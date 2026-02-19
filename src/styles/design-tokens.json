@@ -1,38 +1,38 @@
 {
     "colors": {
         "background": {
-            "DEFAULT": "#030712",
-            "secondary": "#0f172a",
+            "DEFAULT": "#060818",
+            "secondary": "#0A0F2C",
             "tertiary": "#1e293b"
         },
         "surface": {
-            "DEFAULT": "rgba(30, 41, 59, 0.5)",
-            "hover": "rgba(51, 65, 85, 0.5)",
-            "active": "rgba(71, 85, 105, 0.5)"
+            "DEFAULT": "rgba(10, 15, 44, 0.5)",
+            "hover": "rgba(30, 41, 59, 0.5)",
+            "active": "rgba(51, 65, 85, 0.5)"
         },
         "text": {
-            "primary": "#f8fafc",
-            "secondary": "#cbd5e1",
-            "muted": "#94a3b8",
+            "primary": "#F0F4FF",
+            "secondary": "#8A9BB5",
+            "muted": "#64748b",
             "inverted": "#020617"
         },
         "border": {
-            "DEFAULT": "rgba(255, 255, 255, 0.1)",
-            "hover": "rgba(255, 255, 255, 0.2)",
-            "focus": "rgba(99, 102, 241, 0.5)"
+            "DEFAULT": "rgba(79, 142, 247, 0.1)",
+            "hover": "rgba(79, 142, 247, 0.2)",
+            "focus": "rgba(79, 142, 247, 0.5)"
         },
         "primary": {
-            "DEFAULT": "#6366f1",
+            "DEFAULT": "#4F8EF7",
             "foreground": "#ffffff",
-            "glow": "rgba(99, 102, 241, 0.5)"
+            "glow": "rgba(79, 142, 247, 0.5)"
         },
         "secondary": {
-            "DEFAULT": "#a855f7",
+            "DEFAULT": "#7B5EA7",
             "foreground": "#ffffff",
-            "glow": "rgba(168, 85, 247, 0.5)"
+            "glow": "rgba(123, 94, 167, 0.5)"
         },
         "accent": {
-            "cyan": "#06b6d4",
+            "cyan": "#00C2FF",
             "rose": "#f43f5e",
             "amber": "#f59e0b"
         },
@@ -90,10 +90,10 @@
         "full": "9999px"
     },
     "shadows": {
-        "glow-sm": "0 0 10px rgba(99, 102, 241, 0.3)",
-        "glow-md": "0 0 20px rgba(99, 102, 241, 0.5)",
-        "glow-lg": "0 0 30px rgba(99, 102, 241, 0.6)",
-        "neon-border": "0 0 5px rgba(255, 255, 255, 0.5), 0 0 10px rgba(99, 102, 241, 0.3)"
+        "glow-sm": "0 0 10px rgba(79, 142, 247, 0.3)",
+        "glow-md": "0 0 20px rgba(79, 142, 247, 0.5)",
+        "glow-lg": "0 0 30px rgba(79, 142, 247, 0.6)",
+        "neon-border": "0 0 5px rgba(240, 244, 255, 0.5), 0 0 10px rgba(79, 142, 247, 0.3)"
     },
     "animation": {
         "durations": {

@@ -1,0 +1,421 @@
+{
+    "home": {
+        "hero": {
+            "headline": "Engineering Your Digital Future with Precision",
+            "subheading": "We partner with global enterprises to build secure, scalable, and AI-driven software solutions that accelerate innovation and drive tangible business growth."
+        },
+        "aboutSnapshot": "Skylogix Technologies is a premier global IT services partner. With a decade of collective experience, our distributed team of expert engineers delivers bank-grade security and Silicon Valley-quality code to enterprises across the US, UK, Europe, Australia, and the Middle East.",
+        "services": [
+            {
+                "title": "Mobile App Development",
+                "description": "Native and cross-platform mobile experiences engineering for performance, engagement, and seamless user journeys on iOS and Android."
+            },
+            {
+                "title": "Backend Services",
+                "description": "Robust, high-concurrency server-side architectures designed to handle millions of requests with 99.99% uptime and uncompromised security."
+            },
+            {
+                "title": "Website Development",
+                "description": "Next-generation web applications built for speed, SEO dominance, and responsive interactions using cutting-edge frontend frameworks."
+            },
+            {
+                "title": "UI/UX Design",
+                "description": "Data-driven interface design that translates complex logic into intuitive, accessible, and visually stunning digital experiences."
+            },
+            {
+                "title": "AI-Based Software",
+                "description": "Custom machine learning models and predictive analytics tools that turn your data into a competitive advantage."
+            },
+            {
+                "title": "AI Integrations",
+                "description": "Seamlessly embedding advanced LLMs and AI agents into your existing workflows to automate redundant tasks."
+            },
+            {
+                "title": "No-Code Development",
+                "description": "Rapid MVP development and internal tool creation using modern low-code platforms for faster time-to-market."
+            },
+            {
+                "title": "App Maintenance",
+                "description": "Proactive monitoring, security patching, and performance optimization to ensure your software evolves with your business."
+            },
+            {
+                "title": "IT Consulting",
+                "description": "Strategic technology advisory to align your digital roadmap with long-term business objectives and ROI targets."
+            },
+            {
+                "title": "Tech Support",
+                "description": "24/7 reliability engineering and technical support to resolve critical incidents and maintain operational continuity."
+            },
+            {
+                "title": "Mentorship",
+                "description": "Empowering your internal teams through specialized training, code reviews, and architectural guidance from senior engineers."
+            }
+        ],
+        "whyChooseUs": [
+            {
+                "title": "NDA & MOU Protected",
+                "description": "Your intellectual property is our top priority. We guarantee complete confidentiality and legal protection for every line of code we write."
+            },
+            {
+                "title": "Global Standards",
+                "description": "We rigorously adhere to US and EU coding standards, ensuring your software is compliant, maintainable, and ready for global scale."
+            },
+            {
+                "title": "AI-First Approach",
+                "description": "We don’t just build software; we future-proof it. Every solution is architected with AI integration capabilities from day one."
+            },
+            {
+                "title": "End-to-End Delivery",
+                "description": "From initial concept validation to post-deployment scaling, we manage the entire product lifecycle so you can focus on business strategy."
+            }
+        ],
+        "cta": {
+            "heading": "Ready to Transform Your Digital Landscape?",
+            "subheading": "Join the forward-thinking enterprises trusting Skylogix to build their future."
+        }
+    },
+    "about": {
+        "overview": "Skylogix Technologies is a new-age global technology partner established to bridge the gap between complex business requirements and elegant technical execution. Based in India but operating globally, we bring together the top 1% of engineering talent to serve clients in the US, UK, Europe, Australia, and the Middle East. We don't act as a mere vendor; we function as an extension of your core team. Our philosophy is rooted in 'Engineering Excellence'—a commitment to writing clean, scalable, and secure code that stands the test of time. Whether you are a startup looking for a rapid MVP or an enterprise needing a legacy system overhaul, Skylogix delivers with precision, speed, and integrity.",
+        "vision": "To become the world's most trusted catalyst for digital transformation, enabling enterprises to solve their hardest problems through intelligent technology. We envision a future where boundaries between human potential and digital capability are seamless.",
+        "mission": "To engineer secure, scalable, and intuitive software solutions that drive measurable business value. We strive to democratize access to world-class technology expertise, ensuring every client, regardless of size, gets the Silicon Valley standard of development.",
+        "values": [
+            {
+                "name": "Innovation",
+                "description": "We relentlessly challenge the status quo to find smarter, faster, and better ways to solve problems."
+            },
+            {
+                "name": "Integrity",
+                "description": "We operate with radical transparency, honesty, and accountability in every interaction and line of code."
+            },
+            {
+                "name": "Client First",
+                "description": "Your business goals are our north star; we succeed only when you effectively scale and grow."
+            },
+            {
+                "name": "Quality",
+                "description": "We have zero tolerance for mediocrity, strictly adhering to global best practices and rigorous testing."
+            },
+            {
+                "name": "Transparency",
+                "description": "No hidden costs, no jargon, and no surprises—just clear, consistent, and open communication."
+            },
+            {
+                "name": "Growth",
+                "description": "We foster a culture of continuous learning, ensuring our team and your tech stack stay ahead of the curve."
+            }
+        ],
+        "process": [
+            {
+                "name": "Discovery",
+                "description": "Deep-dive workshops to understand your business goals, user needs, and technical constraints."
+            },
+            {
+                "name": "Planning",
+                "description": "Architecting a detailed technical roadmap, database schema, and project timeline for predictability."
+            },
+            {
+                "name": "Design",
+                "description": "Crafting intuitive, user-centric interfaces and prototypes that align with your brand identity."
+            },
+            {
+                "name": "Development",
+                "description": "Writing clean, modular, and documented code using agile methodologies for rapid iteration."
+            },
+            {
+                "name": "Testing",
+                "description": "Rigorous automated and manual QA to ensure bug-free performance and security compliance."
+            },
+            {
+                "name": "Launch",
+                "description": "Seamless deployment to production environments with ongoing monitoring and support."
+            }
+        ]
+    },
+    "services": [
+        {
+            "slug": "mobile-app-development",
+            "tagline": "Seamless Experiences on Every Device",
+            "description": "In a mobile-first world, your app is your brand's most critical touchpoint. We design and engineer high-performance mobile applications that users love. Whether you need a native iOS app for maximum performance or a cross-platform Flutter solution for speed-to-market, our team delivers pixel-perfect interfaces backed by powerful logic. We focus on retention-driving features, intuitive navigation, and battery-efficient performance to ensure your app stands out in the crowded marketplace.",
+            "offerings": [
+                "Native iOS (Swift)",
+                "Native Android (Kotlin)",
+                "Cross-Platform (Flutter/React Native)",
+                "Mobile Strategy & UI/UX"
+            ],
+            "process": [
+                "User Journey Mapping",
+                "Prototyping & Wireframing",
+                "Agile Development Sprints",
+                "App Store Optimization & Launch"
+            ]
+        },
+        {
+            "slug": "backend-services",
+            "tagline": "The Backbone of Your Digital Business",
+            "description": "A beautiful interface means nothing without a powerful engine. We build robust, scalable backend infrastructures capable of handling millions of simultaneous requests. Our focus is on security, speed, and reliability. We design RESTful and GraphQL APIs, manage complex databases, and implement cloud-native microservices architectures that grow with your user base, ensuring your business never faces downtime during critical growth spurts.",
+            "offerings": [
+                "API Design & Development",
+                "Database Architecture (SQL/NoSQL)",
+                "Microservices Migration",
+                "Cloud Infrastructure (AWS/Azure)"
+            ],
+            "process": [
+                "System Architecture Design",
+                "Database Modeling",
+                "API Implementation",
+                "Load Testing & Security Audits"
+            ]
+        },
+        {
+            "slug": "web-development",
+            "tagline": "Performance-Driven Web Applications",
+            "description": "We move beyond static brochure sites to build dynamic, high-performance web applications. Using modern frameworks like Next.js and React, we create fast, SEO-optimized, and responsive websites that convert visitors into customers. Our web solutions are progressive, accessible, and secure, providing a native-app-like feel directly in the browser. From complex enterprise dashboards to high-traffic e-commerce storefronts, we build the web of tomorrow.",
+            "offerings": [
+                "Enterprise Web Apps",
+                "SaaS Product Development",
+                "Progressive Web Apps (PWA)",
+                "Jamstack Solutions"
+            ],
+            "process": [
+                "Requirement Analysis",
+                "Frontend Architecture",
+                "Component Development",
+                "SEO & Performance Tuning"
+            ]
+        },
+        {
+            "slug": "ui-ux-design",
+            "tagline": "Design Thinking Meets Digital Art",
+            "description": "Great technology should be invisible. Our UI/UX design process starts with deep user empathy. We research, wireframe, and prototype to create interfaces that are not just visually stunning but intuitively usable. We solve complex interaction problems with elegant design solutions, ensuring that your users can achieve their goals with minimal friction. We build comprehensive design systems that ensure consistency across all your digital products.",
+            "offerings": [
+                "User Research & Personas",
+                "Interaction Design",
+                "Visual Identity Systems",
+                "Usability Testing"
+            ],
+            "process": [
+                "Empathize & Define",
+                "Ideate & Sketch",
+                "High-Fidelity Prototyping",
+                "User Testing & Iteration"
+            ]
+        },
+        {
+            "slug": "ai-based-software",
+            "tagline": "Intelligence Architected for Business",
+            "description": "Transform your data into actionable intelligence. We develop custom AI software that automates decision-making, predicts trends, and personalizes user experiences. From recommendation engines to fraud detection systems, our machine learning engineers build models tailored to your specific industry data. We handle the entire pipeline from data cleaning to model training and deployment, making AI accessible and impactful for your enterprise.",
+            "offerings": [
+                "Predictive Analytics",
+                "Natural Language Processing",
+                "Computer Vision",
+                "Recommendation Systems"
+            ],
+            "process": [
+                "Data Assessment",
+                "Model Selection & Training",
+                "Integration & Testing",
+                "Continuous Learning & Tuning"
+            ]
+        },
+        {
+            "slug": "ai-integrations",
+            "tagline": "Supercharge Workflows with GenAI",
+            "description": "You don't always need to build a model from scratch. We integrate powerful Large Language Models (LLMs) like GPT-4 and Claude into your existing applications. We build intelligent chatbots, automated content generators, and smart workflow assistants that drastically reduce manual labor. Our expertise in prompt engineering and vector databases ensures that these AI agents are accurate, context-aware, and aligned with your brand voice.",
+            "offerings": [
+                "Custom Chatbots",
+                "LLM API Integration",
+                "Automated Content Workflows",
+                "Intelligent Search"
+            ],
+            "process": [
+                "Use Case Identification",
+                "API & Vector DB Setup",
+                "Prompt Engineering",
+                "Workflow Automation"
+            ]
+        },
+        {
+            "slug": "no-code-development",
+            "tagline": "Rapid Launch, Minimum Fuss",
+            "description": "Speed is the new currency. For internal tools, MVPs, and validation projects, we leverage best-in-class no-code and low-code platforms to deliver functional software in weeks, not months. This approach dramatically reduces development costs and allows for rapid iteration based on user feedback. We ensure these solutions are scalable and can be extended with custom code where necessary.",
+            "offerings": [
+                "MVP Development",
+                "Internal Dashboards",
+                "Workflow Automation",
+                "CRM/CMS Implementation"
+            ],
+            "process": [
+                "Feature Scoping",
+                "Visual Development",
+                "Database Integration",
+                "Launch & Handover"
+            ]
+        },
+        {
+            "slug": "application-maintenance",
+            "tagline": "Vitality for Your Software Ecosystem",
+            "description": "Software is a living organism that needs care. Our application maintenance services go beyond simple bug fixes. We perform proactive health checks, security patch management, and library upgrades to prevent technical debt accumulation. We monitor performance metrics in real-time to detect and resolve potential issues before they impact your users, ensuring your digital assets remain secure and performant year after year.",
+            "offerings": [
+                "Security Patching",
+                "Performance Monitoring",
+                "Legacy Modernization",
+                "L3 Technical Support"
+            ],
+            "process": [
+                "Audit & Health Check",
+                "Routine Maintenance",
+                "Emergency Response",
+                "Performance Reporting"
+            ]
+        },
+        {
+            "slug": "it-consulting",
+            "tagline": "Strategic Advisory for the Digital Age",
+            "description": "Navigating the complex technology landscape can be daunting. Our IT consulting services provide you with a clear roadmap. We act as your fractional CTO, helping you select the right technology stack, plan your digital transformation, and optimize your IT budget. We assess your current infrastructure for bottlenecks and security risks, providing actionable recommendations to align technology with your business goals.",
+            "offerings": [
+                "Digital Transformation Strategy",
+                "Tech Stack Selection",
+                "Security & Compliance Audits",
+                "Cloud Cost Optimization"
+            ],
+            "process": [
+                "Current State Analysis",
+                "Gap Analysis",
+                "Strategic Roadmap",
+                "Implementation Guidance"
+            ]
+        },
+        {
+            "slug": "tech-support",
+            "tagline": "Uninterrupted Operational Excellence",
+            "description": "Downtime is expensive. Our dedicated technical support teams ensure your systems are always online and your users are always supported. We provide tiered support structures to handle everything from password resets to complex server outages. With strictly defined SLAs and 24/7 availability, we act as the guardian of your digital operations, giving you the peace of mind to focus on growth.",
+            "offerings": [
+                "24/7 System Monitoring",
+                "Incident Management",
+                "Help Desk Services",
+                "User Training"
+            ],
+            "process": [
+                "Ticket Logging",
+                "Triage & Prioritization",
+                "Resolution & Recovery",
+                "Root Cause Analysis"
+            ]
+        },
+        {
+            "slug": "mentorship",
+            "tagline": "Elapsed Learning for Tech Teams",
+            "description": "Great tools need great people. We help you upskill your internal development teams through structured mentorship programs. Our senior engineers conduct code reviews, pair programming sessions, and architectural workshops to elevate your team's capabilities. Whether you're transitioning to a new tech stack or onboarding junior developers, our mentorship accelerates the learning curve and instills best-in-class engineering culture.",
+            "offerings": [
+                "Code Quality Reviews",
+                "Architecture Workshops",
+                "Team Upskilling",
+                "Agile Coaching"
+            ],
+            "process": [
+                "Skill Gap Analysis",
+                "Curriculum Design",
+                "Hands-on Sessions",
+                "Progress Evaluation"
+            ]
+        }
+    ],
+    "caseStudies": [
+        {
+            "title": "Secure Payment Gateway Integration",
+            "industry": "FinTech",
+            "region": "US",
+            "challenge": "An established US-based payment processor faced scaling issues and security vulnerabilities with their legacy transaction engine during peak holiday traffic.",
+            "solution": "We re-engineered the core transaction layer using Rust for memory safety and speed, and implemented a microservices architecture compliant with PCI-DSS Level 1 standards.",
+            "results": [
+                "99.999% System Uptime",
+                "300ms Latency Reduction",
+                "Zero Security Incidents"
+            ]
+        },
+        {
+            "title": "Telehealth Patient Portal",
+            "industry": "HealthTech",
+            "region": "UK",
+            "challenge": "A UK healthcare provider needed a GDPR-compliant remote consultation platform to handle increased patient demand while ensuring absolute data privacy.",
+            "solution": "Developed a secure WebRTC video consultation platform with end-to-end encryption and integrated NHS-compliant electronic health record (EHR) syncing.",
+            "results": [
+                "15k+ Monthly Consultations",
+                "40% Admin Time Saved",
+                "100% GDPR Compliance"
+            ]
+        },
+        {
+            "title": "Omnichannel Retail Platform",
+            "industry": "E-Commerce",
+            "region": "Australia",
+            "challenge": "A prominent Australian retailer struggled with inventory synchronization across their physical stores and online Magento store, leading to overselling.",
+            "solution": "Built a custom middleware to sync inventory in real-time between POS and the web, and migrated the frontend to a headless Shopify Plus setup for speed.",
+            "results": [
+                "25% Increase in Mobile Sales",
+                "Real-time Stock Accuracy",
+                "2s Page Load Time"
+            ]
+        },
+        {
+            "title": "Adaptive Learning Management System",
+            "industry": "EdTech",
+            "region": "Europe",
+            "challenge": "A European university network required a personalized learning platform to combat student disengagement in remote learning environments.",
+            "solution": "Implemented an AI-driven LMS that adapts course content difficulty based on student performance in real-time, featuring gamified progress tracking.",
+            "results": [
+                "35% Higher Course Completion",
+                "50k+ Active Students",
+                "20% Reduction in Dropouts"
+            ]
+        },
+        {
+            "title": "Enterprise Resource Planning (ERP)",
+            "industry": "SaaS",
+            "region": "Middle East",
+            "challenge": "A growing construction firm in Dubai was managing multi-million dollar projects using fragmented spreadsheets, causing massive data silos.",
+            "solution": "Developed a custom cloud-based ERP tailored for construction workflows, integrating procurement, HR, and project management modules into one dashboard.",
+            "results": [
+                "50% Reduction in Data Entry",
+                "Real-time Cost Tracking",
+                "Unified Workforce Data"
+            ]
+        },
+        {
+            "title": "Smart Supply Chain Optimization",
+            "industry": "Logistics",
+            "region": "US",
+            "challenge": "A US logistics fleet was losing millions annually due to inefficient route planning and unpredicted vehicle maintenance downtime.",
+            "solution": "Deployed an IoT-enabled fleet management system with predictive maintenance algorithms and AI-powered dynamic route optimization.",
+            "results": [
+                "15% Fuel Cost Reduction",
+                "20% Fleet Efficiency Boost",
+                "Predictive Maintenance Alerts"
+            ]
+        },
+        {
+            "title": "Virtual Property Tour Platform",
+            "industry": "Real Estate",
+            "region": "UK",
+            "challenge": "A UK real estate agency needed to continue property viewings during restrictions and reach international buyers without physical travel.",
+            "solution": "Created an immersive VR-ready virtual tour platform allowing 360-degree walkthroughs and live agent guided tours directly in the browser.",
+            "results": [
+                "3x International Inquiries",
+                "40% Faster Sales Cycle",
+                "High User Engagement"
+            ]
+        },
+        {
+            "title": "AI-Powered Recruitment Tool",
+            "industry": "HR Tech",
+            "region": "Europe",
+            "challenge": "A pan-European recruitment agency was overwhelmed by thousands of applications, leading to slow hiring times and missed talent.",
+            "solution": "Built an AI resume parsing and matching engine that automatically ranks candidates based on job descriptions and bias-aware criteria.",
+            "results": [
+                "60% Faster Screening",
+                "Improved Candidate Quality",
+                "Bias-Reduced Selection"
+            ]
+        }
+    ]
+}
