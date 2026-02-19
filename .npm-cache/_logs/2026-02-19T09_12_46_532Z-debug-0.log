@@ -1,0 +1,1207 @@
+0 verbose cli /Users/chauhanparth06/.nvm/versions/node/v24.11.1/bin/node /Users/chauhanparth06/.nvm/versions/node/v24.11.1/bin/npm
+1 info using npm@11.6.2
+2 info using node@v24.11.1
+3 silly config load:file:/Users/chauhanparth06/.nvm/versions/node/v24.11.1/lib/node_modules/npm/npmrc
+4 silly config load:file:/Users/chauhanparth06/Documents/GitHub/Skylogix/.npmrc
+5 silly config load:file:/Users/chauhanparth06/.npmrc
+6 silly config load:file:/Users/chauhanparth06/.nvm/versions/node/v24.11.1/etc/npmrc
+7 verbose title npm install framer-motion react-tsparticles tsparticles lucide-react zod resend @upstash/redis react-turnstile clsx tailwind-merge
+8 verbose argv "install" "--cache" ".npm-cache" "framer-motion" "react-tsparticles" "tsparticles" "lucide-react" "zod" "resend" "@upstash/redis" "react-turnstile" "clsx" "tailwind-merge"
+9 verbose logfile logs-max:10 dir:/Users/chauhanparth06/Documents/GitHub/Skylogix/.npm-cache/_logs/2026-02-19T09_12_46_532Z-
+10 verbose logfile /Users/chauhanparth06/Documents/GitHub/Skylogix/.npm-cache/_logs/2026-02-19T09_12_46_532Z-debug-0.log
+11 silly logfile done cleaning log files
+12 silly packumentCache heap:2348810240 maxSize:587202560 maxEntrySize:293601280
+13 silly idealTree buildDeps
+14 silly fetch manifest framer-motion@*
+15 silly packumentCache full:https://registry.npmjs.org/framer-motion cache-miss
+16 http fetch GET 200 https://registry.npmjs.org/npm 312ms
+17 http fetch GET 200 https://registry.npmjs.org/framer-motion 233ms (cache miss)
+18 silly packumentCache full:https://registry.npmjs.org/framer-motion set size:undefined disposed:false
+19 silly fetch manifest @emotion/is-prop-valid@*
+20 silly packumentCache full:https://registry.npmjs.org/@emotion%2fis-prop-valid cache-miss
+21 http fetch GET 200 https://registry.npmjs.org/@emotion%2fis-prop-valid 792ms (cache miss)
+22 silly packumentCache full:https://registry.npmjs.org/@emotion%2fis-prop-valid set size:undefined disposed:false
+23 silly fetch manifest react@19.2.3
+24 silly packumentCache full:https://registry.npmjs.org/react cache-miss
+25 http fetch GET 200 https://registry.npmjs.org/react 514ms (cache miss)
+26 silly packumentCache full:https://registry.npmjs.org/react set size:undefined disposed:false
+27 silly fetch manifest react-dom@19.2.3
+28 silly packumentCache full:https://registry.npmjs.org/react-dom cache-miss
+29 http fetch GET 200 https://registry.npmjs.org/react-dom 417ms (cache miss)
+30 silly packumentCache full:https://registry.npmjs.org/react-dom set size:undefined disposed:false
+31 silly fetch manifest react-tsparticles@*
+32 silly packumentCache full:https://registry.npmjs.org/react-tsparticles cache-miss
+33 http fetch GET 200 https://registry.npmjs.org/react-tsparticles 70ms (cache miss)
+34 silly packumentCache full:https://registry.npmjs.org/react-tsparticles set size:undefined disposed:false
+35 silly fetch manifest tsparticles@*
+36 silly packumentCache full:https://registry.npmjs.org/tsparticles cache-miss
+37 http fetch GET 200 https://registry.npmjs.org/tsparticles 98ms (cache miss)
+38 silly packumentCache full:https://registry.npmjs.org/tsparticles set size:undefined disposed:false
+39 silly fetch manifest lucide-react@*
+40 silly packumentCache full:https://registry.npmjs.org/lucide-react cache-miss
+41 http fetch GET 200 https://registry.npmjs.org/lucide-react 70ms (cache miss)
+42 silly packumentCache full:https://registry.npmjs.org/lucide-react set size:undefined disposed:false
+43 silly fetch manifest zod@*
+44 silly packumentCache full:https://registry.npmjs.org/zod cache-miss
+45 http fetch GET 200 https://registry.npmjs.org/zod 80ms (cache miss)
+46 silly packumentCache full:https://registry.npmjs.org/zod set size:undefined disposed:false
+47 silly fetch manifest resend@*
+48 silly packumentCache full:https://registry.npmjs.org/resend cache-miss
+49 http fetch GET 200 https://registry.npmjs.org/resend 326ms (cache miss)
+50 silly packumentCache full:https://registry.npmjs.org/resend set size:undefined disposed:false
+51 silly fetch manifest @react-email/render@*
+52 silly packumentCache full:https://registry.npmjs.org/@react-email%2frender cache-miss
+53 http fetch GET 200 https://registry.npmjs.org/@react-email%2frender 241ms (cache miss)
+54 silly packumentCache full:https://registry.npmjs.org/@react-email%2frender set size:undefined disposed:false
+55 silly fetch manifest @upstash/redis@*
+56 silly packumentCache full:https://registry.npmjs.org/@upstash%2fredis cache-miss
+57 http fetch GET 200 https://registry.npmjs.org/@upstash%2fredis 293ms (cache miss)
+58 silly packumentCache full:https://registry.npmjs.org/@upstash%2fredis set size:undefined disposed:false
+59 silly fetch manifest react-turnstile@*
+60 silly packumentCache full:https://registry.npmjs.org/react-turnstile cache-miss
+61 http fetch GET 200 https://registry.npmjs.org/react-turnstile 50ms (cache miss)
+62 silly packumentCache full:https://registry.npmjs.org/react-turnstile set size:undefined disposed:false
+63 silly fetch manifest clsx@*
+64 silly packumentCache full:https://registry.npmjs.org/clsx cache-miss
+65 http fetch GET 200 https://registry.npmjs.org/clsx 59ms (cache miss)
+66 silly packumentCache full:https://registry.npmjs.org/clsx set size:undefined disposed:false
+67 silly fetch manifest tailwind-merge@*
+68 silly packumentCache full:https://registry.npmjs.org/tailwind-merge cache-miss
+69 http fetch GET 200 https://registry.npmjs.org/tailwind-merge 56ms (cache miss)
+70 silly packumentCache full:https://registry.npmjs.org/tailwind-merge set size:undefined disposed:false
+71 silly placeDep ROOT @upstash/redis@1.36.2 OK for: skylogix@0.1.0 want: *
+72 silly placeDep ROOT clsx@2.1.1 OK for: skylogix@0.1.0 want: *
+73 silly placeDep ROOT framer-motion@12.34.2 OK for: skylogix@0.1.0 want: *
+74 silly placeDep ROOT lucide-react@0.574.0 OK for: skylogix@0.1.0 want: *
+75 silly placeDep ROOT react-tsparticles@2.12.2 OK for: skylogix@0.1.0 want: *
+76 silly placeDep ROOT react-turnstile@1.1.5 OK for: skylogix@0.1.0 want: *
+77 silly placeDep ROOT resend@6.9.2 OK for: skylogix@0.1.0 want: *
+78 silly placeDep ROOT tailwind-merge@3.5.0 OK for: skylogix@0.1.0 want: *
+79 silly placeDep ROOT tsparticles@3.9.1 OK for: skylogix@0.1.0 want: *
+80 silly placeDep ROOT zod@4.3.6 REPLACE for: skylogix@0.1.0 want: *
+81 silly fetch manifest uncrypto@^0.1.3
+82 silly packumentCache full:https://registry.npmjs.org/uncrypto cache-miss
+83 silly fetch manifest motion-dom@^12.34.2
+84 silly packumentCache full:https://registry.npmjs.org/motion-dom cache-miss
+85 silly fetch manifest motion-utils@^12.29.2
+86 silly packumentCache full:https://registry.npmjs.org/motion-utils cache-miss
+87 silly fetch manifest tsparticles-engine@^2.12.0
+88 silly packumentCache full:https://registry.npmjs.org/tsparticles-engine cache-miss
+89 silly fetch manifest postal-mime@2.7.3
+90 silly packumentCache full:https://registry.npmjs.org/postal-mime cache-miss
+91 silly fetch manifest svix@1.84.1
+92 silly packumentCache full:https://registry.npmjs.org/svix cache-miss
+93 silly fetch manifest @tsparticles/slim@3.9.1
+94 silly packumentCache full:https://registry.npmjs.org/@tsparticles%2fslim cache-miss
+95 http fetch GET 200 https://registry.npmjs.org/tsparticles-engine 118ms (cache miss)
+96 silly packumentCache full:https://registry.npmjs.org/tsparticles-engine set size:undefined disposed:false
+97 silly fetch manifest @tsparticles/engine@3.9.1
+98 silly packumentCache full:https://registry.npmjs.org/@tsparticles%2fengine cache-miss
+99 http fetch GET 200 https://registry.npmjs.org/uncrypto 262ms (cache miss)
+100 silly packumentCache full:https://registry.npmjs.org/uncrypto set size:undefined disposed:false
+101 silly fetch manifest @tsparticles/shape-text@3.9.1
+102 silly packumentCache full:https://registry.npmjs.org/@tsparticles%2fshape-text cache-miss
+103 http fetch GET 200 https://registry.npmjs.org/@tsparticles%2fengine 191ms (cache miss)
+104 silly packumentCache full:https://registry.npmjs.org/@tsparticles%2fengine set size:undefined disposed:false
+105 silly fetch manifest @tsparticles/updater-roll@3.9.1
+106 silly packumentCache full:https://registry.npmjs.org/@tsparticles%2fupdater-roll cache-miss
+107 http fetch GET 200 https://registry.npmjs.org/motion-dom 320ms (cache miss)
+108 silly packumentCache full:https://registry.npmjs.org/motion-dom set size:undefined disposed:false
+109 silly fetch manifest @tsparticles/updater-tilt@3.9.1
+110 silly packumentCache full:https://registry.npmjs.org/@tsparticles%2fupdater-tilt cache-miss
+111 http fetch GET 200 https://registry.npmjs.org/motion-utils 435ms (cache miss)
+112 silly packumentCache full:https://registry.npmjs.org/motion-utils set size:undefined disposed:false
+113 silly fetch manifest @tsparticles/updater-wobble@3.9.1
+114 silly packumentCache full:https://registry.npmjs.org/@tsparticles%2fupdater-wobble cache-miss
+115 http fetch GET 200 https://registry.npmjs.org/postal-mime 507ms (cache miss)
+116 silly packumentCache full:https://registry.npmjs.org/postal-mime set size:undefined disposed:false
+117 silly fetch manifest @tsparticles/plugin-emitters@3.9.1
+118 silly packumentCache full:https://registry.npmjs.org/@tsparticles%2fplugin-emitters cache-miss
+119 http fetch GET 200 https://registry.npmjs.org/svix 518ms (cache miss)
+120 silly packumentCache full:https://registry.npmjs.org/svix set size:undefined disposed:false
+121 silly fetch manifest @tsparticles/updater-destroy@3.9.1
+122 silly packumentCache full:https://registry.npmjs.org/@tsparticles%2fupdater-destroy cache-miss
+123 http fetch GET 200 https://registry.npmjs.org/@tsparticles%2fupdater-tilt 267ms (cache miss)
+124 silly packumentCache full:https://registry.npmjs.org/@tsparticles%2fupdater-tilt set size:undefined disposed:false
+125 silly fetch manifest @tsparticles/updater-twinkle@3.9.1
+126 silly packumentCache full:https://registry.npmjs.org/@tsparticles%2fupdater-twinkle cache-miss
+127 http fetch GET 200 https://registry.npmjs.org/@tsparticles%2fslim 1085ms (cache miss)
+128 silly packumentCache full:https://registry.npmjs.org/@tsparticles%2fslim set size:undefined disposed:false
+129 silly fetch manifest @tsparticles/plugin-absorbers@3.9.1
+130 silly packumentCache full:https://registry.npmjs.org/@tsparticles%2fplugin-absorbers cache-miss
+131 http fetch GET 200 https://registry.npmjs.org/@tsparticles%2fshape-text 910ms (cache miss)
+132 silly packumentCache full:https://registry.npmjs.org/@tsparticles%2fshape-text set size:undefined disposed:false
+133 silly fetch manifest @tsparticles/interaction-external-trail@3.9.1
+134 silly packumentCache full:https://registry.npmjs.org/@tsparticles%2finteraction-external-trail cache-miss
+135 http fetch GET 200 https://registry.npmjs.org/@tsparticles%2fupdater-twinkle 583ms (cache miss)
+136 silly packumentCache full:https://registry.npmjs.org/@tsparticles%2fupdater-twinkle set size:undefined disposed:false
+137 silly fetch manifest @tsparticles/plugin-emitters-shape-circle@3.9.1
+138 silly packumentCache full:https://registry.npmjs.org/@tsparticles%2fplugin-emitters-shape-circle cache-miss
+139 http fetch GET 200 https://registry.npmjs.org/@tsparticles%2fupdater-roll 918ms (cache miss)
+140 silly packumentCache full:https://registry.npmjs.org/@tsparticles%2fupdater-roll set size:undefined disposed:false
+141 silly fetch manifest @tsparticles/plugin-emitters-shape-square@3.9.1
+142 silly packumentCache full:https://registry.npmjs.org/@tsparticles%2fplugin-emitters-shape-square cache-miss
+143 http fetch GET 200 https://registry.npmjs.org/@tsparticles%2fplugin-absorbers 250ms (cache miss)
+144 silly packumentCache full:https://registry.npmjs.org/@tsparticles%2fplugin-absorbers set size:undefined disposed:false
+145 http fetch GET 200 https://registry.npmjs.org/@tsparticles%2finteraction-external-trail 594ms (cache miss)
+146 silly packumentCache full:https://registry.npmjs.org/@tsparticles%2finteraction-external-trail set size:undefined disposed:false
+147 http fetch GET 200 https://registry.npmjs.org/@tsparticles%2fplugin-emitters-shape-circle 901ms (cache miss)
+148 silly packumentCache full:https://registry.npmjs.org/@tsparticles%2fplugin-emitters-shape-circle set size:undefined disposed:false
+149 http fetch GET 200 https://registry.npmjs.org/@tsparticles%2fplugin-emitters 1769ms (cache miss)
+150 silly packumentCache full:https://registry.npmjs.org/@tsparticles%2fplugin-emitters set size:undefined disposed:false
+151 http fetch GET 200 https://registry.npmjs.org/@tsparticles%2fupdater-wobble 1898ms (cache miss)
+152 silly packumentCache full:https://registry.npmjs.org/@tsparticles%2fupdater-wobble set size:undefined disposed:false
+153 http fetch GET 200 https://registry.npmjs.org/@tsparticles%2fplugin-emitters-shape-square 1427ms (cache miss)
+154 silly packumentCache full:https://registry.npmjs.org/@tsparticles%2fplugin-emitters-shape-square set size:undefined disposed:false
+155 http fetch GET 200 https://registry.npmjs.org/@tsparticles%2fupdater-destroy 2570ms (cache miss)
+156 silly packumentCache full:https://registry.npmjs.org/@tsparticles%2fupdater-destroy set size:undefined disposed:false
+157 silly placeDep ROOT uncrypto@0.1.3 OK for: @upstash/redis@1.36.2 want: ^0.1.3
+158 silly placeDep ROOT motion-dom@12.34.2 OK for: framer-motion@12.34.2 want: ^12.34.2
+159 silly placeDep ROOT motion-utils@12.29.2 OK for: framer-motion@12.34.2 want: ^12.29.2
+160 silly placeDep ROOT tsparticles-engine@2.12.0 OK for: react-tsparticles@2.12.2 want: ^2.12.0
+161 silly placeDep ROOT postal-mime@2.7.3 OK for: resend@6.9.2 want: 2.7.3
+162 silly placeDep ROOT svix@1.84.1 OK for: resend@6.9.2 want: 1.84.1
+163 silly fetch manifest uuid@^10.0.0
+164 silly packumentCache full:https://registry.npmjs.org/uuid cache-miss
+165 silly fetch manifest standardwebhooks@1.0.0
+166 silly packumentCache full:https://registry.npmjs.org/standardwebhooks cache-miss
+167 http fetch GET 200 https://registry.npmjs.org/standardwebhooks 56ms (cache miss)
+168 silly packumentCache full:https://registry.npmjs.org/standardwebhooks set size:undefined disposed:false
+169 http fetch GET 200 https://registry.npmjs.org/uuid 320ms (cache miss)
+170 silly packumentCache full:https://registry.npmjs.org/uuid set size:undefined disposed:false
+171 silly placeDep ROOT standardwebhooks@1.0.0 OK for: svix@1.84.1 want: 1.0.0
+172 silly placeDep ROOT uuid@10.0.0 OK for: svix@1.84.1 want: ^10.0.0
+173 silly fetch manifest @stablelib/base64@^1.0.0
+174 silly packumentCache full:https://registry.npmjs.org/@stablelib%2fbase64 cache-miss
+175 silly fetch manifest fast-sha256@^1.3.0
+176 silly packumentCache full:https://registry.npmjs.org/fast-sha256 cache-miss
+177 http fetch GET 200 https://registry.npmjs.org/@stablelib%2fbase64 79ms (cache miss)
+178 silly packumentCache full:https://registry.npmjs.org/@stablelib%2fbase64 set size:undefined disposed:false
+179 http fetch GET 200 https://registry.npmjs.org/fast-sha256 1156ms (cache miss)
+180 silly packumentCache full:https://registry.npmjs.org/fast-sha256 set size:undefined disposed:false
+181 silly placeDep ROOT @stablelib/base64@1.0.1 OK for: standardwebhooks@1.0.0 want: ^1.0.0
+182 silly placeDep ROOT fast-sha256@1.3.0 OK for: standardwebhooks@1.0.0 want: ^1.3.0
+183 silly placeDep ROOT @tsparticles/engine@3.9.1 OK for: tsparticles@3.9.1 want: 3.9.1
+184 silly placeDep ROOT @tsparticles/interaction-external-trail@3.9.1 OK for: tsparticles@3.9.1 want: 3.9.1
+185 silly placeDep ROOT @tsparticles/plugin-absorbers@3.9.1 OK for: tsparticles@3.9.1 want: 3.9.1
+186 silly placeDep ROOT @tsparticles/plugin-emitters@3.9.1 OK for: tsparticles@3.9.1 want: 3.9.1
+187 silly placeDep ROOT @tsparticles/plugin-emitters-shape-circle@3.9.1 OK for: tsparticles@3.9.1 want: 3.9.1
+188 silly placeDep ROOT @tsparticles/plugin-emitters-shape-square@3.9.1 OK for: tsparticles@3.9.1 want: 3.9.1
+189 silly placeDep ROOT @tsparticles/shape-text@3.9.1 OK for: tsparticles@3.9.1 want: 3.9.1
+190 silly placeDep ROOT @tsparticles/slim@3.9.1 OK for: tsparticles@3.9.1 want: 3.9.1
+191 silly placeDep ROOT @tsparticles/updater-destroy@3.9.1 OK for: tsparticles@3.9.1 want: 3.9.1
+192 silly placeDep ROOT @tsparticles/updater-roll@3.9.1 OK for: tsparticles@3.9.1 want: 3.9.1
+193 silly placeDep ROOT @tsparticles/updater-tilt@3.9.1 OK for: tsparticles@3.9.1 want: 3.9.1
+194 silly placeDep ROOT @tsparticles/updater-twinkle@3.9.1 OK for: tsparticles@3.9.1 want: 3.9.1
+195 silly placeDep ROOT @tsparticles/updater-wobble@3.9.1 OK for: tsparticles@3.9.1 want: 3.9.1
+196 silly fetch manifest @tsparticles/basic@3.9.1
+197 silly packumentCache full:https://registry.npmjs.org/@tsparticles%2fbasic cache-miss
+198 silly fetch manifest @tsparticles/shape-line@3.9.1
+199 silly packumentCache full:https://registry.npmjs.org/@tsparticles%2fshape-line cache-miss
+200 silly fetch manifest @tsparticles/shape-star@3.9.1
+201 silly packumentCache full:https://registry.npmjs.org/@tsparticles%2fshape-star cache-miss
+202 silly fetch manifest @tsparticles/shape-emoji@3.9.1
+203 silly packumentCache full:https://registry.npmjs.org/@tsparticles%2fshape-emoji cache-miss
+204 silly fetch manifest @tsparticles/shape-image@3.9.1
+205 silly packumentCache full:https://registry.npmjs.org/@tsparticles%2fshape-image cache-miss
+206 silly fetch manifest @tsparticles/shape-square@3.9.1
+207 silly packumentCache full:https://registry.npmjs.org/@tsparticles%2fshape-square cache-miss
+208 silly fetch manifest @tsparticles/updater-life@3.9.1
+209 silly packumentCache full:https://registry.npmjs.org/@tsparticles%2fupdater-life cache-miss
+210 http fetch GET 200 https://registry.npmjs.org/@tsparticles%2fshape-image 228ms (cache miss)
+211 silly packumentCache full:https://registry.npmjs.org/@tsparticles%2fshape-image set size:undefined disposed:false
+212 silly fetch manifest @tsparticles/move-parallax@3.9.1
+213 silly packumentCache full:https://registry.npmjs.org/@tsparticles%2fmove-parallax cache-miss
+214 http fetch GET 200 https://registry.npmjs.org/@tsparticles%2fbasic 380ms (cache miss)
+215 silly packumentCache full:https://registry.npmjs.org/@tsparticles%2fbasic set size:undefined disposed:false
+216 silly fetch manifest @tsparticles/shape-polygon@3.9.1
+217 silly packumentCache full:https://registry.npmjs.org/@tsparticles%2fshape-polygon cache-miss
+218 http fetch GET 200 https://registry.npmjs.org/@tsparticles%2fshape-square 516ms (cache miss)
+219 silly packumentCache full:https://registry.npmjs.org/@tsparticles%2fshape-square set size:undefined disposed:false
+220 silly fetch manifest @tsparticles/updater-rotate@3.9.1
+221 silly packumentCache full:https://registry.npmjs.org/@tsparticles%2fupdater-rotate cache-miss
+222 http fetch GET 200 https://registry.npmjs.org/@tsparticles%2fshape-polygon 383ms (cache miss)
+223 silly packumentCache full:https://registry.npmjs.org/@tsparticles%2fshape-polygon set size:undefined disposed:false
+224 silly fetch manifest @tsparticles/plugin-easing-quad@3.9.1
+225 silly packumentCache full:https://registry.npmjs.org/@tsparticles%2fplugin-easing-quad cache-miss
+226 http fetch GET 200 https://registry.npmjs.org/@tsparticles%2fupdater-life 803ms (cache miss)
+227 silly packumentCache full:https://registry.npmjs.org/@tsparticles%2fupdater-life set size:undefined disposed:false
+228 silly fetch manifest @tsparticles/updater-stroke-color@3.9.1
+229 silly packumentCache full:https://registry.npmjs.org/@tsparticles%2fupdater-stroke-color cache-miss
+230 http fetch GET 200 https://registry.npmjs.org/@tsparticles%2fshape-line 896ms (cache miss)
+231 silly packumentCache full:https://registry.npmjs.org/@tsparticles%2fshape-line set size:undefined disposed:false
+232 silly fetch manifest @tsparticles/interaction-external-grab@3.9.1
+233 silly packumentCache full:https://registry.npmjs.org/@tsparticles%2finteraction-external-grab cache-miss
+234 http fetch GET 200 https://registry.npmjs.org/@tsparticles%2fmove-parallax 746ms (cache miss)
+235 silly packumentCache full:https://registry.npmjs.org/@tsparticles%2fmove-parallax set size:undefined disposed:false
+236 silly fetch manifest @tsparticles/interaction-external-push@3.9.1
+237 silly packumentCache full:https://registry.npmjs.org/@tsparticles%2finteraction-external-push cache-miss
+238 http fetch GET 200 https://registry.npmjs.org/@tsparticles%2fshape-emoji 1015ms (cache miss)
+239 silly packumentCache full:https://registry.npmjs.org/@tsparticles%2fshape-emoji set size:undefined disposed:false
+240 silly fetch manifest @tsparticles/interaction-external-slow@3.9.1
+241 silly packumentCache full:https://registry.npmjs.org/@tsparticles%2finteraction-external-slow cache-miss
+242 http fetch GET 200 https://registry.npmjs.org/@tsparticles%2fshape-star 1072ms (cache miss)
+243 silly packumentCache full:https://registry.npmjs.org/@tsparticles%2fshape-star set size:undefined disposed:false
+244 silly fetch manifest @tsparticles/interaction-external-pause@3.9.1
+245 silly packumentCache full:https://registry.npmjs.org/@tsparticles%2finteraction-external-pause cache-miss
+246 http fetch GET 200 https://registry.npmjs.org/@tsparticles%2finteraction-external-grab 249ms (cache miss)
+247 silly packumentCache full:https://registry.npmjs.org/@tsparticles%2finteraction-external-grab set size:undefined disposed:false
+248 silly fetch manifest @tsparticles/interaction-external-bounce@3.9.1
+249 silly packumentCache full:https://registry.npmjs.org/@tsparticles%2finteraction-external-bounce cache-miss
+250 http fetch GET 200 https://registry.npmjs.org/@tsparticles%2fupdater-rotate 839ms (cache miss)
+251 silly packumentCache full:https://registry.npmjs.org/@tsparticles%2fupdater-rotate set size:undefined disposed:false
+252 silly fetch manifest @tsparticles/interaction-external-bubble@3.9.1
+253 silly packumentCache full:https://registry.npmjs.org/@tsparticles%2finteraction-external-bubble cache-miss
+254 http fetch GET 200 https://registry.npmjs.org/@tsparticles%2finteraction-external-push 890ms (cache miss)
+255 silly packumentCache full:https://registry.npmjs.org/@tsparticles%2finteraction-external-push set size:undefined disposed:false
+256 silly fetch manifest @tsparticles/interaction-external-remove@3.9.1
+257 silly packumentCache full:https://registry.npmjs.org/@tsparticles%2finteraction-external-remove cache-miss
+258 http fetch GET 200 https://registry.npmjs.org/@tsparticles%2fupdater-stroke-color 1072ms (cache miss)
+259 silly packumentCache full:https://registry.npmjs.org/@tsparticles%2fupdater-stroke-color set size:undefined disposed:false
+260 silly fetch manifest @tsparticles/interaction-particles-links@3.9.1
+261 silly packumentCache full:https://registry.npmjs.org/@tsparticles%2finteraction-particles-links cache-miss
+262 http fetch GET 200 https://registry.npmjs.org/@tsparticles%2finteraction-external-bounce 742ms (cache miss)
+263 silly packumentCache full:https://registry.npmjs.org/@tsparticles%2finteraction-external-bounce set size:undefined disposed:false
+264 silly fetch manifest @tsparticles/interaction-external-attract@3.9.1
+265 silly packumentCache full:https://registry.npmjs.org/@tsparticles%2finteraction-external-attract cache-miss
+266 http fetch GET 200 https://registry.npmjs.org/@tsparticles%2finteraction-external-remove 240ms (cache miss)
+267 silly packumentCache full:https://registry.npmjs.org/@tsparticles%2finteraction-external-remove set size:undefined disposed:false
+268 silly fetch manifest @tsparticles/interaction-external-connect@3.9.1
+269 silly packumentCache full:https://registry.npmjs.org/@tsparticles%2finteraction-external-connect cache-miss
+270 http fetch GET 200 https://registry.npmjs.org/@tsparticles%2finteraction-external-bubble 781ms (cache miss)
+271 silly packumentCache full:https://registry.npmjs.org/@tsparticles%2finteraction-external-bubble set size:undefined disposed:false
+272 silly fetch manifest @tsparticles/interaction-external-repulse@3.9.1
+273 silly packumentCache full:https://registry.npmjs.org/@tsparticles%2finteraction-external-repulse cache-miss
+274 http fetch GET 200 https://registry.npmjs.org/@tsparticles%2finteraction-external-attract 274ms (cache miss)
+275 silly packumentCache full:https://registry.npmjs.org/@tsparticles%2finteraction-external-attract set size:undefined disposed:false
+276 silly fetch manifest @tsparticles/interaction-particles-attract@3.9.1
+277 silly packumentCache full:https://registry.npmjs.org/@tsparticles%2finteraction-particles-attract cache-miss
+278 http fetch GET 200 https://registry.npmjs.org/@tsparticles%2finteraction-external-connect 236ms (cache miss)
+279 silly packumentCache full:https://registry.npmjs.org/@tsparticles%2finteraction-external-connect set size:undefined disposed:false
+280 silly fetch manifest @tsparticles/interaction-particles-collisions@3.9.1
+281 silly packumentCache full:https://registry.npmjs.org/@tsparticles%2finteraction-particles-collisions cache-miss
+282 http fetch GET 200 https://registry.npmjs.org/@tsparticles%2finteraction-particles-attract 189ms (cache miss)
+283 silly packumentCache full:https://registry.npmjs.org/@tsparticles%2finteraction-particles-attract set size:undefined disposed:false
+284 http fetch GET 200 https://registry.npmjs.org/@tsparticles%2finteraction-external-slow 1456ms (cache miss)
+285 silly packumentCache full:https://registry.npmjs.org/@tsparticles%2finteraction-external-slow set size:undefined disposed:false
+286 http fetch GET 200 https://registry.npmjs.org/@tsparticles%2finteraction-particles-collisions 246ms (cache miss)
+287 silly packumentCache full:https://registry.npmjs.org/@tsparticles%2finteraction-particles-collisions set size:undefined disposed:false
+288 http fetch GET 200 https://registry.npmjs.org/@tsparticles%2finteraction-particles-links 1074ms (cache miss)
+289 silly packumentCache full:https://registry.npmjs.org/@tsparticles%2finteraction-particles-links set size:undefined disposed:false
+290 http fetch GET 200 https://registry.npmjs.org/@tsparticles%2finteraction-external-repulse 813ms (cache miss)
+291 silly packumentCache full:https://registry.npmjs.org/@tsparticles%2finteraction-external-repulse set size:undefined disposed:false
+292 http fetch GET 200 https://registry.npmjs.org/@tsparticles%2fplugin-easing-quad 2586ms (cache miss)
+293 silly packumentCache full:https://registry.npmjs.org/@tsparticles%2fplugin-easing-quad set size:undefined disposed:false
+294 http fetch GET 200 https://registry.npmjs.org/@tsparticles%2finteraction-external-pause 2435ms (cache miss)
+295 silly packumentCache full:https://registry.npmjs.org/@tsparticles%2finteraction-external-pause set size:undefined disposed:false
+296 silly placeDep ROOT @tsparticles/basic@3.9.1 OK for: @tsparticles/slim@3.9.1 want: 3.9.1
+297 silly placeDep ROOT @tsparticles/interaction-external-attract@3.9.1 OK for: @tsparticles/slim@3.9.1 want: 3.9.1
+298 silly placeDep ROOT @tsparticles/interaction-external-bounce@3.9.1 OK for: @tsparticles/slim@3.9.1 want: 3.9.1
+299 silly placeDep ROOT @tsparticles/interaction-external-bubble@3.9.1 OK for: @tsparticles/slim@3.9.1 want: 3.9.1
+300 silly placeDep ROOT @tsparticles/interaction-external-connect@3.9.1 OK for: @tsparticles/slim@3.9.1 want: 3.9.1
+301 silly placeDep ROOT @tsparticles/interaction-external-grab@3.9.1 OK for: @tsparticles/slim@3.9.1 want: 3.9.1
+302 silly placeDep ROOT @tsparticles/interaction-external-pause@3.9.1 OK for: @tsparticles/slim@3.9.1 want: 3.9.1
+303 silly placeDep ROOT @tsparticles/interaction-external-push@3.9.1 OK for: @tsparticles/slim@3.9.1 want: 3.9.1
+304 silly placeDep ROOT @tsparticles/interaction-external-remove@3.9.1 OK for: @tsparticles/slim@3.9.1 want: 3.9.1
+305 silly placeDep ROOT @tsparticles/interaction-external-repulse@3.9.1 OK for: @tsparticles/slim@3.9.1 want: 3.9.1
+306 silly placeDep ROOT @tsparticles/interaction-external-slow@3.9.1 OK for: @tsparticles/slim@3.9.1 want: 3.9.1
+307 silly placeDep ROOT @tsparticles/interaction-particles-attract@3.9.1 OK for: @tsparticles/slim@3.9.1 want: 3.9.1
+308 silly placeDep ROOT @tsparticles/interaction-particles-collisions@3.9.1 OK for: @tsparticles/slim@3.9.1 want: 3.9.1
+309 silly placeDep ROOT @tsparticles/interaction-particles-links@3.9.1 OK for: @tsparticles/slim@3.9.1 want: 3.9.1
+310 silly placeDep ROOT @tsparticles/move-parallax@3.9.1 OK for: @tsparticles/slim@3.9.1 want: 3.9.1
+311 silly placeDep ROOT @tsparticles/plugin-easing-quad@3.9.1 OK for: @tsparticles/slim@3.9.1 want: 3.9.1
+312 silly placeDep ROOT @tsparticles/shape-emoji@3.9.1 OK for: @tsparticles/slim@3.9.1 want: 3.9.1
+313 silly placeDep ROOT @tsparticles/shape-image@3.9.1 OK for: @tsparticles/slim@3.9.1 want: 3.9.1
+314 silly placeDep ROOT @tsparticles/shape-line@3.9.1 OK for: @tsparticles/slim@3.9.1 want: 3.9.1
+315 silly placeDep ROOT @tsparticles/shape-polygon@3.9.1 OK for: @tsparticles/slim@3.9.1 want: 3.9.1
+316 silly placeDep ROOT @tsparticles/shape-square@3.9.1 OK for: @tsparticles/slim@3.9.1 want: 3.9.1
+317 silly placeDep ROOT @tsparticles/shape-star@3.9.1 OK for: @tsparticles/slim@3.9.1 want: 3.9.1
+318 silly placeDep ROOT @tsparticles/updater-life@3.9.1 OK for: @tsparticles/slim@3.9.1 want: 3.9.1
+319 silly placeDep ROOT @tsparticles/updater-rotate@3.9.1 OK for: @tsparticles/slim@3.9.1 want: 3.9.1
+320 silly placeDep ROOT @tsparticles/updater-stroke-color@3.9.1 OK for: @tsparticles/slim@3.9.1 want: 3.9.1
+321 silly fetch manifest @tsparticles/move-base@3.9.1
+322 silly packumentCache full:https://registry.npmjs.org/@tsparticles%2fmove-base cache-miss
+323 silly fetch manifest @tsparticles/shape-circle@3.9.1
+324 silly packumentCache full:https://registry.npmjs.org/@tsparticles%2fshape-circle cache-miss
+325 silly fetch manifest @tsparticles/updater-size@3.9.1
+326 silly packumentCache full:https://registry.npmjs.org/@tsparticles%2fupdater-size cache-miss
+327 silly fetch manifest @tsparticles/updater-color@3.9.1
+328 silly packumentCache full:https://registry.npmjs.org/@tsparticles%2fupdater-color cache-miss
+329 silly fetch manifest @tsparticles/updater-opacity@3.9.1
+330 silly packumentCache full:https://registry.npmjs.org/@tsparticles%2fupdater-opacity cache-miss
+331 silly fetch manifest @tsparticles/plugin-hex-color@3.9.1
+332 silly packumentCache full:https://registry.npmjs.org/@tsparticles%2fplugin-hex-color cache-miss
+333 silly fetch manifest @tsparticles/plugin-hsl-color@3.9.1
+334 silly packumentCache full:https://registry.npmjs.org/@tsparticles%2fplugin-hsl-color cache-miss
+335 http fetch GET 200 https://registry.npmjs.org/@tsparticles%2fshape-circle 302ms (cache miss)
+336 silly packumentCache full:https://registry.npmjs.org/@tsparticles%2fshape-circle set size:undefined disposed:false
+337 silly fetch manifest @tsparticles/plugin-rgb-color@3.9.1
+338 silly packumentCache full:https://registry.npmjs.org/@tsparticles%2fplugin-rgb-color cache-miss
+339 http fetch GET 200 https://registry.npmjs.org/@tsparticles%2fupdater-size 757ms (cache miss)
+340 silly packumentCache full:https://registry.npmjs.org/@tsparticles%2fupdater-size set size:undefined disposed:false
+341 silly fetch manifest @tsparticles/updater-out-modes@3.9.1
+342 silly packumentCache full:https://registry.npmjs.org/@tsparticles%2fupdater-out-modes cache-miss
+343 http fetch GET 200 https://registry.npmjs.org/@tsparticles%2fupdater-color 792ms (cache miss)
+344 silly packumentCache full:https://registry.npmjs.org/@tsparticles%2fupdater-color set size:undefined disposed:false
+345 http fetch GET 200 https://registry.npmjs.org/@tsparticles%2fmove-base 800ms (cache miss)
+346 silly packumentCache full:https://registry.npmjs.org/@tsparticles%2fmove-base set size:undefined disposed:false
+347 http fetch GET 200 https://registry.npmjs.org/@tsparticles%2fplugin-hex-color 1058ms (cache miss)
+348 silly packumentCache full:https://registry.npmjs.org/@tsparticles%2fplugin-hex-color set size:undefined disposed:false
+349 http fetch GET 200 https://registry.npmjs.org/@tsparticles%2fplugin-rgb-color 857ms (cache miss)
+350 silly packumentCache full:https://registry.npmjs.org/@tsparticles%2fplugin-rgb-color set size:undefined disposed:false
+351 http fetch GET 200 https://registry.npmjs.org/@tsparticles%2fupdater-opacity 1461ms (cache miss)
+352 silly packumentCache full:https://registry.npmjs.org/@tsparticles%2fupdater-opacity set size:undefined disposed:false
+353 http fetch GET 200 https://registry.npmjs.org/@tsparticles%2fplugin-hsl-color 1817ms (cache miss)
+354 silly packumentCache full:https://registry.npmjs.org/@tsparticles%2fplugin-hsl-color set size:undefined disposed:false
+355 http fetch GET 200 https://registry.npmjs.org/@tsparticles%2fupdater-out-modes 1348ms (cache miss)
+356 silly packumentCache full:https://registry.npmjs.org/@tsparticles%2fupdater-out-modes set size:undefined disposed:false
+357 silly placeDep ROOT @tsparticles/move-base@3.9.1 OK for: @tsparticles/basic@3.9.1 want: 3.9.1
+358 silly placeDep ROOT @tsparticles/plugin-hex-color@3.9.1 OK for: @tsparticles/basic@3.9.1 want: 3.9.1
+359 silly placeDep ROOT @tsparticles/plugin-hsl-color@3.9.1 OK for: @tsparticles/basic@3.9.1 want: 3.9.1
+360 silly placeDep ROOT @tsparticles/plugin-rgb-color@3.9.1 OK for: @tsparticles/basic@3.9.1 want: 3.9.1
+361 silly placeDep ROOT @tsparticles/shape-circle@3.9.1 OK for: @tsparticles/basic@3.9.1 want: 3.9.1
+362 silly placeDep ROOT @tsparticles/updater-color@3.9.1 OK for: @tsparticles/basic@3.9.1 want: 3.9.1
+363 silly placeDep ROOT @tsparticles/updater-opacity@3.9.1 OK for: @tsparticles/basic@3.9.1 want: 3.9.1
+364 silly placeDep ROOT @tsparticles/updater-out-modes@3.9.1 OK for: @tsparticles/basic@3.9.1 want: 3.9.1
+365 silly placeDep ROOT @tsparticles/updater-size@3.9.1 OK for: @tsparticles/basic@3.9.1 want: 3.9.1
+366 silly reify moves {}
+367 silly audit bulk request {
+367 silly audit   '@alloc/quick-lru': [ '5.2.0' ],
+367 silly audit   '@babel/code-frame': [ '7.29.0' ],
+367 silly audit   '@babel/compat-data': [ '7.29.0' ],
+367 silly audit   '@babel/core': [ '7.29.0' ],
+367 silly audit   '@babel/generator': [ '7.29.1' ],
+367 silly audit   '@babel/helper-compilation-targets': [ '7.28.6' ],
+367 silly audit   '@babel/helper-globals': [ '7.28.0' ],
+367 silly audit   '@babel/helper-module-imports': [ '7.28.6' ],
+367 silly audit   '@babel/helper-module-transforms': [ '7.28.6' ],
+367 silly audit   '@babel/helper-string-parser': [ '7.27.1' ],
+367 silly audit   '@babel/helper-validator-identifier': [ '7.28.5' ],
+367 silly audit   '@babel/helper-validator-option': [ '7.27.1' ],
+367 silly audit   '@babel/helpers': [ '7.28.6' ],
+367 silly audit   '@babel/parser': [ '7.29.0' ],
+367 silly audit   '@babel/template': [ '7.28.6' ],
+367 silly audit   '@babel/traverse': [ '7.29.0' ],
+367 silly audit   '@babel/types': [ '7.29.0' ],
+367 silly audit   '@emnapi/core': [ '1.8.1' ],
+367 silly audit   '@emnapi/runtime': [ '1.8.1' ],
+367 silly audit   '@emnapi/wasi-threads': [ '1.1.0' ],
+367 silly audit   '@eslint-community/eslint-utils': [ '4.9.1' ],
+367 silly audit   'eslint-visitor-keys': [ '3.4.3', '5.0.0', '4.2.1' ],
+367 silly audit   '@eslint-community/regexpp': [ '4.12.2' ],
+367 silly audit   '@eslint/config-array': [ '0.21.1' ],
+367 silly audit   '@eslint/config-helpers': [ '0.4.2' ],
+367 silly audit   '@eslint/core': [ '0.17.0' ],
+367 silly audit   '@eslint/eslintrc': [ '3.3.3' ],
+367 silly audit   '@eslint/js': [ '9.39.2' ],
+367 silly audit   '@eslint/object-schema': [ '2.1.7' ],
+367 silly audit   '@eslint/plugin-kit': [ '0.4.1' ],
+367 silly audit   '@humanfs/core': [ '0.19.1' ],
+367 silly audit   '@humanfs/node': [ '0.16.7' ],
+367 silly audit   '@humanwhocodes/module-importer': [ '1.0.1' ],
+367 silly audit   '@humanwhocodes/retry': [ '0.4.3' ],
+367 silly audit   '@img/colour': [ '1.0.0' ],
+367 silly audit   '@img/sharp-darwin-arm64': [ '0.34.5' ],
+367 silly audit   '@img/sharp-darwin-x64': [ '0.34.5' ],
+367 silly audit   '@img/sharp-libvips-darwin-arm64': [ '1.2.4' ],
+367 silly audit   '@img/sharp-libvips-darwin-x64': [ '1.2.4' ],
+367 silly audit   '@img/sharp-libvips-linux-arm': [ '1.2.4' ],
+367 silly audit   '@img/sharp-libvips-linux-arm64': [ '1.2.4' ],
+367 silly audit   '@img/sharp-libvips-linux-ppc64': [ '1.2.4' ],
+367 silly audit   '@img/sharp-libvips-linux-riscv64': [ '1.2.4' ],
+367 silly audit   '@img/sharp-libvips-linux-s390x': [ '1.2.4' ],
+367 silly audit   '@img/sharp-libvips-linux-x64': [ '1.2.4' ],
+367 silly audit   '@img/sharp-libvips-linuxmusl-arm64': [ '1.2.4' ],
+367 silly audit   '@img/sharp-libvips-linuxmusl-x64': [ '1.2.4' ],
+367 silly audit   '@img/sharp-linux-arm': [ '0.34.5' ],
+367 silly audit   '@img/sharp-linux-arm64': [ '0.34.5' ],
+367 silly audit   '@img/sharp-linux-ppc64': [ '0.34.5' ],
+367 silly audit   '@img/sharp-linux-riscv64': [ '0.34.5' ],
+367 silly audit   '@img/sharp-linux-s390x': [ '0.34.5' ],
+367 silly audit   '@img/sharp-linux-x64': [ '0.34.5' ],
+367 silly audit   '@img/sharp-linuxmusl-arm64': [ '0.34.5' ],
+367 silly audit   '@img/sharp-linuxmusl-x64': [ '0.34.5' ],
+367 silly audit   '@img/sharp-wasm32': [ '0.34.5' ],
+367 silly audit   '@img/sharp-win32-arm64': [ '0.34.5' ],
+367 silly audit   '@img/sharp-win32-ia32': [ '0.34.5' ],
+367 silly audit   '@img/sharp-win32-x64': [ '0.34.5' ],
+367 silly audit   '@jridgewell/gen-mapping': [ '0.3.13' ],
+367 silly audit   '@jridgewell/remapping': [ '2.3.5' ],
+367 silly audit   '@jridgewell/resolve-uri': [ '3.1.2' ],
+367 silly audit   '@jridgewell/sourcemap-codec': [ '1.5.5' ],
+367 silly audit   '@jridgewell/trace-mapping': [ '0.3.31' ],
+367 silly audit   '@napi-rs/wasm-runtime': [ '0.2.12' ],
+367 silly audit   '@next/env': [ '16.1.6' ],
+367 silly audit   '@next/eslint-plugin-next': [ '16.1.6' ],
+367 silly audit   '@next/swc-darwin-arm64': [ '16.1.6' ],
+367 silly audit   '@next/swc-darwin-x64': [ '16.1.6' ],
+367 silly audit   '@next/swc-linux-arm64-gnu': [ '16.1.6' ],
+367 silly audit   '@next/swc-linux-arm64-musl': [ '16.1.6' ],
+367 silly audit   '@next/swc-linux-x64-gnu': [ '16.1.6' ],
+367 silly audit   '@next/swc-linux-x64-musl': [ '16.1.6' ],
+367 silly audit   '@next/swc-win32-arm64-msvc': [ '16.1.6' ],
+367 silly audit   '@next/swc-win32-x64-msvc': [ '16.1.6' ],
+367 silly audit   '@nodelib/fs.scandir': [ '2.1.5' ],
+367 silly audit   '@nodelib/fs.stat': [ '2.0.5' ],
+367 silly audit   '@nodelib/fs.walk': [ '1.2.8' ],
+367 silly audit   '@nolyfill/is-core-module': [ '1.0.39' ],
+367 silly audit   '@rtsao/scc': [ '1.1.0' ],
+367 silly audit   '@swc/helpers': [ '0.5.15' ],
+367 silly audit   '@tailwindcss/node': [ '4.2.0' ],
+367 silly audit   '@tailwindcss/oxide': [ '4.2.0' ],
+367 silly audit   '@tailwindcss/oxide-android-arm64': [ '4.2.0' ],
+367 silly audit   '@tailwindcss/oxide-darwin-arm64': [ '4.2.0' ],
+367 silly audit   '@tailwindcss/oxide-darwin-x64': [ '4.2.0' ],
+367 silly audit   '@tailwindcss/oxide-freebsd-x64': [ '4.2.0' ],
+367 silly audit   '@tailwindcss/oxide-linux-arm-gnueabihf': [ '4.2.0' ],
+367 silly audit   '@tailwindcss/oxide-linux-arm64-gnu': [ '4.2.0' ],
+367 silly audit   '@tailwindcss/oxide-linux-arm64-musl': [ '4.2.0' ],
+367 silly audit   '@tailwindcss/oxide-linux-x64-gnu': [ '4.2.0' ],
+367 silly audit   '@tailwindcss/oxide-linux-x64-musl': [ '4.2.0' ],
+367 silly audit   '@tailwindcss/oxide-wasm32-wasi': [ '4.2.0' ],
+367 silly audit   '@tailwindcss/oxide-win32-arm64-msvc': [ '4.2.0' ],
+367 silly audit   '@tailwindcss/oxide-win32-x64-msvc': [ '4.2.0' ],
+367 silly audit   '@tailwindcss/postcss': [ '4.2.0' ],
+367 silly audit   '@tybys/wasm-util': [ '0.10.1' ],
+367 silly audit   '@types/estree': [ '1.0.8' ],
+367 silly audit   '@types/json-schema': [ '7.0.15' ],
+367 silly audit   '@types/json5': [ '0.0.29' ],
+367 silly audit   '@types/node': [ '20.19.33' ],
+367 silly audit   '@types/react': [ '19.2.14' ],
+367 silly audit   '@types/react-dom': [ '19.2.3' ],
+367 silly audit   '@typescript-eslint/eslint-plugin': [ '8.56.0' ],
+367 silly audit   ignore: [ '7.0.5', '5.3.2' ],
+367 silly audit   '@typescript-eslint/parser': [ '8.56.0' ],
+367 silly audit   '@typescript-eslint/project-service': [ '8.56.0' ],
+367 silly audit   '@typescript-eslint/scope-manager': [ '8.56.0' ],
+367 silly audit   '@typescript-eslint/tsconfig-utils': [ '8.56.0' ],
+367 silly audit   '@typescript-eslint/type-utils': [ '8.56.0' ],
+367 silly audit   '@typescript-eslint/types': [ '8.56.0' ],
+367 silly audit   '@typescript-eslint/typescript-estree': [ '8.56.0' ],
+367 silly audit   'brace-expansion': [ '2.0.2', '1.1.12' ],
+367 silly audit   minimatch: [ '9.0.5', '3.1.2' ],
+367 silly audit   semver: [ '7.7.4', '6.3.1' ],
+367 silly audit   '@typescript-eslint/utils': [ '8.56.0' ],
+367 silly audit   '@typescript-eslint/visitor-keys': [ '8.56.0' ],
+367 silly audit   '@unrs/resolver-binding-android-arm-eabi': [ '1.11.1' ],
+367 silly audit   '@unrs/resolver-binding-android-arm64': [ '1.11.1' ],
+367 silly audit   '@unrs/resolver-binding-darwin-arm64': [ '1.11.1' ],
+367 silly audit   '@unrs/resolver-binding-darwin-x64': [ '1.11.1' ],
+367 silly audit   '@unrs/resolver-binding-freebsd-x64': [ '1.11.1' ],
+367 silly audit   '@unrs/resolver-binding-linux-arm-gnueabihf': [ '1.11.1' ],
+367 silly audit   '@unrs/resolver-binding-linux-arm-musleabihf': [ '1.11.1' ],
+367 silly audit   '@unrs/resolver-binding-linux-arm64-gnu': [ '1.11.1' ],
+367 silly audit   '@unrs/resolver-binding-linux-arm64-musl': [ '1.11.1' ],
+367 silly audit   '@unrs/resolver-binding-linux-ppc64-gnu': [ '1.11.1' ],
+367 silly audit   '@unrs/resolver-binding-linux-riscv64-gnu': [ '1.11.1' ],
+367 silly audit   '@unrs/resolver-binding-linux-riscv64-musl': [ '1.11.1' ],
+367 silly audit   '@unrs/resolver-binding-linux-s390x-gnu': [ '1.11.1' ],
+367 silly audit   '@unrs/resolver-binding-linux-x64-gnu': [ '1.11.1' ],
+367 silly audit   '@unrs/resolver-binding-linux-x64-musl': [ '1.11.1' ],
+367 silly audit   '@unrs/resolver-binding-wasm32-wasi': [ '1.11.1' ],
+367 silly audit   '@unrs/resolver-binding-win32-arm64-msvc': [ '1.11.1' ],
+367 silly audit   '@unrs/resolver-binding-win32-ia32-msvc': [ '1.11.1' ],
+367 silly audit   '@unrs/resolver-binding-win32-x64-msvc': [ '1.11.1' ],
+367 silly audit   acorn: [ '8.15.0' ],
+367 silly audit   'acorn-jsx': [ '5.3.2' ],
+367 silly audit   ajv: [ '6.12.6' ],
+367 silly audit   'ansi-styles': [ '4.3.0' ],
+367 silly audit   argparse: [ '2.0.1' ],
+367 silly audit   'aria-query': [ '5.3.2' ],
+367 silly audit   'array-buffer-byte-length': [ '1.0.2' ],
+367 silly audit   'array-includes': [ '3.1.9' ],
+367 silly audit   'array.prototype.findlast': [ '1.2.5' ],
+367 silly audit   'array.prototype.findlastindex': [ '1.2.6' ],
+367 silly audit   'array.prototype.flat': [ '1.3.3' ],
+367 silly audit   'array.prototype.flatmap': [ '1.3.3' ],
+367 silly audit   'array.prototype.tosorted': [ '1.1.4' ],
+367 silly audit   'arraybuffer.prototype.slice': [ '1.0.4' ],
+367 silly audit   'ast-types-flow': [ '0.0.8' ],
+367 silly audit   'async-function': [ '1.0.0' ],
+367 silly audit   'available-typed-arrays': [ '1.0.7' ],
+367 silly audit   'axe-core': [ '4.11.1' ],
+367 silly audit   'axobject-query': [ '4.1.0' ],
+367 silly audit   'balanced-match': [ '1.0.2' ],
+367 silly audit   'baseline-browser-mapping': [ '2.9.19' ],
+367 silly audit   braces: [ '3.0.3' ],
+367 silly audit   browserslist: [ '4.28.1' ],
+367 silly audit   'call-bind': [ '1.0.8' ],
+367 silly audit   'call-bind-apply-helpers': [ '1.0.2' ],
+367 silly audit   'call-bound': [ '1.0.4' ],
+367 silly audit   callsites: [ '3.1.0' ],
+367 silly audit   'caniuse-lite': [ '1.0.30001770' ],
+367 silly audit   chalk: [ '4.1.2' ],
+367 silly audit   'client-only': [ '0.0.1' ],
+367 silly audit   'color-convert': [ '2.0.1' ],
+367 silly audit   'color-name': [ '1.1.4' ],
+367 silly audit   'concat-map': [ '0.0.1' ],
+367 silly audit   'convert-source-map': [ '2.0.0' ],
+367 silly audit   'cross-spawn': [ '7.0.6' ],
+367 silly audit   csstype: [ '3.2.3' ],
+367 silly audit   'damerau-levenshtein': [ '1.0.8' ],
+367 silly audit   'data-view-buffer': [ '1.0.2' ],
+367 silly audit   'data-view-byte-length': [ '1.0.2' ],
+367 silly audit   'data-view-byte-offset': [ '1.0.1' ],
+367 silly audit   debug: [ '4.4.3', '3.2.7' ],
+367 silly audit   'deep-is': [ '0.1.4' ],
+367 silly audit   'define-data-property': [ '1.1.4' ],
+367 silly audit   'define-properties': [ '1.2.1' ],
+367 silly audit   'detect-libc': [ '2.1.2' ],
+367 silly audit   doctrine: [ '2.1.0' ],
+367 silly audit   'dunder-proto': [ '1.0.1' ],
+367 silly audit   'electron-to-chromium': [ '1.5.286' ],
+367 silly audit   'emoji-regex': [ '9.2.2' ],
+367 silly audit   'enhanced-resolve': [ '5.19.0' ],
+367 silly audit   'es-abstract': [ '1.24.1' ],
+367 silly audit   'es-define-property': [ '1.0.1' ],
+367 silly audit   'es-errors': [ '1.3.0' ],
+367 silly audit   'es-iterator-helpers': [ '1.2.2' ],
+367 silly audit   'es-object-atoms': [ '1.1.1' ],
+367 silly audit   'es-set-tostringtag': [ '2.1.0' ],
+367 silly audit   'es-shim-unscopables': [ '1.1.0' ],
+367 silly audit   'es-to-primitive': [ '1.3.0' ],
+367 silly audit   escalade: [ '3.2.0' ],
+367 silly audit   'escape-string-regexp': [ '4.0.0' ],
+367 silly audit   eslint: [ '9.39.2' ],
+367 silly audit   'eslint-config-next': [ '16.1.6' ],
+367 silly audit   globals: [ '16.4.0', '14.0.0' ],
+367 silly audit   'eslint-import-resolver-node': [ '0.3.9' ],
+367 silly audit   'eslint-import-resolver-typescript': [ '3.10.1' ],
+367 silly audit   'eslint-module-utils': [ '2.12.1' ],
+367 silly audit   'eslint-plugin-import': [ '2.32.0' ],
+367 silly audit   'eslint-plugin-jsx-a11y': [ '6.10.2' ],
+367 silly audit   'eslint-plugin-react': [ '7.37.5' ],
+367 silly audit   'eslint-plugin-react-hooks': [ '7.0.1' ],
+367 silly audit   resolve: [ '2.0.0-next.6', '1.22.11' ],
+367 silly audit   'eslint-scope': [ '8.4.0' ],
+367 silly audit   espree: [ '10.4.0' ],
+367 silly audit   esquery: [ '1.7.0' ],
+367 silly audit   esrecurse: [ '4.3.0' ],
+367 silly audit   estraverse: [ '5.3.0' ],
+367 silly audit   esutils: [ '2.0.3' ],
+367 silly audit   'fast-deep-equal': [ '3.1.3' ],
+367 silly audit   'fast-glob': [ '3.3.1' ],
+367 silly audit   'glob-parent': [ '5.1.2', '6.0.2' ],
+367 silly audit   'fast-json-stable-stringify': [ '2.1.0' ],
+367 silly audit   'fast-levenshtein': [ '2.0.6' ],
+367 silly audit   fastq: [ '1.20.1' ],
+367 silly audit   'file-entry-cache': [ '8.0.0' ],
+367 silly audit   'fill-range': [ '7.1.1' ],
+367 silly audit   'find-up': [ '5.0.0' ],
+367 silly audit   'flat-cache': [ '4.0.1' ],
+367 silly audit   flatted: [ '3.3.3' ],
+367 silly audit   'for-each': [ '0.3.5' ],
+367 silly audit   'function-bind': [ '1.1.2' ],
+367 silly audit   'function.prototype.name': [ '1.1.8' ],
+367 silly audit   'functions-have-names': [ '1.2.3' ],
+367 silly audit   'generator-function': [ '2.0.1' ],
+367 silly audit   gensync: [ '1.0.0-beta.2' ],
+367 silly audit   'get-intrinsic': [ '1.3.0' ],
+367 silly audit   'get-proto': [ '1.0.1' ],
+367 silly audit   'get-symbol-description': [ '1.1.0' ],
+367 silly audit   'get-tsconfig': [ '4.13.6' ],
+367 silly audit   globalthis: [ '1.0.4' ],
+367 silly audit   gopd: [ '1.2.0' ],
+367 silly audit   'graceful-fs': [ '4.2.11' ],
+367 silly audit   'has-bigints': [ '1.1.0' ],
+367 silly audit   'has-flag': [ '4.0.0' ],
+367 silly audit   'has-property-descriptors': [ '1.0.2' ],
+367 silly audit   'has-proto': [ '1.2.0' ],
+367 silly audit   'has-symbols': [ '1.1.0' ],
+367 silly audit   'has-tostringtag': [ '1.0.2' ],
+367 silly audit   hasown: [ '2.0.2' ],
+367 silly audit   'hermes-estree': [ '0.25.1' ],
+367 silly audit   'hermes-parser': [ '0.25.1' ],
+367 silly audit   'import-fresh': [ '3.3.1' ],
+367 silly audit   imurmurhash: [ '0.1.4' ],
+367 silly audit   'internal-slot': [ '1.1.0' ],
+367 silly audit   'is-array-buffer': [ '3.0.5' ],
+367 silly audit   'is-async-function': [ '2.1.1' ],
+367 silly audit   'is-bigint': [ '1.1.0' ],
+367 silly audit   'is-boolean-object': [ '1.2.2' ],
+367 silly audit   'is-bun-module': [ '2.0.0' ],
+367 silly audit   'is-callable': [ '1.2.7' ],
+367 silly audit   'is-core-module': [ '2.16.1' ],
+367 silly audit   'is-data-view': [ '1.0.2' ],
+367 silly audit   'is-date-object': [ '1.1.0' ],
+367 silly audit   'is-extglob': [ '2.1.1' ],
+367 silly audit   'is-finalizationregistry': [ '1.1.1' ],
+367 silly audit   'is-generator-function': [ '1.1.2' ],
+367 silly audit   'is-glob': [ '4.0.3' ],
+367 silly audit   'is-map': [ '2.0.3' ],
+367 silly audit   'is-negative-zero': [ '2.0.3' ],
+367 silly audit   'is-number': [ '7.0.0' ],
+367 silly audit   'is-number-object': [ '1.1.1' ],
+367 silly audit   'is-regex': [ '1.2.1' ],
+367 silly audit   'is-set': [ '2.0.3' ],
+367 silly audit   'is-shared-array-buffer': [ '1.0.4' ],
+367 silly audit   'is-string': [ '1.1.1' ],
+367 silly audit   'is-symbol': [ '1.1.1' ],
+367 silly audit   'is-typed-array': [ '1.1.15' ],
+367 silly audit   'is-weakmap': [ '2.0.2' ],
+367 silly audit   'is-weakref': [ '1.1.1' ],
+367 silly audit   'is-weakset': [ '2.0.4' ],
+367 silly audit   isarray: [ '2.0.5' ],
+367 silly audit   isexe: [ '2.0.0' ],
+367 silly audit   'iterator.prototype': [ '1.1.5' ],
+367 silly audit   jiti: [ '2.6.1' ],
+367 silly audit   'js-tokens': [ '4.0.0' ],
+367 silly audit   'js-yaml': [ '4.1.1' ],
+367 silly audit   jsesc: [ '3.1.0' ],
+367 silly audit   'json-buffer': [ '3.0.1' ],
+367 silly audit   'json-schema-traverse': [ '0.4.1' ],
+367 silly audit   'json-stable-stringify-without-jsonify': [ '1.0.1' ],
+367 silly audit   json5: [ '2.2.3', '1.0.2' ],
+367 silly audit   'jsx-ast-utils': [ '3.3.5' ],
+367 silly audit   keyv: [ '4.5.4' ],
+367 silly audit   'language-subtag-registry': [ '0.3.23' ],
+367 silly audit   'language-tags': [ '1.0.9' ],
+367 silly audit   levn: [ '0.4.1' ],
+367 silly audit   lightningcss: [ '1.31.1' ],
+367 silly audit   'lightningcss-android-arm64': [ '1.31.1' ],
+367 silly audit   'lightningcss-darwin-arm64': [ '1.31.1' ],
+367 silly audit   'lightningcss-darwin-x64': [ '1.31.1' ],
+367 silly audit   'lightningcss-freebsd-x64': [ '1.31.1' ],
+367 silly audit   'lightningcss-linux-arm-gnueabihf': [ '1.31.1' ],
+367 silly audit   'lightningcss-linux-arm64-gnu': [ '1.31.1' ],
+367 silly audit   'lightningcss-linux-arm64-musl': [ '1.31.1' ],
+367 silly audit   'lightningcss-linux-x64-gnu': [ '1.31.1' ],
+367 silly audit   'lightningcss-linux-x64-musl': [ '1.31.1' ],
+367 silly audit   'lightningcss-win32-arm64-msvc': [ '1.31.1' ],
+367 silly audit   'lightningcss-win32-x64-msvc': [ '1.31.1' ],
+367 silly audit   'locate-path': [ '6.0.0' ],
+367 silly audit   'lodash.merge': [ '4.6.2' ],
+367 silly audit   'loose-envify': [ '1.4.0' ],
+367 silly audit   'lru-cache': [ '5.1.1' ],
+367 silly audit   'magic-string': [ '0.30.21' ],
+367 silly audit   'math-intrinsics': [ '1.1.0' ],
+367 silly audit   merge2: [ '1.4.1' ],
+367 silly audit   micromatch: [ '4.0.8' ],
+367 silly audit   minimist: [ '1.2.8' ],
+367 silly audit   ms: [ '2.1.3' ],
+367 silly audit   nanoid: [ '3.3.11' ],
+367 silly audit   'napi-postinstall': [ '0.3.4' ],
+367 silly audit   'natural-compare': [ '1.4.0' ],
+367 silly audit   next: [ '16.1.6' ],
+367 silly audit   postcss: [ '8.4.31', '8.5.6' ],
+367 silly audit   'node-exports-info': [ '1.6.0' ],
+367 silly audit   'node-releases': [ '2.0.27' ],
+367 silly audit   'object-assign': [ '4.1.1' ],
+367 silly audit   'object-inspect': [ '1.13.4' ],
+367 silly audit   'object-keys': [ '1.1.1' ],
+367 silly audit   'object.assign': [ '4.1.7' ],
+367 silly audit   'object.entries': [ '1.1.9' ],
+367 silly audit   'object.fromentries': [ '2.0.8' ],
+367 silly audit   'object.groupby': [ '1.0.3' ],
+367 silly audit   'object.values': [ '1.2.1' ],
+367 silly audit   optionator: [ '0.9.4' ],
+367 silly audit   'own-keys': [ '1.0.1' ],
+367 silly audit   'p-limit': [ '3.1.0' ],
+367 silly audit   'p-locate': [ '5.0.0' ],
+367 silly audit   'parent-module': [ '1.0.1' ],
+367 silly audit   'path-exists': [ '4.0.0' ],
+367 silly audit   'path-key': [ '3.1.1' ],
+367 silly audit   'path-parse': [ '1.0.7' ],
+367 silly audit   picocolors: [ '1.1.1' ],
+367 silly audit   picomatch: [ '2.3.1', '4.0.3' ],
+367 silly audit   'possible-typed-array-names': [ '1.1.0' ],
+367 silly audit   'prelude-ls': [ '1.2.1' ],
+367 silly audit   'prop-types': [ '15.8.1' ],
+367 silly audit   punycode: [ '2.3.1' ],
+367 silly audit   'queue-microtask': [ '1.2.3' ],
+367 silly audit   react: [ '19.2.3' ],
+367 silly audit   'react-dom': [ '19.2.3' ],
+367 silly audit   'react-is': [ '16.13.1' ],
+367 silly audit   'reflect.getprototypeof': [ '1.0.10' ],
+367 silly audit   'regexp.prototype.flags': [ '1.5.4' ],
+367 silly audit   'resolve-from': [ '4.0.0' ],
+367 silly audit   'resolve-pkg-maps': [ '1.0.0' ],
+367 silly audit   reusify: [ '1.1.0' ],
+367 silly audit   'run-parallel': [ '1.2.0' ],
+367 silly audit   'safe-array-concat': [ '1.1.3' ],
+367 silly audit   'safe-push-apply': [ '1.0.0' ],
+367 silly audit   'safe-regex-test': [ '1.1.0' ],
+367 silly audit   scheduler: [ '0.27.0' ],
+367 silly audit   'set-function-length': [ '1.2.2' ],
+367 silly audit   'set-function-name': [ '2.0.2' ],
+367 silly audit   'set-proto': [ '1.0.0' ],
+367 silly audit   sharp: [ '0.34.5' ],
+367 silly audit   'shebang-command': [ '2.0.0' ],
+367 silly audit   'shebang-regex': [ '3.0.0' ],
+367 silly audit   'side-channel': [ '1.1.0' ],
+367 silly audit   'side-channel-list': [ '1.0.0' ],
+367 silly audit   'side-channel-map': [ '1.0.1' ],
+367 silly audit   'side-channel-weakmap': [ '1.0.2' ],
+367 silly audit   'source-map-js': [ '1.2.1' ],
+367 silly audit   'stable-hash': [ '0.0.5' ],
+367 silly audit   'stop-iteration-iterator': [ '1.1.0' ],
+367 silly audit   'string.prototype.includes': [ '2.0.1' ],
+367 silly audit   'string.prototype.matchall': [ '4.0.12' ],
+367 silly audit   'string.prototype.repeat': [ '1.0.0' ],
+367 silly audit   'string.prototype.trim': [ '1.2.10' ],
+367 silly audit   'string.prototype.trimend': [ '1.0.9' ],
+367 silly audit   'string.prototype.trimstart': [ '1.0.8' ],
+367 silly audit   'strip-bom': [ '3.0.0' ],
+367 silly audit   'strip-json-comments': [ '3.1.1' ],
+367 silly audit   'styled-jsx': [ '5.1.6' ],
+367 silly audit   'supports-color': [ '7.2.0' ],
+367 silly audit   'supports-preserve-symlinks-flag': [ '1.0.0' ],
+367 silly audit   tailwindcss: [ '4.2.0' ],
+367 silly audit   tapable: [ '2.3.0' ],
+367 silly audit   tinyglobby: [ '0.2.15' ],
+367 silly audit   fdir: [ '6.5.0' ],
+367 silly audit   'to-regex-range': [ '5.0.1' ],
+367 silly audit   'ts-api-utils': [ '2.4.0' ],
+367 silly audit   'tsconfig-paths': [ '3.15.0' ],
+367 silly audit   tslib: [ '2.8.1' ],
+367 silly audit   'type-check': [ '0.4.0' ],
+367 silly audit   'typed-array-buffer': [ '1.0.3' ],
+367 silly audit   'typed-array-byte-length': [ '1.0.3' ],
+367 silly audit   'typed-array-byte-offset': [ '1.0.4' ],
+367 silly audit   'typed-array-length': [ '1.0.7' ],
+367 silly audit   typescript: [ '5.9.3' ],
+367 silly audit   'typescript-eslint': [ '8.56.0' ],
+367 silly audit   'unbox-primitive': [ '1.1.0' ],
+367 silly audit   'undici-types': [ '6.21.0' ],
+367 silly audit   'unrs-resolver': [ '1.11.1' ],
+367 silly audit   'update-browserslist-db': [ '1.2.3' ],
+367 silly audit   'uri-js': [ '4.4.1' ],
+367 silly audit   which: [ '2.0.2' ],
+367 silly audit   'which-boxed-primitive': [ '1.1.1' ],
+367 silly audit   'which-builtin-type': [ '1.2.1' ],
+367 silly audit   'which-collection': [ '1.0.2' ],
+367 silly audit   'which-typed-array': [ '1.1.20' ],
+367 silly audit   'word-wrap': [ '1.2.5' ],
+367 silly audit   yallist: [ '3.1.1' ],
+367 silly audit   'yocto-queue': [ '0.1.0' ],
+367 silly audit   'zod-validation-error': [ '4.0.2' ],
+367 silly audit   '@upstash/redis': [ '1.36.2' ],
+367 silly audit   clsx: [ '2.1.1' ],
+367 silly audit   'framer-motion': [ '12.34.2' ],
+367 silly audit   'lucide-react': [ '0.574.0' ],
+367 silly audit   'react-tsparticles': [ '2.12.2' ],
+367 silly audit   'react-turnstile': [ '1.1.5' ],
+367 silly audit   resend: [ '6.9.2' ],
+367 silly audit   'tailwind-merge': [ '3.5.0' ],
+367 silly audit   tsparticles: [ '3.9.1' ],
+367 silly audit   zod: [ '4.3.6' ],
+367 silly audit   uncrypto: [ '0.1.3' ],
+367 silly audit   'motion-dom': [ '12.34.2' ],
+367 silly audit   'motion-utils': [ '12.29.2' ],
+367 silly audit   'tsparticles-engine': [ '2.12.0' ],
+367 silly audit   'postal-mime': [ '2.7.3' ],
+367 silly audit   svix: [ '1.84.1' ],
+367 silly audit   standardwebhooks: [ '1.0.0' ],
+367 silly audit   uuid: [ '10.0.0' ],
+367 silly audit   '@stablelib/base64': [ '1.0.1' ],
+367 silly audit   'fast-sha256': [ '1.3.0' ],
+367 silly audit   '@tsparticles/engine': [ '3.9.1' ],
+367 silly audit   '@tsparticles/interaction-external-trail': [ '3.9.1' ],
+367 silly audit   '@tsparticles/plugin-absorbers': [ '3.9.1' ],
+367 silly audit   '@tsparticles/plugin-emitters': [ '3.9.1' ],
+367 silly audit   '@tsparticles/plugin-emitters-shape-circle': [ '3.9.1' ],
+367 silly audit   '@tsparticles/plugin-emitters-shape-square': [ '3.9.1' ],
+367 silly audit   '@tsparticles/shape-text': [ '3.9.1' ],
+367 silly audit   '@tsparticles/slim': [ '3.9.1' ],
+367 silly audit   '@tsparticles/updater-destroy': [ '3.9.1' ],
+367 silly audit   '@tsparticles/updater-roll': [ '3.9.1' ],
+367 silly audit   '@tsparticles/updater-tilt': [ '3.9.1' ],
+367 silly audit   '@tsparticles/updater-twinkle': [ '3.9.1' ],
+367 silly audit   '@tsparticles/updater-wobble': [ '3.9.1' ],
+367 silly audit   '@tsparticles/basic': [ '3.9.1' ],
+367 silly audit   '@tsparticles/interaction-external-attract': [ '3.9.1' ],
+367 silly audit   '@tsparticles/interaction-external-bounce': [ '3.9.1' ],
+367 silly audit   '@tsparticles/interaction-external-bubble': [ '3.9.1' ],
+367 silly audit   '@tsparticles/interaction-external-connect': [ '3.9.1' ],
+367 silly audit   '@tsparticles/interaction-external-grab': [ '3.9.1' ],
+367 silly audit   '@tsparticles/interaction-external-pause': [ '3.9.1' ],
+367 silly audit   '@tsparticles/interaction-external-push': [ '3.9.1' ],
+367 silly audit   '@tsparticles/interaction-external-remove': [ '3.9.1' ],
+367 silly audit   '@tsparticles/interaction-external-repulse': [ '3.9.1' ],
+367 silly audit   '@tsparticles/interaction-external-slow': [ '3.9.1' ],
+367 silly audit   '@tsparticles/interaction-particles-attract': [ '3.9.1' ],
+367 silly audit   '@tsparticles/interaction-particles-collisions': [ '3.9.1' ],
+367 silly audit   '@tsparticles/interaction-particles-links': [ '3.9.1' ],
+367 silly audit   '@tsparticles/move-parallax': [ '3.9.1' ],
+367 silly audit   '@tsparticles/plugin-easing-quad': [ '3.9.1' ],
+367 silly audit   '@tsparticles/shape-emoji': [ '3.9.1' ],
+367 silly audit   '@tsparticles/shape-image': [ '3.9.1' ],
+367 silly audit   '@tsparticles/shape-line': [ '3.9.1' ],
+367 silly audit   '@tsparticles/shape-polygon': [ '3.9.1' ],
+367 silly audit   '@tsparticles/shape-square': [ '3.9.1' ],
+367 silly audit   '@tsparticles/shape-star': [ '3.9.1' ],
+367 silly audit   '@tsparticles/updater-life': [ '3.9.1' ],
+367 silly audit   '@tsparticles/updater-rotate': [ '3.9.1' ],
+367 silly audit   '@tsparticles/updater-stroke-color': [ '3.9.1' ],
+367 silly audit   '@tsparticles/move-base': [ '3.9.1' ],
+367 silly audit   '@tsparticles/plugin-hex-color': [ '3.9.1' ],
+367 silly audit   '@tsparticles/plugin-hsl-color': [ '3.9.1' ],
+367 silly audit   '@tsparticles/plugin-rgb-color': [ '3.9.1' ],
+367 silly audit   '@tsparticles/shape-circle': [ '3.9.1' ],
+367 silly audit   '@tsparticles/updater-color': [ '3.9.1' ],
+367 silly audit   '@tsparticles/updater-opacity': [ '3.9.1' ],
+367 silly audit   '@tsparticles/updater-out-modes': [ '3.9.1' ],
+367 silly audit   '@tsparticles/updater-size': [ '3.9.1' ]
+367 silly audit }
+368 http cache @tsparticles/updater-opacity@https://registry.npmjs.org/@tsparticles/updater-opacity/-/updater-opacity-3.9.1.tgz 0ms (cache hit)
+369 http cache @tsparticles/updater-out-modes@https://registry.npmjs.org/@tsparticles/updater-out-modes/-/updater-out-modes-3.9.1.tgz 0ms (cache hit)
+370 http cache @tsparticles/updater-size@https://registry.npmjs.org/@tsparticles/updater-size/-/updater-size-3.9.1.tgz 0ms (cache hit)
+371 http cache @tsparticles/shape-circle@https://registry.npmjs.org/@tsparticles/shape-circle/-/shape-circle-3.9.1.tgz 0ms (cache hit)
+372 http cache @tsparticles/updater-color@https://registry.npmjs.org/@tsparticles/updater-color/-/updater-color-3.9.1.tgz 0ms (cache hit)
+373 http cache @tsparticles/plugin-rgb-color@https://registry.npmjs.org/@tsparticles/plugin-rgb-color/-/plugin-rgb-color-3.9.1.tgz 0ms (cache hit)
+374 http cache @tsparticles/move-base@https://registry.npmjs.org/@tsparticles/move-base/-/move-base-3.9.1.tgz 0ms (cache hit)
+375 http cache @tsparticles/updater-rotate@https://registry.npmjs.org/@tsparticles/updater-rotate/-/updater-rotate-3.9.1.tgz 0ms (cache hit)
+376 http cache @tsparticles/shape-star@https://registry.npmjs.org/@tsparticles/shape-star/-/shape-star-3.9.1.tgz 0ms (cache hit)
+377 http cache @tsparticles/plugin-hsl-color@https://registry.npmjs.org/@tsparticles/plugin-hsl-color/-/plugin-hsl-color-3.9.1.tgz 0ms (cache hit)
+378 http cache @tsparticles/updater-stroke-color@https://registry.npmjs.org/@tsparticles/updater-stroke-color/-/updater-stroke-color-3.9.1.tgz 0ms (cache hit)
+379 http cache @tsparticles/shape-square@https://registry.npmjs.org/@tsparticles/shape-square/-/shape-square-3.9.1.tgz 0ms (cache hit)
+380 http cache @tsparticles/updater-life@https://registry.npmjs.org/@tsparticles/updater-life/-/updater-life-3.9.1.tgz 0ms (cache hit)
+381 http cache @tsparticles/shape-image@https://registry.npmjs.org/@tsparticles/shape-image/-/shape-image-3.9.1.tgz 0ms (cache hit)
+382 http cache @tsparticles/plugin-easing-quad@https://registry.npmjs.org/@tsparticles/plugin-easing-quad/-/plugin-easing-quad-3.9.1.tgz 0ms (cache hit)
+383 http cache @tsparticles/move-parallax@https://registry.npmjs.org/@tsparticles/move-parallax/-/move-parallax-3.9.1.tgz 0ms (cache hit)
+384 http cache @tsparticles/plugin-hex-color@https://registry.npmjs.org/@tsparticles/plugin-hex-color/-/plugin-hex-color-3.9.1.tgz 0ms (cache hit)
+385 http cache @tsparticles/shape-line@https://registry.npmjs.org/@tsparticles/shape-line/-/shape-line-3.9.1.tgz 0ms (cache hit)
+386 http cache @tsparticles/shape-emoji@https://registry.npmjs.org/@tsparticles/shape-emoji/-/shape-emoji-3.9.1.tgz 0ms (cache hit)
+387 http cache @tsparticles/interaction-particles-collisions@https://registry.npmjs.org/@tsparticles/interaction-particles-collisions/-/interaction-particles-collisions-3.9.1.tgz 0ms (cache hit)
+388 http cache @tsparticles/interaction-external-remove@https://registry.npmjs.org/@tsparticles/interaction-external-remove/-/interaction-external-remove-3.9.1.tgz 0ms (cache hit)
+389 http cache @tsparticles/interaction-external-slow@https://registry.npmjs.org/@tsparticles/interaction-external-slow/-/interaction-external-slow-3.9.1.tgz 0ms (cache hit)
+390 http cache @tsparticles/interaction-particles-links@https://registry.npmjs.org/@tsparticles/interaction-particles-links/-/interaction-particles-links-3.9.1.tgz 0ms (cache hit)
+391 http cache @tsparticles/interaction-particles-attract@https://registry.npmjs.org/@tsparticles/interaction-particles-attract/-/interaction-particles-attract-3.9.1.tgz 0ms (cache hit)
+392 http cache @tsparticles/shape-polygon@https://registry.npmjs.org/@tsparticles/shape-polygon/-/shape-polygon-3.9.1.tgz 0ms (cache hit)
+393 http cache @tsparticles/interaction-external-push@https://registry.npmjs.org/@tsparticles/interaction-external-push/-/interaction-external-push-3.9.1.tgz 0ms (cache hit)
+394 http cache @tsparticles/interaction-external-pause@https://registry.npmjs.org/@tsparticles/interaction-external-pause/-/interaction-external-pause-3.9.1.tgz 0ms (cache hit)
+395 http cache @tsparticles/interaction-external-attract@https://registry.npmjs.org/@tsparticles/interaction-external-attract/-/interaction-external-attract-3.9.1.tgz 1ms (cache hit)
+396 http cache @tsparticles/interaction-external-bounce@https://registry.npmjs.org/@tsparticles/interaction-external-bounce/-/interaction-external-bounce-3.9.1.tgz 0ms (cache hit)
+397 http cache @tsparticles/interaction-external-connect@https://registry.npmjs.org/@tsparticles/interaction-external-connect/-/interaction-external-connect-3.9.1.tgz 0ms (cache hit)
+398 http cache @tsparticles/basic@https://registry.npmjs.org/@tsparticles/basic/-/basic-3.9.1.tgz 0ms (cache hit)
+399 http cache @tsparticles/interaction-external-bubble@https://registry.npmjs.org/@tsparticles/interaction-external-bubble/-/interaction-external-bubble-3.9.1.tgz 0ms (cache hit)
+400 http cache @tsparticles/updater-wobble@https://registry.npmjs.org/@tsparticles/updater-wobble/-/updater-wobble-3.9.1.tgz 0ms (cache hit)
+401 http cache @tsparticles/updater-tilt@https://registry.npmjs.org/@tsparticles/updater-tilt/-/updater-tilt-3.9.1.tgz 0ms (cache hit)
+402 http cache @tsparticles/updater-destroy@https://registry.npmjs.org/@tsparticles/updater-destroy/-/updater-destroy-3.9.1.tgz 0ms (cache hit)
+403 http cache @tsparticles/updater-twinkle@https://registry.npmjs.org/@tsparticles/updater-twinkle/-/updater-twinkle-3.9.1.tgz 0ms (cache hit)
+404 http cache @tsparticles/interaction-external-repulse@https://registry.npmjs.org/@tsparticles/interaction-external-repulse/-/interaction-external-repulse-3.9.1.tgz 0ms (cache hit)
+405 http cache @tsparticles/shape-text@https://registry.npmjs.org/@tsparticles/shape-text/-/shape-text-3.9.1.tgz 0ms (cache hit)
+406 http cache @tsparticles/updater-roll@https://registry.npmjs.org/@tsparticles/updater-roll/-/updater-roll-3.9.1.tgz 0ms (cache hit)
+407 http cache @tsparticles/plugin-emitters-shape-circle@https://registry.npmjs.org/@tsparticles/plugin-emitters-shape-circle/-/plugin-emitters-shape-circle-3.9.1.tgz 0ms (cache hit)
+408 http cache @tsparticles/plugin-emitters@https://registry.npmjs.org/@tsparticles/plugin-emitters/-/plugin-emitters-3.9.1.tgz 0ms (cache hit)
+409 http cache @tsparticles/slim@https://registry.npmjs.org/@tsparticles/slim/-/slim-3.9.1.tgz 0ms (cache hit)
+410 http cache @tsparticles/plugin-emitters-shape-square@https://registry.npmjs.org/@tsparticles/plugin-emitters-shape-square/-/plugin-emitters-shape-square-3.9.1.tgz 0ms (cache hit)
+411 http cache @tsparticles/engine@https://registry.npmjs.org/@tsparticles/engine/-/engine-3.9.1.tgz 0ms (cache hit)
+412 http cache fast-sha256@https://registry.npmjs.org/fast-sha256/-/fast-sha256-1.3.0.tgz 0ms (cache hit)
+413 http cache @tsparticles/plugin-absorbers@https://registry.npmjs.org/@tsparticles/plugin-absorbers/-/plugin-absorbers-3.9.1.tgz 0ms (cache hit)
+414 http cache uuid@https://registry.npmjs.org/uuid/-/uuid-10.0.0.tgz 0ms (cache hit)
+415 http cache standardwebhooks@https://registry.npmjs.org/standardwebhooks/-/standardwebhooks-1.0.0.tgz 0ms (cache hit)
+416 http cache postal-mime@https://registry.npmjs.org/postal-mime/-/postal-mime-2.7.3.tgz 0ms (cache hit)
+417 http cache @tsparticles/interaction-external-grab@https://registry.npmjs.org/@tsparticles/interaction-external-grab/-/interaction-external-grab-3.9.1.tgz 0ms (cache hit)
+418 http cache @tsparticles/interaction-external-trail@https://registry.npmjs.org/@tsparticles/interaction-external-trail/-/interaction-external-trail-3.9.1.tgz 0ms (cache hit)
+419 http cache @stablelib/base64@https://registry.npmjs.org/@stablelib/base64/-/base64-1.0.1.tgz 0ms (cache hit)
+420 http cache motion-utils@https://registry.npmjs.org/motion-utils/-/motion-utils-12.29.2.tgz 0ms (cache hit)
+421 http cache uncrypto@https://registry.npmjs.org/uncrypto/-/uncrypto-0.1.3.tgz 0ms (cache hit)
+422 http cache tailwind-merge@https://registry.npmjs.org/tailwind-merge/-/tailwind-merge-3.5.0.tgz 0ms (cache hit)
+423 http cache svix@https://registry.npmjs.org/svix/-/svix-1.84.1.tgz 0ms (cache hit)
+424 http cache resend@https://registry.npmjs.org/resend/-/resend-6.9.2.tgz 0ms (cache hit)
+425 http cache tsparticles-engine@https://registry.npmjs.org/tsparticles-engine/-/tsparticles-engine-2.12.0.tgz 0ms (cache hit)
+426 http cache tsparticles@https://registry.npmjs.org/tsparticles/-/tsparticles-3.9.1.tgz 0ms (cache hit)
+427 http cache react-tsparticles@https://registry.npmjs.org/react-tsparticles/-/react-tsparticles-2.12.2.tgz 0ms (cache hit)
+428 http cache lucide-react@https://registry.npmjs.org/lucide-react/-/lucide-react-0.574.0.tgz 0ms (cache hit)
+429 http cache @upstash/redis@https://registry.npmjs.org/@upstash/redis/-/redis-1.36.2.tgz 0ms (cache hit)
+430 http cache clsx@https://registry.npmjs.org/clsx/-/clsx-2.1.1.tgz 0ms (cache hit)
+431 http cache react-turnstile@https://registry.npmjs.org/react-turnstile/-/react-turnstile-1.1.5.tgz 0ms (cache hit)
+432 http cache framer-motion@https://registry.npmjs.org/framer-motion/-/framer-motion-12.34.2.tgz 0ms (cache hit)
+433 http cache motion-dom@https://registry.npmjs.org/motion-dom/-/motion-dom-12.34.2.tgz 0ms (cache hit)
+434 silly tarball no local data for @tsparticles/updater-opacity@https://registry.npmjs.org/@tsparticles/updater-opacity/-/updater-opacity-3.9.1.tgz. Extracting by manifest.
+435 silly tarball no local data for @tsparticles/updater-out-modes@https://registry.npmjs.org/@tsparticles/updater-out-modes/-/updater-out-modes-3.9.1.tgz. Extracting by manifest.
+436 silly tarball no local data for @tsparticles/updater-size@https://registry.npmjs.org/@tsparticles/updater-size/-/updater-size-3.9.1.tgz. Extracting by manifest.
+437 silly tarball no local data for @tsparticles/shape-circle@https://registry.npmjs.org/@tsparticles/shape-circle/-/shape-circle-3.9.1.tgz. Extracting by manifest.
+438 silly tarball no local data for @tsparticles/updater-color@https://registry.npmjs.org/@tsparticles/updater-color/-/updater-color-3.9.1.tgz. Extracting by manifest.
+439 silly tarball no local data for @tsparticles/plugin-rgb-color@https://registry.npmjs.org/@tsparticles/plugin-rgb-color/-/plugin-rgb-color-3.9.1.tgz. Extracting by manifest.
+440 silly tarball no local data for @tsparticles/move-base@https://registry.npmjs.org/@tsparticles/move-base/-/move-base-3.9.1.tgz. Extracting by manifest.
+441 silly tarball no local data for @tsparticles/updater-rotate@https://registry.npmjs.org/@tsparticles/updater-rotate/-/updater-rotate-3.9.1.tgz. Extracting by manifest.
+442 silly tarball no local data for @tsparticles/shape-star@https://registry.npmjs.org/@tsparticles/shape-star/-/shape-star-3.9.1.tgz. Extracting by manifest.
+443 silly tarball no local data for @tsparticles/plugin-hsl-color@https://registry.npmjs.org/@tsparticles/plugin-hsl-color/-/plugin-hsl-color-3.9.1.tgz. Extracting by manifest.
+444 silly tarball no local data for @tsparticles/updater-stroke-color@https://registry.npmjs.org/@tsparticles/updater-stroke-color/-/updater-stroke-color-3.9.1.tgz. Extracting by manifest.
+445 silly tarball no local data for @tsparticles/shape-square@https://registry.npmjs.org/@tsparticles/shape-square/-/shape-square-3.9.1.tgz. Extracting by manifest.
+446 silly tarball no local data for @tsparticles/updater-life@https://registry.npmjs.org/@tsparticles/updater-life/-/updater-life-3.9.1.tgz. Extracting by manifest.
+447 silly tarball no local data for @tsparticles/shape-image@https://registry.npmjs.org/@tsparticles/shape-image/-/shape-image-3.9.1.tgz. Extracting by manifest.
+448 silly tarball no local data for @tsparticles/plugin-easing-quad@https://registry.npmjs.org/@tsparticles/plugin-easing-quad/-/plugin-easing-quad-3.9.1.tgz. Extracting by manifest.
+449 silly tarball no local data for @tsparticles/move-parallax@https://registry.npmjs.org/@tsparticles/move-parallax/-/move-parallax-3.9.1.tgz. Extracting by manifest.
+450 silly tarball no local data for @tsparticles/plugin-hex-color@https://registry.npmjs.org/@tsparticles/plugin-hex-color/-/plugin-hex-color-3.9.1.tgz. Extracting by manifest.
+451 silly tarball no local data for @tsparticles/shape-line@https://registry.npmjs.org/@tsparticles/shape-line/-/shape-line-3.9.1.tgz. Extracting by manifest.
+452 silly tarball no local data for @tsparticles/shape-emoji@https://registry.npmjs.org/@tsparticles/shape-emoji/-/shape-emoji-3.9.1.tgz. Extracting by manifest.
+453 silly tarball no local data for @tsparticles/interaction-particles-collisions@https://registry.npmjs.org/@tsparticles/interaction-particles-collisions/-/interaction-particles-collisions-3.9.1.tgz. Extracting by manifest.
+454 silly tarball no local data for @tsparticles/interaction-external-remove@https://registry.npmjs.org/@tsparticles/interaction-external-remove/-/interaction-external-remove-3.9.1.tgz. Extracting by manifest.
+455 silly tarball no local data for @tsparticles/interaction-external-slow@https://registry.npmjs.org/@tsparticles/interaction-external-slow/-/interaction-external-slow-3.9.1.tgz. Extracting by manifest.
+456 silly tarball no local data for @tsparticles/interaction-particles-links@https://registry.npmjs.org/@tsparticles/interaction-particles-links/-/interaction-particles-links-3.9.1.tgz. Extracting by manifest.
+457 silly tarball no local data for @tsparticles/interaction-particles-attract@https://registry.npmjs.org/@tsparticles/interaction-particles-attract/-/interaction-particles-attract-3.9.1.tgz. Extracting by manifest.
+458 silly tarball no local data for @tsparticles/shape-polygon@https://registry.npmjs.org/@tsparticles/shape-polygon/-/shape-polygon-3.9.1.tgz. Extracting by manifest.
+459 silly tarball no local data for @tsparticles/interaction-external-push@https://registry.npmjs.org/@tsparticles/interaction-external-push/-/interaction-external-push-3.9.1.tgz. Extracting by manifest.
+460 silly tarball no local data for @tsparticles/interaction-external-pause@https://registry.npmjs.org/@tsparticles/interaction-external-pause/-/interaction-external-pause-3.9.1.tgz. Extracting by manifest.
+461 silly tarball no local data for @tsparticles/interaction-external-attract@https://registry.npmjs.org/@tsparticles/interaction-external-attract/-/interaction-external-attract-3.9.1.tgz. Extracting by manifest.
+462 silly tarball no local data for @tsparticles/interaction-external-bounce@https://registry.npmjs.org/@tsparticles/interaction-external-bounce/-/interaction-external-bounce-3.9.1.tgz. Extracting by manifest.
+463 silly tarball no local data for @tsparticles/interaction-external-connect@https://registry.npmjs.org/@tsparticles/interaction-external-connect/-/interaction-external-connect-3.9.1.tgz. Extracting by manifest.
+464 silly tarball no local data for @tsparticles/basic@https://registry.npmjs.org/@tsparticles/basic/-/basic-3.9.1.tgz. Extracting by manifest.
+465 silly tarball no local data for @tsparticles/interaction-external-bubble@https://registry.npmjs.org/@tsparticles/interaction-external-bubble/-/interaction-external-bubble-3.9.1.tgz. Extracting by manifest.
+466 silly tarball no local data for @tsparticles/updater-wobble@https://registry.npmjs.org/@tsparticles/updater-wobble/-/updater-wobble-3.9.1.tgz. Extracting by manifest.
+467 silly tarball no local data for @tsparticles/updater-tilt@https://registry.npmjs.org/@tsparticles/updater-tilt/-/updater-tilt-3.9.1.tgz. Extracting by manifest.
+468 silly tarball no local data for @tsparticles/updater-destroy@https://registry.npmjs.org/@tsparticles/updater-destroy/-/updater-destroy-3.9.1.tgz. Extracting by manifest.
+469 silly tarball no local data for @tsparticles/updater-twinkle@https://registry.npmjs.org/@tsparticles/updater-twinkle/-/updater-twinkle-3.9.1.tgz. Extracting by manifest.
+470 silly tarball no local data for @tsparticles/interaction-external-repulse@https://registry.npmjs.org/@tsparticles/interaction-external-repulse/-/interaction-external-repulse-3.9.1.tgz. Extracting by manifest.
+471 silly tarball no local data for @tsparticles/shape-text@https://registry.npmjs.org/@tsparticles/shape-text/-/shape-text-3.9.1.tgz. Extracting by manifest.
+472 silly tarball no local data for @tsparticles/updater-roll@https://registry.npmjs.org/@tsparticles/updater-roll/-/updater-roll-3.9.1.tgz. Extracting by manifest.
+473 silly tarball no local data for @tsparticles/plugin-emitters-shape-circle@https://registry.npmjs.org/@tsparticles/plugin-emitters-shape-circle/-/plugin-emitters-shape-circle-3.9.1.tgz. Extracting by manifest.
+474 silly tarball no local data for @tsparticles/plugin-emitters@https://registry.npmjs.org/@tsparticles/plugin-emitters/-/plugin-emitters-3.9.1.tgz. Extracting by manifest.
+475 silly tarball no local data for @tsparticles/slim@https://registry.npmjs.org/@tsparticles/slim/-/slim-3.9.1.tgz. Extracting by manifest.
+476 silly tarball no local data for @tsparticles/plugin-emitters-shape-square@https://registry.npmjs.org/@tsparticles/plugin-emitters-shape-square/-/plugin-emitters-shape-square-3.9.1.tgz. Extracting by manifest.
+477 silly tarball no local data for @tsparticles/engine@https://registry.npmjs.org/@tsparticles/engine/-/engine-3.9.1.tgz. Extracting by manifest.
+478 silly tarball no local data for fast-sha256@https://registry.npmjs.org/fast-sha256/-/fast-sha256-1.3.0.tgz. Extracting by manifest.
+479 silly tarball no local data for @tsparticles/plugin-absorbers@https://registry.npmjs.org/@tsparticles/plugin-absorbers/-/plugin-absorbers-3.9.1.tgz. Extracting by manifest.
+480 silly tarball no local data for uuid@https://registry.npmjs.org/uuid/-/uuid-10.0.0.tgz. Extracting by manifest.
+481 silly tarball no local data for standardwebhooks@https://registry.npmjs.org/standardwebhooks/-/standardwebhooks-1.0.0.tgz. Extracting by manifest.
+482 silly tarball no local data for postal-mime@https://registry.npmjs.org/postal-mime/-/postal-mime-2.7.3.tgz. Extracting by manifest.
+483 silly tarball no local data for @tsparticles/interaction-external-grab@https://registry.npmjs.org/@tsparticles/interaction-external-grab/-/interaction-external-grab-3.9.1.tgz. Extracting by manifest.
+484 silly tarball no local data for @tsparticles/interaction-external-trail@https://registry.npmjs.org/@tsparticles/interaction-external-trail/-/interaction-external-trail-3.9.1.tgz. Extracting by manifest.
+485 silly tarball no local data for @stablelib/base64@https://registry.npmjs.org/@stablelib/base64/-/base64-1.0.1.tgz. Extracting by manifest.
+486 silly tarball no local data for motion-utils@https://registry.npmjs.org/motion-utils/-/motion-utils-12.29.2.tgz. Extracting by manifest.
+487 silly tarball no local data for uncrypto@https://registry.npmjs.org/uncrypto/-/uncrypto-0.1.3.tgz. Extracting by manifest.
+488 silly tarball no local data for tailwind-merge@https://registry.npmjs.org/tailwind-merge/-/tailwind-merge-3.5.0.tgz. Extracting by manifest.
+489 silly tarball no local data for svix@https://registry.npmjs.org/svix/-/svix-1.84.1.tgz. Extracting by manifest.
+490 silly tarball no local data for resend@https://registry.npmjs.org/resend/-/resend-6.9.2.tgz. Extracting by manifest.
+491 silly tarball no local data for tsparticles-engine@https://registry.npmjs.org/tsparticles-engine/-/tsparticles-engine-2.12.0.tgz. Extracting by manifest.
+492 silly tarball no local data for tsparticles@https://registry.npmjs.org/tsparticles/-/tsparticles-3.9.1.tgz. Extracting by manifest.
+493 silly tarball no local data for react-tsparticles@https://registry.npmjs.org/react-tsparticles/-/react-tsparticles-2.12.2.tgz. Extracting by manifest.
+494 silly tarball no local data for lucide-react@https://registry.npmjs.org/lucide-react/-/lucide-react-0.574.0.tgz. Extracting by manifest.
+495 silly tarball no local data for @upstash/redis@https://registry.npmjs.org/@upstash/redis/-/redis-1.36.2.tgz. Extracting by manifest.
+496 silly tarball no local data for clsx@https://registry.npmjs.org/clsx/-/clsx-2.1.1.tgz. Extracting by manifest.
+497 silly tarball no local data for react-turnstile@https://registry.npmjs.org/react-turnstile/-/react-turnstile-1.1.5.tgz. Extracting by manifest.
+498 silly tarball no local data for framer-motion@https://registry.npmjs.org/framer-motion/-/framer-motion-12.34.2.tgz. Extracting by manifest.
+499 silly tarball no local data for motion-dom@https://registry.npmjs.org/motion-dom/-/motion-dom-12.34.2.tgz. Extracting by manifest.
+500 http fetch POST 200 https://registry.npmjs.org/-/npm/v1/security/advisories/bulk 297ms
+501 silly audit report {
+501 silly audit report   minimatch: [
+501 silly audit report     {
+501 silly audit report       id: 1113296,
+501 silly audit report       url: 'https://github.com/advisories/GHSA-3ppc-4f35-3m26',
+501 silly audit report       title: 'minimatch has a ReDoS via repeated wildcards with non-matching literal in pattern',
+501 silly audit report       severity: 'high',
+501 silly audit report       vulnerable_versions: '<10.2.1',
+501 silly audit report       cwe: [Array],
+501 silly audit report       cvss: [Object]
+501 silly audit report     }
+501 silly audit report   ],
+501 silly audit report   ajv: [
+501 silly audit report     {
+501 silly audit report       id: 1113214,
+501 silly audit report       url: 'https://github.com/advisories/GHSA-2g4f-4pwh-qvx6',
+501 silly audit report       title: 'ajv has ReDoS when using `$data` option',
+501 silly audit report       severity: 'moderate',
+501 silly audit report       vulnerable_versions: '<8.18.0',
+501 silly audit report       cwe: [Array],
+501 silly audit report       cvss: [Object]
+501 silly audit report     }
+501 silly audit report   ]
+501 silly audit report }
+502 silly packumentCache corgi:https://registry.npmjs.org/minimatch cache-miss
+503 silly packumentCache corgi:https://registry.npmjs.org/ajv cache-miss
+504 http fetch GET 200 https://registry.npmjs.org/@tsparticles/updater-size/-/updater-size-3.9.1.tgz 366ms (cache miss)
+505 http fetch GET 200 https://registry.npmjs.org/@tsparticles/plugin-rgb-color/-/plugin-rgb-color-3.9.1.tgz 395ms (cache miss)
+506 http fetch GET 200 https://registry.npmjs.org/@tsparticles/shape-square/-/shape-square-3.9.1.tgz 402ms (cache miss)
+507 http fetch GET 200 https://registry.npmjs.org/@tsparticles/updater-rotate/-/updater-rotate-3.9.1.tgz 410ms (cache miss)
+508 http fetch GET 200 https://registry.npmjs.org/@tsparticles/move-base/-/move-base-3.9.1.tgz 416ms (cache miss)
+509 http fetch GET 200 https://registry.npmjs.org/@tsparticles/updater-opacity/-/updater-opacity-3.9.1.tgz 560ms (cache miss)
+510 http fetch GET 200 https://registry.npmjs.org/@tsparticles/updater-life/-/updater-life-3.9.1.tgz 592ms (cache miss)
+511 http fetch GET 200 https://registry.npmjs.org/@tsparticles/plugin-hsl-color/-/plugin-hsl-color-3.9.1.tgz 605ms (cache miss)
+512 http fetch GET 200 https://registry.npmjs.org/@tsparticles/updater-stroke-color/-/updater-stroke-color-3.9.1.tgz 656ms (cache miss)
+513 http fetch GET 200 https://registry.npmjs.org/@tsparticles/shape-line/-/shape-line-3.9.1.tgz 720ms (cache miss)
+514 http fetch GET 200 https://registry.npmjs.org/@tsparticles/shape-emoji/-/shape-emoji-3.9.1.tgz 785ms (cache miss)
+515 http fetch GET 200 https://registry.npmjs.org/@tsparticles/updater-color/-/updater-color-3.9.1.tgz 789ms (cache miss)
+516 http fetch GET 200 https://registry.npmjs.org/@tsparticles/interaction-particles-collisions/-/interaction-particles-collisions-3.9.1.tgz 818ms (cache miss)
+517 http fetch GET 200 https://registry.npmjs.org/@tsparticles/updater-out-modes/-/updater-out-modes-3.9.1.tgz 845ms (cache miss)
+518 http fetch GET 200 https://registry.npmjs.org/@tsparticles/plugin-easing-quad/-/plugin-easing-quad-3.9.1.tgz 845ms (cache miss)
+519 http fetch GET 200 https://registry.npmjs.org/@tsparticles/shape-circle/-/shape-circle-3.9.1.tgz 850ms (cache miss)
+520 http fetch GET 200 https://registry.npmjs.org/@tsparticles/shape-image/-/shape-image-3.9.1.tgz 863ms (cache miss)
+521 http fetch GET 200 https://registry.npmjs.org/@tsparticles/plugin-hex-color/-/plugin-hex-color-3.9.1.tgz 911ms (cache miss)
+522 http fetch GET 200 https://registry.npmjs.org/@tsparticles/interaction-external-slow/-/interaction-external-slow-3.9.1.tgz 913ms (cache miss)
+523 http fetch GET 200 https://registry.npmjs.org/@tsparticles/interaction-external-remove/-/interaction-external-remove-3.9.1.tgz 967ms (cache miss)
+524 http fetch GET 200 https://registry.npmjs.org/@tsparticles/interaction-particles-attract/-/interaction-particles-attract-3.9.1.tgz 1030ms (cache miss)
+525 http fetch GET 200 https://registry.npmjs.org/@tsparticles/interaction-external-push/-/interaction-external-push-3.9.1.tgz 1115ms (cache miss)
+526 http fetch GET 200 https://registry.npmjs.org/@tsparticles/interaction-external-attract/-/interaction-external-attract-3.9.1.tgz 1118ms (cache miss)
+527 http fetch GET 200 https://registry.npmjs.org/@tsparticles/interaction-particles-links/-/interaction-particles-links-3.9.1.tgz 1156ms (cache miss)
+528 http fetch GET 200 https://registry.npmjs.org/@tsparticles/interaction-external-pause/-/interaction-external-pause-3.9.1.tgz 1189ms (cache miss)
+529 http fetch GET 200 https://registry.npmjs.org/@tsparticles/shape-star/-/shape-star-3.9.1.tgz 1229ms (cache miss)
+530 http fetch GET 200 https://registry.npmjs.org/@tsparticles/move-parallax/-/move-parallax-3.9.1.tgz 1254ms (cache miss)
+531 http fetch GET 200 https://registry.npmjs.org/@tsparticles/shape-polygon/-/shape-polygon-3.9.1.tgz 1255ms (cache miss)
+532 http fetch GET 200 https://registry.npmjs.org/@tsparticles/basic/-/basic-3.9.1.tgz 1392ms (cache miss)
+533 http fetch GET 200 https://registry.npmjs.org/@tsparticles/interaction-external-repulse/-/interaction-external-repulse-3.9.1.tgz 1493ms (cache miss)
+534 http fetch GET 200 https://registry.npmjs.org/@tsparticles/updater-wobble/-/updater-wobble-3.9.1.tgz 1499ms (cache miss)
+535 http fetch GET 200 https://registry.npmjs.org/@tsparticles/updater-roll/-/updater-roll-3.9.1.tgz 1501ms (cache miss)
+536 http fetch GET 200 https://registry.npmjs.org/fast-sha256/-/fast-sha256-1.3.0.tgz 1514ms (cache miss)
+537 http fetch GET 200 https://registry.npmjs.org/@tsparticles/updater-destroy/-/updater-destroy-3.9.1.tgz 1517ms (cache miss)
+538 http fetch GET 200 https://registry.npmjs.org/@tsparticles/interaction-external-bounce/-/interaction-external-bounce-3.9.1.tgz 1557ms (cache miss)
+539 http fetch GET 200 https://registry.npmjs.org/postal-mime/-/postal-mime-2.7.3.tgz 1558ms (cache miss)
+540 http fetch GET 200 https://registry.npmjs.org/standardwebhooks/-/standardwebhooks-1.0.0.tgz 1562ms (cache miss)
+541 http fetch GET 200 https://registry.npmjs.org/@tsparticles/interaction-external-connect/-/interaction-external-connect-3.9.1.tgz 1574ms (cache miss)
+542 http fetch GET 200 https://registry.npmjs.org/uuid/-/uuid-10.0.0.tgz 1576ms (cache miss)
+543 http fetch GET 200 https://registry.npmjs.org/@tsparticles/updater-tilt/-/updater-tilt-3.9.1.tgz 1584ms (cache miss)
+544 http fetch GET 200 https://registry.npmjs.org/@tsparticles/plugin-emitters-shape-square/-/plugin-emitters-shape-square-3.9.1.tgz 1598ms (cache miss)
+545 http fetch GET 200 https://registry.npmjs.org/uncrypto/-/uncrypto-0.1.3.tgz 1601ms (cache miss)
+546 http fetch GET 200 https://registry.npmjs.org/@tsparticles/slim/-/slim-3.9.1.tgz 1624ms (cache miss)
+547 http fetch GET 200 https://registry.npmjs.org/motion-utils/-/motion-utils-12.29.2.tgz 1629ms (cache miss)
+548 http fetch GET 200 https://registry.npmjs.org/@tsparticles/interaction-external-bubble/-/interaction-external-bubble-3.9.1.tgz 1653ms (cache miss)
+549 http fetch GET 200 https://registry.npmjs.org/@tsparticles/plugin-emitters/-/plugin-emitters-3.9.1.tgz 1665ms (cache miss)
+550 http fetch GET 200 https://registry.npmjs.org/clsx/-/clsx-2.1.1.tgz 1875ms (cache miss)
+551 http fetch GET 200 https://registry.npmjs.org/@tsparticles/plugin-absorbers/-/plugin-absorbers-3.9.1.tgz 1927ms (cache miss)
+552 http fetch GET 200 https://registry.npmjs.org/@tsparticles/plugin-emitters-shape-circle/-/plugin-emitters-shape-circle-3.9.1.tgz 1934ms (cache miss)
+553 http fetch GET 200 https://registry.npmjs.org/resend/-/resend-6.9.2.tgz 1942ms (cache miss)
+554 http fetch GET 200 https://registry.npmjs.org/svix/-/svix-1.84.1.tgz 2037ms (cache miss)
+555 http fetch GET 200 https://registry.npmjs.org/@stablelib/base64/-/base64-1.0.1.tgz 2068ms (cache miss)
+556 http fetch GET 200 https://registry.npmjs.org/@tsparticles/updater-twinkle/-/updater-twinkle-3.9.1.tgz 2093ms (cache miss)
+557 http fetch GET 200 https://registry.npmjs.org/ajv 1817ms (cache miss)
+558 silly packumentCache corgi:https://registry.npmjs.org/ajv set size:undefined disposed:false
+559 http fetch GET 200 https://registry.npmjs.org/react-tsparticles/-/react-tsparticles-2.12.2.tgz 2119ms (cache miss)
+560 warn deprecated react-tsparticles@2.12.2: @tsparticles/react is the new version, please use that
+561 http fetch GET 200 https://registry.npmjs.org/@tsparticles/interaction-external-trail/-/interaction-external-trail-3.9.1.tgz 2223ms (cache miss)
+562 http fetch GET 200 https://registry.npmjs.org/@upstash/redis/-/redis-1.36.2.tgz 2245ms (cache miss)
+563 http fetch GET 200 https://registry.npmjs.org/react-turnstile/-/react-turnstile-1.1.5.tgz 2264ms (cache miss)
+564 http fetch GET 200 https://registry.npmjs.org/tsparticles/-/tsparticles-3.9.1.tgz 2294ms (cache miss)
+565 http fetch GET 200 https://registry.npmjs.org/minimatch 2080ms (cache miss)
+566 silly packumentCache corgi:https://registry.npmjs.org/minimatch set size:undefined disposed:false
+567 silly packumentCache corgi:https://registry.npmjs.org/@typescript-eslint%2ftypescript-estree cache-miss
+568 silly packumentCache corgi:https://registry.npmjs.org/@eslint%2fconfig-array cache-miss
+569 silly packumentCache corgi:https://registry.npmjs.org/@eslint%2feslintrc cache-miss
+570 silly packumentCache corgi:https://registry.npmjs.org/eslint cache-miss
+571 silly packumentCache corgi:https://registry.npmjs.org/eslint-plugin-import cache-miss
+572 silly packumentCache corgi:https://registry.npmjs.org/eslint-plugin-jsx-a11y cache-miss
+573 silly packumentCache corgi:https://registry.npmjs.org/eslint-plugin-react cache-miss
+574 http fetch GET 200 https://registry.npmjs.org/eslint-plugin-jsx-a11y 50ms (cache miss)
+575 silly packumentCache corgi:https://registry.npmjs.org/eslint-plugin-jsx-a11y set size:undefined disposed:false
+576 http fetch GET 200 https://registry.npmjs.org/tailwind-merge/-/tailwind-merge-3.5.0.tgz 2420ms (cache miss)
+577 http fetch GET 200 https://registry.npmjs.org/eslint-plugin-import 72ms (cache miss)
+578 silly packumentCache corgi:https://registry.npmjs.org/eslint-plugin-import set size:undefined disposed:false
+579 http fetch GET 200 https://registry.npmjs.org/motion-dom/-/motion-dom-12.34.2.tgz 2442ms (cache miss)
+580 http fetch GET 200 https://registry.npmjs.org/@eslint%2feslintrc 91ms (cache miss)
+581 silly packumentCache corgi:https://registry.npmjs.org/@eslint%2feslintrc set size:undefined disposed:false
+582 http fetch GET 200 https://registry.npmjs.org/eslint-plugin-react 97ms (cache miss)
+583 silly packumentCache corgi:https://registry.npmjs.org/eslint-plugin-react set size:undefined disposed:false
+584 http fetch GET 200 https://registry.npmjs.org/@eslint%2fconfig-array 101ms (cache miss)
+585 silly packumentCache corgi:https://registry.npmjs.org/@eslint%2fconfig-array set size:undefined disposed:false
+586 http fetch GET 200 https://registry.npmjs.org/eslint 102ms (cache miss)
+587 silly packumentCache corgi:https://registry.npmjs.org/eslint set size:undefined disposed:false
+588 http fetch GET 200 https://registry.npmjs.org/framer-motion/-/framer-motion-12.34.2.tgz 2482ms (cache miss)
+589 http fetch GET 200 https://registry.npmjs.org/@tsparticles/shape-text/-/shape-text-3.9.1.tgz 2541ms (cache miss)
+590 http fetch GET 200 https://registry.npmjs.org/tsparticles-engine/-/tsparticles-engine-2.12.0.tgz 2621ms (cache miss)
+591 warn deprecated tsparticles-engine@2.12.0: starting from tsparticles v3 the packages are now moved to @tsparticles/package-name instead of tsparticles-package-name
+592 http fetch GET 200 https://registry.npmjs.org/@tsparticles/engine/-/engine-3.9.1.tgz 2639ms (cache miss)
+593 http fetch GET 200 https://registry.npmjs.org/@typescript-eslint%2ftypescript-estree 415ms (cache miss)
+594 silly packumentCache corgi:https://registry.npmjs.org/@typescript-eslint%2ftypescript-estree set size:undefined disposed:false
+595 silly packumentCache corgi:https://registry.npmjs.org/eslint-config-next cache-miss
+596 http fetch GET 200 https://registry.npmjs.org/@tsparticles/interaction-external-grab/-/interaction-external-grab-3.9.1.tgz 3068ms (cache miss)
+597 http fetch GET 200 https://registry.npmjs.org/lucide-react/-/lucide-react-0.574.0.tgz 3285ms (cache miss)
+598 info run @tsparticles/engine@3.9.1 install node_modules/@tsparticles/engine node ./scripts/install.js
+599 info run react-tsparticles@2.12.2 install node_modules/react-tsparticles node ./scripts/install.js
+600 info run tsparticles-engine@2.12.0 install node_modules/tsparticles-engine node ./scripts/install.js
+601 info run @tsparticles/engine@3.9.1 install { code: 0, signal: null }
+602 info run tsparticles-engine@2.12.0 install { code: 0, signal: null }
+603 info run react-tsparticles@2.12.2 install { code: 0, signal: null }
+604 http fetch GET 200 https://registry.npmjs.org/eslint-config-next 515ms (cache miss)
+605 silly packumentCache corgi:https://registry.npmjs.org/eslint-config-next set size:undefined disposed:false
+606 silly packumentCache corgi:https://registry.npmjs.org/eslint-import-resolver-typescript cache-miss
+607 http fetch GET 200 https://registry.npmjs.org/eslint-import-resolver-typescript 139ms (cache miss)
+608 silly packumentCache corgi:https://registry.npmjs.org/eslint-import-resolver-typescript set size:undefined disposed:false
+609 silly packumentCache corgi:https://registry.npmjs.org/@eslint-community%2feslint-utils cache-miss
+610 silly packumentCache corgi:https://registry.npmjs.org/@typescript-eslint%2feslint-plugin cache-miss
+611 silly packumentCache corgi:https://registry.npmjs.org/@typescript-eslint%2fparser cache-miss
+612 silly packumentCache corgi:https://registry.npmjs.org/@typescript-eslint%2ftype-utils cache-miss
+613 silly packumentCache corgi:https://registry.npmjs.org/@typescript-eslint%2futils cache-miss
+614 silly packumentCache corgi:https://registry.npmjs.org/eslint-plugin-react-hooks cache-miss
+615 silly packumentCache corgi:https://registry.npmjs.org/typescript-eslint cache-miss
+616 http fetch GET 200 https://registry.npmjs.org/@eslint-community%2feslint-utils 175ms (cache miss)
+617 silly packumentCache corgi:https://registry.npmjs.org/@eslint-community%2feslint-utils set size:undefined disposed:false
+618 http fetch GET 200 https://registry.npmjs.org/eslint-plugin-react-hooks 405ms (cache miss)
+619 silly packumentCache corgi:https://registry.npmjs.org/eslint-plugin-react-hooks set size:undefined disposed:false
+620 http fetch GET 200 https://registry.npmjs.org/typescript-eslint 460ms (cache miss)
+621 silly packumentCache corgi:https://registry.npmjs.org/typescript-eslint set size:undefined disposed:false
+622 http fetch GET 200 https://registry.npmjs.org/@typescript-eslint%2fparser 659ms (cache miss)
+623 silly packumentCache corgi:https://registry.npmjs.org/@typescript-eslint%2fparser set size:undefined disposed:false
+624 http fetch GET 200 https://registry.npmjs.org/@typescript-eslint%2futils 918ms (cache miss)
+625 silly packumentCache corgi:https://registry.npmjs.org/@typescript-eslint%2futils set size:undefined disposed:false
+626 http fetch GET 200 https://registry.npmjs.org/@typescript-eslint%2feslint-plugin 1170ms (cache miss)
+627 silly packumentCache corgi:https://registry.npmjs.org/@typescript-eslint%2feslint-plugin set size:undefined disposed:false
+628 http fetch GET 200 https://registry.npmjs.org/@typescript-eslint%2ftype-utils 1440ms (cache miss)
+629 silly packumentCache corgi:https://registry.npmjs.org/@typescript-eslint%2ftype-utils set size:undefined disposed:false
+630 silly ADD node_modules/@tsparticles/updater-size
+631 silly ADD node_modules/@tsparticles/updater-out-modes
+632 silly ADD node_modules/@tsparticles/updater-opacity
+633 silly ADD node_modules/@tsparticles/updater-color
+634 silly ADD node_modules/@tsparticles/shape-circle
+635 silly ADD node_modules/@tsparticles/plugin-rgb-color
+636 silly ADD node_modules/@tsparticles/plugin-hsl-color
+637 silly ADD node_modules/@tsparticles/plugin-hex-color
+638 silly ADD node_modules/@tsparticles/move-base
+639 silly ADD node_modules/@tsparticles/updater-stroke-color
+640 silly ADD node_modules/@tsparticles/updater-rotate
+641 silly ADD node_modules/@tsparticles/updater-life
+642 silly ADD node_modules/@tsparticles/shape-star
+643 silly ADD node_modules/@tsparticles/shape-square
+644 silly ADD node_modules/@tsparticles/shape-polygon
+645 silly ADD node_modules/@tsparticles/shape-line
+646 silly ADD node_modules/@tsparticles/shape-image
+647 silly ADD node_modules/@tsparticles/shape-emoji
+648 silly ADD node_modules/@tsparticles/plugin-easing-quad
+649 silly ADD node_modules/@tsparticles/move-parallax
+650 silly ADD node_modules/@tsparticles/interaction-particles-links
+651 silly ADD node_modules/@tsparticles/interaction-particles-collisions
+652 silly ADD node_modules/@tsparticles/interaction-particles-attract
+653 silly ADD node_modules/@tsparticles/interaction-external-slow
+654 silly ADD node_modules/@tsparticles/interaction-external-repulse
+655 silly ADD node_modules/@tsparticles/interaction-external-remove
+656 silly ADD node_modules/@tsparticles/interaction-external-push
+657 silly ADD node_modules/@tsparticles/interaction-external-pause
+658 silly ADD node_modules/@tsparticles/interaction-external-grab
+659 silly ADD node_modules/@tsparticles/interaction-external-connect
+660 silly ADD node_modules/@tsparticles/interaction-external-bubble
+661 silly ADD node_modules/@tsparticles/interaction-external-bounce
+662 silly ADD node_modules/@tsparticles/interaction-external-attract
+663 silly ADD node_modules/@tsparticles/basic
+664 silly ADD node_modules/@tsparticles/updater-wobble
+665 silly ADD node_modules/@tsparticles/updater-twinkle
+666 silly ADD node_modules/@tsparticles/updater-tilt
+667 silly ADD node_modules/@tsparticles/updater-roll
+668 silly ADD node_modules/@tsparticles/updater-destroy
+669 silly ADD node_modules/@tsparticles/slim
+670 silly ADD node_modules/@tsparticles/shape-text
+671 silly ADD node_modules/@tsparticles/plugin-emitters-shape-square
+672 silly ADD node_modules/@tsparticles/plugin-emitters-shape-circle
+673 silly ADD node_modules/@tsparticles/plugin-emitters
+674 silly ADD node_modules/@tsparticles/plugin-absorbers
+675 silly ADD node_modules/@tsparticles/interaction-external-trail
+676 silly ADD node_modules/@tsparticles/engine
+677 silly ADD node_modules/fast-sha256
+678 silly ADD node_modules/@stablelib/base64
+679 silly ADD node_modules/uuid
+680 silly ADD node_modules/standardwebhooks
+681 silly ADD node_modules/svix
+682 silly ADD node_modules/postal-mime
+683 silly ADD node_modules/tsparticles-engine
+684 silly ADD node_modules/motion-utils
+685 silly ADD node_modules/motion-dom
+686 silly ADD node_modules/uncrypto
+687 silly ADD node_modules/tsparticles
+688 silly ADD node_modules/tailwind-merge
+689 silly ADD node_modules/resend
+690 silly ADD node_modules/react-turnstile
+691 silly ADD node_modules/react-tsparticles
+692 silly ADD node_modules/lucide-react
+693 silly ADD node_modules/framer-motion
+694 silly ADD node_modules/clsx
+695 silly ADD node_modules/@upstash/redis
+696 verbose cwd /Users/chauhanparth06/Documents/GitHub/Skylogix
+697 verbose os Darwin 25.2.0
+698 verbose node v24.11.1
+699 verbose npm  v11.6.2
+700 notice
+700 notice New [33mminor[39m version of npm available! [33m11.6.2[39m -> [34m11.10.0[39m
+700 notice Changelog: [34mhttps://github.com/npm/cli/releases/tag/v11.10.0[39m
+700 notice To update run: [4mnpm install -g npm@11.10.0[24m
+700 notice  { force: true, Symbol(proc-log.meta): true }
+701 verbose exit 0
+702 info ok
