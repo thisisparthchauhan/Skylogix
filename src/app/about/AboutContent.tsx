@@ -57,7 +57,7 @@ export default function AboutContent() {
             />
 
             {/* Company Overview */}
-            <SectionWrapper className="bg-[#0A0F2C]">
+            <SectionWrapper id="overview" className="bg-[#0A0F2C]">
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
                     <motion.div
                         initial={{ opacity: 0, x: -50 }}
@@ -104,7 +104,7 @@ export default function AboutContent() {
             </SectionWrapper>
 
             {/* Global Reach - 3D Globe */}
-            <SectionWrapper className="bg-[#050714] relative overflow-hidden">
+            <SectionWrapper id="global-reach" className="bg-[#050714] relative overflow-hidden">
                 <div className="absolute top-0 left-0 w-full h-full bg-[radial-gradient(circle_at_50%_50%,rgba(0,194,255,0.1),transparent_70%)] pointer-events-none" />
 
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
@@ -140,7 +140,7 @@ export default function AboutContent() {
             </SectionWrapper>
 
             {/* Vision & Mission */}
-            <SectionWrapper className="bg-background relative">
+            <SectionWrapper id="vision-mission" className="bg-background relative">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                     <GlassCard className="p-10 border-t-4 border-t-primary">
                         <div className="w-14 h-14 rounded-full bg-primary/10 flex items-center justify-center mb-6">
@@ -165,7 +165,7 @@ export default function AboutContent() {
             </SectionWrapper>
 
             {/* Core Values */}
-            <SectionWrapper className="bg-[#0A0F2C]">
+            <SectionWrapper id="core-values" className="bg-[#0A0F2C]">
                 <SectionHeading
                     eyebrow="Our Culture"
                     title="Core Values"
@@ -191,7 +191,7 @@ export default function AboutContent() {
             </SectionWrapper>
 
             {/* Development Process */}
-            <SectionWrapper>
+            <SectionWrapper id="process">
                 <SectionHeading
                     eyebrow="How We Work"
                     title="Our Development Process"
@@ -228,7 +228,7 @@ export default function AboutContent() {
             </SectionWrapper>
 
             {/* Team Culture */}
-            <SectionWrapper className="bg-[#0A0F2C]">
+            <SectionWrapper id="culture" className="bg-[#0A0F2C]">
                 <div className="text-center max-w-3xl mx-auto">
                     <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/5 border border-white/10 mb-8">
                         <Building2 className="w-4 h-4 text-primary" />

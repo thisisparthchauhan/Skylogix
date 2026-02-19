@@ -68,6 +68,11 @@ export const metadata: Metadata = {
 import MagneticCursor from "@/components/ui/MagneticCursor";
 import TransitionProvider from "@/components/layout/TransitionProvider";
 import { ThemeProvider } from "@/components/theme-provider";
+import ScrollProgress from "@/components/ui/ScrollProgress";
+import WhatsAppButton from "@/components/ui/WhatsAppButton";
+import TawkToChat from "@/components/ui/TawkToChat";
+import ExitIntentPopup from "@/components/ui/ExitIntentPopup";
+import SlideInBanner from "@/components/ui/SlideInBanner";
 
 export default function RootLayout({
   children,
@@ -85,6 +90,11 @@ export default function RootLayout({
         >
           <JsonLd data={[organizationSchema, websiteSchema]} />
           <MagneticCursor />
+          <ScrollProgress />
+          <WhatsAppButton />
+          <TawkToChat />
+          <ExitIntentPopup />
+          <SlideInBanner />
           <TransitionProvider>
             {children}
           </TransitionProvider>

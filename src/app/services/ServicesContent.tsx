@@ -59,7 +59,7 @@ export default function ServicesContent() {
                 breadcrumb={[{ label: "Services" }]}
             />
 
-            <SectionWrapper className="bg-[#0A0F2C]">
+            <SectionWrapper id="all-services" className="bg-[#0A0F2C]">
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
                     {serviceData.map((service) => (
                         <ServiceCard
