@@ -65,18 +65,30 @@ export const metadata: Metadata = {
   },
 };
 
+import MagneticCursor from "@/components/ui/MagneticCursor";
+import TransitionProvider from "@/components/layout/TransitionProvider";
+import { ThemeProvider } from "@/components/theme-provider";
+
 export default function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body
-        className={`${inter.variable} ${spaceGrotesk.variable} antialiased`}
-      >
-        <JsonLd data={[organizationSchema, websiteSchema]} />
-        {children}
+    <html lang="en" suppressHydrationWarning>
+      <body className={`${inter.variable} ${spaceGrotesk.variable} antialiased cursor-none`}>
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="dark"
+          enableSystem
+          disableTransitionOnChange
+        >
+          <JsonLd data={[organizationSchema, websiteSchema]} />
+          <MagneticCursor />
+          <TransitionProvider>
+            {children}
+          </TransitionProvider>
+        </ThemeProvider>
       </body>
     </html>
   );

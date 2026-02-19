@@ -3,10 +3,16 @@ import {
     Zap, Wrench, Briefcase, Headphones, GraduationCap
 } from "lucide-react";
 
+// Map of services to their Lottie animation URLs
+// Mobile App: https://lottie.host/99b6bed0-096d-4530-848f-305101290333/ExampleMobile.json (Placeholder)
+// Backend: https://lottie.host/ExampleBackend.json
+// ...
+
 export const serviceData = [
     {
         slug: "mobile-app-development",
         icon: Smartphone,
+        lottieUrl: "https://assets9.lottiefiles.com/packages/lf20_w51pcehl.json", // Example: Mobile App
         title: "Mobile App Development",
         tagline: "Native & Cross-Platform Excellence",
         description: "We craft high-performance mobile applications that deliver seamless user experiences across iOS and Android devices.",
@@ -27,6 +33,7 @@ export const serviceData = [
     {
         slug: "backend-services",
         icon: Server,
+        lottieUrl: "https://assets2.lottiefiles.com/packages/lf20_dn5u8y8e.json", // Example: Server
         title: "Backend Services",
         tagline: "Robust & Scalable Infrastructure",
         description: "Powering your applications with secure, high-performance server-side architectures and APIs.",
@@ -47,6 +54,7 @@ export const serviceData = [
     {
         slug: "web-development",
         icon: Globe,
+        lottieUrl: "https://assets5.lottiefiles.com/packages/lf20_fcfjwiyb.json", // Example: Web code
         title: "Website Development",
         tagline: "Modern, Fast, & SEO-Ready",
         description: "Building next-generation websites using the latest frameworks for speed, security, and conversion.",
@@ -67,6 +75,7 @@ export const serviceData = [
     {
         slug: "ui-ux-design",
         icon: Palette,
+        lottieUrl: "https://assets8.lottiefiles.com/packages/lf20_49rdyysj.json", // Example: Design
         title: "UI/UX Design",
         tagline: "Designing for Impact",
         description: "Creating intuitive and engaging user interfaces that drive user satisfaction and business goals.",
@@ -87,6 +96,7 @@ export const serviceData = [
     {
         slug: "ai-based-software",
         icon: Brain,
+        lottieUrl: "https://assets3.lottiefiles.com/packages/lf20_mJV72W.json", // Example: AI Brain
         title: "AI-Based Software Development",
         tagline: "Intelligence Built-In",
         description: "Leveraging machine learning and artificial intelligence to build smarter, predictive, and automated software solutions.",
@@ -107,6 +117,7 @@ export const serviceData = [
     {
         slug: "ai-integrations",
         icon: Bot,
+        lottieUrl: "https://assets10.lottiefiles.com/packages/lf20_yMpiqC.json", // Example: Bot/Integration
         title: "AI Integrations",
         tagline: "Empower Your Workflows",
         description: "Seamlessly integrating powerful AI models like GPT-4, Claude, and customized agents into your existing business processes.",
@@ -127,6 +138,7 @@ export const serviceData = [
     {
         slug: "no-code-development",
         icon: Zap,
+        lottieUrl: "https://assets6.lottiefiles.com/packages/lf20_qpwbvdyw.json", // Example: Blocks
         title: "No-Code Development",
         tagline: "Speed to Market",
         description: "Rapidly building functional internal tools and MVPs using modern no-code and low-code platforms.",
@@ -147,6 +159,7 @@ export const serviceData = [
     {
         slug: "application-maintenance",
         icon: Wrench,
+        lottieUrl: "https://assets4.lottiefiles.com/packages/lf20_j1adxtyb.json", // Example: Maintenance
         title: "Application Maintenance",
         tagline: "Keep Your Software Running",
         description: "Ensuring your applications remain secure, up-to-date, and performant with our dedicated support services.",
@@ -167,6 +180,7 @@ export const serviceData = [
     {
         slug: "it-consulting",
         icon: Briefcase,
+        lottieUrl: "https://assets9.lottiefiles.com/packages/lf20_tloqj0w3.json", // Example: Consulting/Chart
         title: "IT Consulting",
         tagline: "Strategic Technology Growth",
         description: "Expert guidance to align your technology strategy with your business objectives for maximum ROI.",
@@ -187,6 +201,7 @@ export const serviceData = [
     {
         slug: "tech-support",
         icon: Headphones,
+        lottieUrl: "https://assets5.lottiefiles.com/packages/lf20_puciaact.json", // Example: Support
         title: "Tech Support",
         tagline: "Reliable & Responsive",
         description: "24/7 technical assistance to resolve issues quickly and keep your business operations running smoothly.",
@@ -207,6 +222,7 @@ export const serviceData = [
     {
         slug: "mentorship",
         icon: GraduationCap,
+        lottieUrl: "https://assets1.lottiefiles.com/packages/lf20_3rw3x1mo.json", // Example: Graduation/Education
         title: "Mentorship",
         tagline: "Grow Your Team",
         description: "Empowering developers and tech teams with specialized training and mentorship programs.",

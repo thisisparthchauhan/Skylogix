@@ -11,6 +11,7 @@ import { GlassCard } from "@/components/ui/GlassCard";
 import { AnimatedCounter } from "@/components/ui/AnimatedCounter";
 import { CTA } from "@/components/sections/CTA";
 import { JsonLd } from "@/components/seo/JsonLd";
+import Globe3D from "@/components/ui/Globe3D";
 
 const aboutSchema = {
     "@context": "https://schema.org",
@@ -99,6 +100,42 @@ export default function AboutContent() {
                             ))}
                         </div>
                     </GlassCard>
+                </div>
+            </SectionWrapper>
+
+            {/* Global Reach - 3D Globe */}
+            <SectionWrapper className="bg-[#050714] relative overflow-hidden">
+                <div className="absolute top-0 left-0 w-full h-full bg-[radial-gradient(circle_at_50%_50%,rgba(0,194,255,0.1),transparent_70%)] pointer-events-none" />
+
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                    <div className="order-2 lg:order-1">
+                        <Globe3D />
+                    </div>
+
+                    <div className="order-1 lg:order-2 space-y-6">
+                        <SectionHeading
+                            align="left"
+                            eyebrow="Global Reach"
+                            title="Connecting Innovation Across Borders"
+                            className="mb-6"
+                        />
+                        <p className="text-muted-foreground text-lg leading-relaxed">
+                            Distance is no barrier to excellence. From our headquarters in India, we seamlessly collaborate with partners in the US, UK, Germany, France, Dubai, and Australia.
+                        </p>
+                        <div className="grid grid-cols-2 gap-6 mt-8">
+                            {[
+                                { region: "North America", hub: "USA" },
+                                { region: "Europe", hub: "UK, Germany, France" },
+                                { region: "Middle East", hub: "Dubai" },
+                                { region: "Asia Pacific", hub: "India, Australia" },
+                            ].map((item, i) => (
+                                <div key={i} className="border-l-2 border-primary/30 pl-4">
+                                    <h4 className="font-bold text-white">{item.region}</h4>
+                                    <p className="text-sm text-muted-foreground">{item.hub}</p>
+                                </div>
+                            ))}
+                        </div>
+                    </div>
                 </div>
             </SectionWrapper>
 

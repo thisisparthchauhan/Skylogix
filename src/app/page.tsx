@@ -6,6 +6,8 @@ import { WhyChooseUs } from "@/components/sections/WhyChooseUs";
 import { CTA } from "@/components/sections/CTA";
 
 
+import TechStack from "@/components/sections/TechStack";
+
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col bg-background text-foreground overflow-x-hidden">
@@ -14,6 +16,8 @@ export default function Home() {
       <Hero />
 
       <Services />
+
+      <TechStack />
 
       <WhyChooseUs />
 

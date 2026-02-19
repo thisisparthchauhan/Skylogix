@@ -82,6 +82,7 @@ const config: Config = {
                 float: 'float 6s ease-in-out infinite',
                 'pulse-glow': 'pulse-glow 4s cubic-bezier(0.4, 0, 0.6, 1) infinite',
                 'slow-spin': 'spin 12s linear infinite',
+                scroll: "scroll 40s linear infinite",
             },
             keyframes: {
                 float: {
@@ -91,6 +92,11 @@ const config: Config = {
                 'pulse-glow': {
                     '0%, 100%': { opacity: '1', boxShadow: '0 0 20px var(--primary-glow)' },
                     '50%': { opacity: '0.5', boxShadow: '0 0 5px var(--primary-glow)' },
+                },
+                scroll: {
+                    to: {
+                        transform: "translate(calc(-50% - 0.5rem))",
+                    },
                 },
             },
         }

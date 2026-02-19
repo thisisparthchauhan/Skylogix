@@ -7,7 +7,7 @@ import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
 import { PageHeader } from "@/components/layout/PageHeader";
 import { SectionWrapper } from "@/components/layout/SectionWrapper";
-import { GlassCard } from "@/components/ui/GlassCard";
+import ServiceCard from "@/components/ui/ServiceCard";
 import { CTA } from "@/components/sections/CTA";
 import { serviceData } from "@/lib/serviceData";
 import { JsonLd } from "@/components/seo/JsonLd";
@@ -61,30 +61,15 @@ export default function ServicesContent() {
 
             <SectionWrapper className="bg-[#0A0F2C]">
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
-                    {serviceData.map((service, index) => (
-                        <Link key={service.slug} href={`/services/${service.slug}`} className="block h-full">
-                            <GlassCard
-                                className="h-full flex flex-col group hover:border-primary/50 transition-all duration-300"
-                                hoverEffect={true}
-                            >
-                                <div className="mb-6 w-14 h-14 rounded-xl bg-primary/10 flex items-center justify-center group-hover:bg-primary/20 group-hover:scale-110 transition-all duration-300">
-                                    <service.icon className="w-7 h-7 text-primary group-hover:text-white transition-colors" />
-                                </div>
-
-                                <h3 className="text-xl font-heading font-bold mb-2 group-hover:text-primary transition-colors">
-                                    {service.title}
-                                </h3>
-
-                                <p className="text-sm text-muted-foreground leading-relaxed mb-6 flex-grow">
-                                    {service.description}
-                                </p>
-
-                                <div className="flex items-center text-sm font-medium text-primary opacity-80 group-hover:opacity-100 transition-opacity">
-                                    Learn More
-                                    <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
-                                </div>
-                            </GlassCard>
-                        </Link>
+                    {serviceData.map((service) => (
+                        <ServiceCard
+                            key={service.slug}
+                            title={service.title}
+                            description={service.description}
+                            icon={service.icon}
+                            lottieUrl={service.lottieUrl}
+                            slug={service.slug}
+                        />
                     ))}
                 </div>
             </SectionWrapper>

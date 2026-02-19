@@ -2,10 +2,13 @@
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
-import { Menu, X } from "lucide-react";
+import { usePathname } from "next/navigation";
+import { Menu, X, Rocket } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
+import Magnet from "@/components/ui/Magnet";
+import { ThemeToggle } from "@/components/ui/ThemeToggle";
 
 const navLinks = [
     { name: "Services", href: "/services" },
@@ -17,6 +20,7 @@ const navLinks = [
 export function Navbar() {
     const [isScrolled, setIsScrolled] = useState(false);
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+    const pathname = usePathname();
 
     useEffect(() => {
         const handleScroll = () => {
@@ -48,21 +52,33 @@ export function Navbar() {
                     </Link>
 
                     {/* Desktop Navigation */}
-                    <div className="hidden md:flex items-center gap-8">
+                    <div className="hidden md:flex items-center space-x-6">
                         {navLinks.map((link) => (
                             <Link
                                 key={link.name}
                                 href={link.href}
-                                className="text-sm font-medium text-muted-foreground hover:text-primary transition-colors hover:shadow-[0_0_20px_rgba(79,142,241,0.2)]"
+                                className={cn(
+                                    "text-sm font-medium transition-colors hover:text-primary",
+                                    pathname === link.href ? "text-primary" : "text-muted-foreground"
+                                )}
                             >
                                 {link.name}
                             </Link>
                         ))}
-                        <Link href="/contact">
-                            <Button variant="glow" className="rounded-full px-6">
-                                Get Started
-                            </Button>
-                        </Link>
+
+                        {/* Theme Toggle */}
+                        <ThemeToggle />
+
+                        <Magnet>
+                            <Link href="/contact">
+                                <Button className="bg-primary hover:bg-primary/90 text-primary-foreground font-semibold px-6 rounded-full shadow-[0_0_20px_rgba(79,142,247,0.3)] hover:shadow-[0_0_30px_rgba(79,142,247,0.5)] transition-all duration-300 group overflow-hidden relative">
+                                    <div className="absolute inset-0 bg-white/20 translate-y-full group-hover:translate-y-0 transition-transform duration-300" />
+                                    <span className="relative flex items-center gap-2">
+                                        Get Started <Rocket className="w-4 h-4 group-hover:-translate-y-1 group-hover:translate-x-1 transition-transform duration-300" />
+                                    </span>
+                                </Button>
+                            </Link>
+                        </Magnet>
                     </div>
 
                     {/* Mobile Menu Button */}

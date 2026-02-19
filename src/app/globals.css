@@ -84,14 +84,95 @@
 }
 
 :root {
-  /* Core Colors */
-  --background: #060818;
-  /* Deep Space */
-  --foreground: #F0F4FF;
-  /* Ice White */
+  /* =========================================
+     LIGHT MODE (New)
+     ========================================= */
 
+  /* Background: #F8FAFF (Ice White/Blue Tint) */
+  --background: #F8FAFF;
+
+  /* Foreground: #0A0F2C (Deep Space Blue) */
+  --foreground: #0A0F2C;
+
+  /* Secondary BG: #EEF2FF (Soft Blue) */
+  --background-secondary: #EEF2FF;
+
+  /* Tertiary BG: #E0E7FF */
+  --background-tertiary: #E0E7FF;
+
+  /* Surface & Glass: White with subtle shadow */
+  --surface: rgba(255, 255, 255, 0.7);
+  --surface-hover: rgba(255, 255, 255, 0.9);
+  --surface-active: #ffffff;
+
+  /* Accents */
+  --primary: #2563EB;
+  /* Darker Blue for Light Mode */
+  --primary-foreground: #ffffff;
+  --primary-glow: rgba(37, 99, 235, 0.3);
+
+  --secondary: #7B5EA7;
+  /* Cosmic Purple (Same) */
+  --secondary-foreground: #ffffff;
+  --secondary-glow: rgba(123, 94, 167, 0.3);
+
+  --accent-cyan: #0284C7;
+  /* Darker Cyan for contrast */
+  --accent-rose: #e11d48;
+  --accent-amber: #d97706;
+
+  /* UI Elements */
+  --card: #ffffff;
+  --card-foreground: #0A0F2C;
+
+  --popover: #ffffff;
+  --popover-foreground: #0A0F2C;
+
+  --muted: #94a3b8;
+  --muted-foreground: #64748b;
+
+  --accent: rgba(37, 99, 235, 0.1);
+  --accent-foreground: #0A0F2C;
+
+  --destructive: #ef4444;
+  --destructive-foreground: #ffffff;
+
+  --border: rgba(37, 99, 235, 0.1);
+  --border-hover: rgba(37, 99, 235, 0.2);
+  --border-focus: rgba(37, 99, 235, 0.5);
+
+  --input: rgba(37, 99, 235, 0.1);
+  --ring: #2563EB;
+
+  /* Charts */
+  --chart-1: #2563EB;
+  --chart-2: #7B5EA7;
+  --chart-3: #0284C7;
+  --chart-4: #e11d48;
+  --chart-5: #d97706;
+
+  /* Typography */
+  --font-inter: 'Inter', sans-serif;
+  --font-space-grotesk: 'Space Grotesk', sans-serif;
+
+  --radius: 0.5rem;
+}
+
+.dark {
+  /* =========================================
+     DARK MODE (Default / Original)
+     ========================================= */
+
+  /* Background: #060818 (Deep Space) */
+  --background: #060818;
+
+  /* Foreground: #F0F4FF (Ice White) */
+  --foreground: #F0F4FF;
+
+  /* Secondary BG: #0A0F2C (Cosmic Blue) */
   --background-secondary: #0A0F2C;
-  /* Cosmic Blue */
+
+  /* Tertiary BG: #1e293b */
   --background-tertiary: #1e293b;
 
   /* Surface & Glass */
@@ -123,7 +204,6 @@
 
   --muted: #64748b;
   --muted-foreground: #8A9BB5;
-  /* Blue Grey */
 
   --accent: rgba(79, 142, 247, 0.1);
   --accent-foreground: #F0F4FF;
@@ -144,12 +224,6 @@
   --chart-3: #00C2FF;
   --chart-4: #f43f5e;
   --chart-5: #f59e0b;
-
-  /* Typography */
-  --font-inter: 'Inter', sans-serif;
-  --font-space-grotesk: 'Space Grotesk', sans-serif;
-
-  --radius: 0.5rem;
 }
 
 /* Utilities */
