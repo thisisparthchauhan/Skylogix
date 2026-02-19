@@ -6,11 +6,6 @@ import dynamic from "next/dynamic";
 // Dynamic import for react-globe.gl to avoid SSR issues
 const Globe = dynamic(() => import("react-globe.gl"), {
     ssr: false,
-    loading: () => (
-        <div className="flex items-center justify-center h-[400px] w-full bg-[#060818] text-primary/50 animate-pulse">
-            Loading Globe...
-        </div>
-    ),
 });
 
 // Location Data

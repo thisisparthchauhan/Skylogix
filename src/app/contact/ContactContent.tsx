@@ -92,7 +92,7 @@ export default function ContactContent() {
             <Navbar />
 
             <PageHeader
-                title="Contact Us"
+                title="Contact Skylogix Technologies"
                 description="Ready to start your project? Get in touch with our team of experts today."
                 breadcrumb={[{ label: "Contact" }]}
             />
@@ -108,7 +108,7 @@ export default function ContactContent() {
                         className="space-y-12"
                     >
                         <div>
-                            <h2 className="text-4xl md:text-5xl font-heading font-bold mb-6">Let's Build Together</h2>
+                            <h2 className="text-4xl md:text-5xl font-heading font-bold mb-6">Get in Touch</h2>
                             <p className="text-lg text-muted-foreground leading-relaxed">
                                 Whether you have a groundbreaking idea or need to modernize your existing systems, we're here to help. Reach out to discuss your vision.
                             </p>

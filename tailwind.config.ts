@@ -83,6 +83,7 @@ const config: Config = {
                 'pulse-glow': 'pulse-glow 4s cubic-bezier(0.4, 0, 0.6, 1) infinite',
                 'slow-spin': 'spin 12s linear infinite',
                 scroll: "scroll 40s linear infinite",
+                "scroll-reverse": "scroll-reverse 40s linear infinite",
             },
             keyframes: {
                 float: {
@@ -96,6 +97,14 @@ const config: Config = {
                 scroll: {
                     to: {
                         transform: "translate(calc(-50% - 0.5rem))",
+                    },
+                },
+                "scroll-reverse": {
+                    from: {
+                        transform: "translate(calc(-50% - 0.5rem))",
+                    },
+                    to: {
+                        transform: "translate(0)",
                     },
                 },
             },

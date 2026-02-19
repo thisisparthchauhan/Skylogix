@@ -56,7 +56,7 @@ export default function CaseStudiesContent() {
             <Navbar />
 
             <PageHeader
-                title="Our Work"
+                title="Software Development Case Studies"
                 description="A showcase of our engineering capabilities. Please note that due to strict NDAs, client names and proprietary details have been anonymized."
                 breadcrumb={[{ label: "Case Studies" }]}
             />
@@ -111,9 +111,9 @@ export default function CaseStudiesContent() {
                                         </Badge>
                                     </div>
 
-                                    <h3 className="text-xl font-heading font-bold mb-2 group-hover:text-primary transition-colors">
+                                    <h2 className="text-xl font-heading font-bold mb-2 group-hover:text-primary transition-colors">
                                         {study.title}
-                                    </h3>
+                                    </h2>
                                     <div className="text-xs font-semibold text-secondary uppercase tracking-wider mb-4">
                                         {study.type}
                                     </div>

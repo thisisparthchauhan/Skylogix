@@ -9,7 +9,7 @@ const MAX_REQUESTS = 5;
 
 const spamKeywords = ["viagra", "casino", "lottery", "winner", "crypto investment"];
 
-const resend = new Resend(process.env.RESEND_API_KEY || "re_123");
+// const resend = new Resend(process.env.RESEND_API_KEY || "re_123");
 
 export async function POST(req: NextRequest) {
     try {
@@ -65,6 +65,8 @@ export async function POST(req: NextRequest) {
             console.log("Mock Email Sent:", body);
             return NextResponse.json({ success: true, message: "Mock email sent" });
         }
+
+        const resend = new Resend(process.env.RESEND_API_KEY);
 
         const { data, error } = await resend.emails.send({
             from: process.env.FROM_EMAIL || "onboarding@resend.dev",

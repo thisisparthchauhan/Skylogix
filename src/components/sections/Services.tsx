@@ -96,7 +96,7 @@ export function Services() {
         <SectionWrapper id="services" className="bg-[#0A0F2C]">
             <SectionHeading
                 eyebrow="Our Services"
-                title="What We Build"
+                title="Our Services"
                 subtitle="End-to-end technology solutions tailored to your business needs."
                 className="mb-16"
             />
@@ -117,9 +117,9 @@ export function Services() {
                             <div className="mb-4 w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center group-hover:bg-primary/20 group-hover:shadow-[0_0_15px_rgba(79,142,247,0.3)] transition-all duration-300">
                                 <service.icon className="w-6 h-6 text-primary group-hover:scale-110 transition-transform duration-300" />
                             </div>
-                            <h3 className="text-xl font-heading font-bold mb-2 text-foreground group-hover:text-primary transition-colors">
+                            <h2 className="text-xl font-heading font-bold mb-2 text-foreground group-hover:text-primary transition-colors">
                                 {service.title}
-                            </h3>
+                            </h2>
                             <p className="text-sm text-muted-foreground leading-relaxed">
                                 {service.desc}
                             </p>

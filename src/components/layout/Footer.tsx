@@ -102,19 +102,27 @@ export function Footer() {
                         </ul>
                     </div>
 
-                    {/* Newsletter Column */}
-                    <div>
-                        <h3 className="font-heading font-semibold text-foreground mb-6">Stay Updated</h3>
-                        <p className="text-muted-foreground text-sm mb-4">
-                            Subscribe to our newsletter for the latest tech insights.
-                        </p>
-                        <div className="flex flex-col gap-3">
-                            <input
-                                type="email"
-                                placeholder="Enter your email"
-                                className="bg-white/5 border border-white/10 rounded-md px-4 py-2 text-sm focus:outline-none focus:border-primary transition-colors"
-                            />
-                            <Button>Subscribe</Button>
+                    {/* Newsletter & CTA Column */}
+                    <div className="flex flex-col gap-6">
+                        <div>
+                            <h3 className="font-heading font-semibold text-foreground mb-4">Ready to start?</h3>
+                            <Link href="/book-a-call">
+                                <Button className="w-full bg-primary hover:bg-primary/90 text-white shadow-lg shadow-primary/20">
+                                    Book a Free Call
+                                </Button>
+                            </Link>
+                        </div>
+
+                        <div>
+                            <h3 className="font-heading font-semibold text-foreground mb-4">Stay Updated</h3>
+                            <div className="flex flex-col gap-3">
+                                <input
+                                    type="email"
+                                    placeholder="Enter your email"
+                                    className="bg-white/5 border border-white/10 rounded-md px-4 py-2 text-sm focus:outline-none focus:border-primary transition-colors"
+                                />
+                                <Button variant="outline" className="border-white/10 hover:bg-white/5">Subscribe</Button>
+                            </div>
                         </div>
                     </div>
                 </div>

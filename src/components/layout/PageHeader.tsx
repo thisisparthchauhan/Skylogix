@@ -3,8 +3,12 @@
 import Link from "next/link";
 import { ChevronRight } from "lucide-react";
 import { motion } from "framer-motion";
+import dynamic from "next/dynamic";
 import { GlowOrb } from "@/components/ui/GlowOrb";
-import { ParticlesBackground } from "@/components/ui/ParticlesBackground";
+
+const ParticlesBackground = dynamic(() => import("@/components/ui/ParticlesBackground").then(mod => mod.ParticlesBackground), {
+    ssr: false,
+});
 
 interface PageHeaderProps {
     title: string;

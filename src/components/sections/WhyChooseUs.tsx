@@ -60,7 +60,7 @@ export function WhyChooseUs() {
             {/* Heading */}
             <div className="flex flex-col items-center mb-16">
                 <SectionHeading
-                    title="Why Skylogix?"
+                    title="Why Choose Skylogix"
                     className="mb-6"
                 />
                 {/* Accent Line */}

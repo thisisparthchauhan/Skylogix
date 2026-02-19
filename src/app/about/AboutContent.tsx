@@ -12,6 +12,7 @@ import { AnimatedCounter } from "@/components/ui/AnimatedCounter";
 import { CTA } from "@/components/sections/CTA";
 import { JsonLd } from "@/components/seo/JsonLd";
 import Globe3D from "@/components/ui/Globe3D";
+import { RelatedLinks } from "@/components/seo/RelatedLinks";
 
 const aboutSchema = {
     "@context": "https://schema.org",
@@ -51,7 +52,7 @@ export default function AboutContent() {
             <Navbar />
 
             <PageHeader
-                title="About Skylogix"
+                title="About Skylogix Technologies"
                 description="We are a global team of innovators, engineers, and strategists dedicated to building the digital future."
                 breadcrumb={[{ label: "About" }]}
             />
@@ -68,7 +69,7 @@ export default function AboutContent() {
                         <SectionHeading
                             align="left"
                             eyebrow="Who We Are"
-                            title="Pioneering the Future of Digital Innovation"
+                            title="Company Overview"
                             className="mb-8"
                         />
                         <div className="space-y-6 text-muted-foreground text-lg leading-relaxed">
@@ -141,6 +142,10 @@ export default function AboutContent() {
 
             {/* Vision & Mission */}
             <SectionWrapper id="vision-mission" className="bg-background relative">
+                <SectionHeading
+                    title="Our Vision & Mission"
+                    className="mb-12"
+                />
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                     <GlassCard className="p-10 border-t-4 border-t-primary">
                         <div className="w-14 h-14 rounded-full bg-primary/10 flex items-center justify-center mb-6">
@@ -247,6 +252,8 @@ export default function AboutContent() {
                     </div>
                 </div>
             </SectionWrapper>
+
+            <RelatedLinks currentPage="about" className="bg-background" title="Discover More" />
 
             <CTA />
             <Footer />

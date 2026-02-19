@@ -2,9 +2,14 @@
 
 import { motion } from "framer-motion";
 import { ArrowRight, ChevronDown } from "lucide-react";
+import Link from "next/link";
+import dynamic from "next/dynamic";
 import { Button } from "@/components/ui/button";
-import { ParticlesBackground } from "@/components/ui/ParticlesBackground";
 import { GlowOrb } from "@/components/ui/GlowOrb";
+
+const ParticlesBackground = dynamic(() => import("@/components/ui/ParticlesBackground").then(mod => mod.ParticlesBackground), {
+    ssr: false,
+});
 
 export function Hero() {
     return (
@@ -30,8 +35,8 @@ export function Hero() {
                     transition={{ duration: 0.8, ease: "easeOut" }}
                     className="text-5xl md:text-7xl lg:text-[72px] font-heading font-bold text-white leading-[1.1] mb-6 tracking-tight drop-shadow-lg"
                 >
-                    Your Global <br className="hidden md:block" />
-                    Technology Partner
+                    Global IT Services & <br className="hidden md:block" />
+                    Consulting Company
                 </motion.h1>
 
                 {/* Subheading */}
@@ -51,23 +56,27 @@ export function Hero() {
                     transition={{ duration: 0.8, delay: 0.4, ease: "easeOut" }}
                     className="flex flex-col sm:flex-row gap-5 w-full sm:w-auto"
                 >
-                    {/* Primary Button: Glowing Cyan */}
-                    <Button
-                        size="lg"
-                        className="h-14 px-8 text-lg font-semibold rounded-full bg-[#00C2FF] hover:bg-[#00C2FF]/90 text-white shadow-[0_0_20px_rgba(0,194,255,0.4)] hover:shadow-[0_0_30px_rgba(0,194,255,0.6)] transition-all"
-                    >
-                        Start Your Project
-                        <ArrowRight className="ml-2 w-5 h-5" />
-                    </Button>
+                    {/* Primary Button: Book a Call */}
+                    <Link href="/book-a-call">
+                        <Button
+                            size="lg"
+                            className="h-14 px-8 text-lg font-semibold rounded-full bg-[#00C2FF] hover:bg-[#00C2FF]/90 text-white shadow-[0_0_20px_rgba(0,194,255,0.4)] hover:shadow-[0_0_30px_rgba(0,194,255,0.6)] transition-all w-full sm:w-auto"
+                        >
+                            Book a Free Call
+                            <ArrowRight className="ml-2 w-5 h-5" />
+                        </Button>
+                    </Link>
 
-                    {/* Ghost Button: Transparent with White Border */}
-                    <Button
-                        size="lg"
-                        variant="outline"
-                        className="h-14 px-8 text-lg font-medium rounded-full border-white/20 bg-transparent text-white hover:bg-white/10 hover:border-white/50 backdrop-blur-sm transition-all"
-                    >
-                        View Our Work
-                    </Button>
+                    {/* Secondary Button: Check Estimate */}
+                    <Link href="/estimate">
+                        <Button
+                            size="lg"
+                            variant="outline"
+                            className="h-14 px-8 text-lg font-medium rounded-full border-white/20 bg-transparent text-white hover:bg-white/10 hover:border-white/50 backdrop-blur-sm transition-all w-full sm:w-auto"
+                        >
+                            Get Free Estimate
+                        </Button>
+                    </Link>
                 </motion.div>
             </div>
 

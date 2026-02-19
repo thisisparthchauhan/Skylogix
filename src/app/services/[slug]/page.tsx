@@ -13,6 +13,10 @@ import { serviceData } from "@/lib/serviceData";
 import { Metadata } from "next";
 
 import { JsonLd } from "@/components/seo/JsonLd";
+import { PageViewTracker } from "@/components/analytics/PageViewTracker";
+import ServiceSchema from "@/components/seo/schemas/ServiceSchema";
+import BreadcrumbSchema from "@/components/seo/schemas/BreadcrumbSchema";
+import { RelatedLinks } from "@/components/seo/RelatedLinks";
 
 interface PageProps {
     params: Promise<{
@@ -26,31 +30,37 @@ export async function generateStaticParams() {
     }));
 }
 
+import { generatePageMetadata } from "@/lib/generatePageMetadata";
+import { SERVICES_SEO } from "@/lib/seoConstants";
+
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
     const { slug } = await params;
+    const serviceSEO = SERVICES_SEO.find((s) => s.slug === slug);
     const service = serviceData.find((s) => s.slug === slug);
 
     if (!service) {
-        return {
-            title: "Service Not Found",
-        };
+        return generatePageMetadata("home", { title: "Service Not Found" });
     }
 
-    return {
+    if (serviceSEO) {
+        return generatePageMetadata("services", {
+            title: serviceSEO.metaTitle,
+            description: serviceSEO.metaDescription,
+            keywords: [serviceSEO.primaryKeyword, ...serviceSEO.secondaryKeywords],
+            canonical: serviceSEO.canonical
+        });
+    }
+
+    return generatePageMetadata("services", {
         title: `${service.title} | Skylogix Services`,
         description: service.description,
-        openGraph: {
-            title: `${service.title} | Skylogix Services`,
-            description: service.description,
-            url: `/services/${slug}`,
-        },
-        alternates: {
-            canonical: `/services/${slug}`,
-        },
-    };
+        canonical: `/services/${slug}`
+    });
 }
 
-export default async function ServiceDetailPage({ params }: PageProps) {
+export const dynamic = "force-static";
+
+export default async function ServicePage({ params }: PageProps) {
     const { slug } = await params;
     const service = serviceData.find((s) => s.slug === slug);
 
@@ -63,54 +73,21 @@ export default async function ServiceDetailPage({ params }: PageProps) {
         .filter((s) => s.slug !== slug)
         .slice(0, 3);
 
-    const jsonLd = {
-        "@context": "https://schema.org",
-        "@type": "Service",
-        name: service.title,
-        description: service.description,
-        provider: {
-            "@type": "Organization",
-            name: "Skylogix Technologies",
-            url: "https://skylogix.tech",
-        },
-        offers: {
-            "@type": "Offer",
-            description: service.tagline,
-        },
-    };
-
-    const breadcrumbSchema = {
-        "@context": "https://schema.org",
-        "@type": "BreadcrumbList",
-        itemListElement: [
-            {
-                "@type": "ListItem",
-                position: 1,
-                name: "Home",
-                item: "https://skylogix.tech",
-            },
-            {
-                "@type": "ListItem",
-                position: 2,
-                name: "Services",
-                item: "https://skylogix.tech/services",
-            },
-            {
-                "@type": "ListItem",
-                position: 3,
-                name: service.title,
-                item: `https://skylogix.tech/services/${slug}`,
-            },
-        ],
-    };
+    const breadcrumbs = [
+        { name: "Home", url: "/" },
+        { name: "Services", url: "/services" },
+        { name: service.title, url: `/services/${slug}` },
+    ];
 
     return (
         <main className="min-h-screen bg-background text-foreground overflow-x-hidden">
-            <JsonLd data={[jsonLd, breadcrumbSchema]} />
+            <ServiceSchema service={service} />
+            <BreadcrumbSchema items={breadcrumbs} />
+            <PageViewTracker eventName="service_page_view" properties={{ service: service.title }} />
             <Navbar />
 
             <PageHeader
-                title={service.title}
+                title={`${service.title} Services | Skylogix Technologies`}
                 description={service.tagline}
                 breadcrumb={[
                     { label: "Services", href: "/services" },
@@ -118,24 +95,26 @@ export default async function ServiceDetailPage({ params }: PageProps) {
                 ]}
             />
 
-            {/* Main Content & Offerings */}
             <SectionWrapper className="bg-[#0A0F2C]">
-                <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
-                    <div className="space-y-8">
+                <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
+                    {/* Main Content */}
+                    <div className="lg:col-span-2 space-y-12">
                         <Link href="/services" className="inline-flex items-center text-sm text-muted-foreground hover:text-primary transition-colors mb-4">
                             <ArrowLeft className="w-4 h-4 mr-2" />
                             Back to Services
                         </Link>
 
-                        <h2 className="text-3xl md:text-4xl font-heading font-bold">
-                            Unlocking Potential with {service.title}
-                        </h2>
-                        <p className="text-lg text-muted-foreground leading-relaxed">
-                            {service.description} At Skylogix, we ensure that every solution is tailored to your specific business environment, ensuring maximum impact and ROI.
-                        </p>
+                        <div className="space-y-4">
+                            <h2 className="text-3xl md:text-4xl font-heading font-bold">
+                                Unlocking Potential with {service.title}
+                            </h2>
+                            <p className="text-lg text-muted-foreground leading-relaxed">
+                                {service.description} At Skylogix, we ensure that every solution is tailored to your specific business environment, ensuring maximum impact and ROI.
+                            </p>
+                        </div>
 
                         <div className="space-y-4">
-                            <h3 className="text-xl font-bold text-white">What We Offer</h3>
+                            <h2 className="text-xl font-bold text-white">What We Offer</h2>
                             <div className="grid grid-cols-1 gap-3">
                                 {service.offerings.map((offering, i) => (
                                     <div key={i} className="flex items-start gap-3 p-4 rounded-lg bg-white/5 border border-white/10">
@@ -148,40 +127,50 @@ export default async function ServiceDetailPage({ params }: PageProps) {
                     </div>
 
                     {/* Tech Stack Side Panel */}
-                    <GlassCard className="p-8 sticky top-24">
-                        <div className="mb-6 flex items-center gap-4">
-                            <div className="w-12 h-12 rounded-lg bg-primary/20 flex items-center justify-center">
-                                <service.icon className="w-6 h-6 text-primary" />
+                    <div className="space-y-8">
+                        <GlassCard className="p-8 sticky top-24">
+                            <div className="mb-6 flex items-center gap-4">
+                                <div className="w-12 h-12 rounded-lg bg-primary/20 flex items-center justify-center">
+                                    <service.icon className="w-6 h-6 text-primary" />
+                                </div>
+                                <h2 className="text-xl font-bold">Technologies We Use</h2>
                             </div>
-                            <h3 className="text-xl font-bold">Technologies</h3>
-                        </div>
 
-                        <div className="flex flex-wrap gap-2 mb-8">
-                            {service.technologies.map((tech, i) => (
-                                <Badge key={i} variant="secondary" className="bg-white/10 text-white hover:bg-white/20 border-white/10 px-3 py-1">
-                                    {tech}
-                                </Badge>
-                            ))}
-                        </div>
+                            <div className="flex flex-wrap gap-2 mb-8">
+                                {service.technologies.map((tech, i) => (
+                                    <Badge key={i} variant="secondary" className="bg-white/10 text-white hover:bg-white/20 border-white/10 px-3 py-1">
+                                        {tech}
+                                    </Badge>
+                                ))}
+                            </div>
 
-                        <div className="border-t border-white/10 pt-6">
-                            <h4 className="font-bold mb-4">Why This Service?</h4>
-                            <ul className="space-y-3 text-sm text-muted-foreground">
-                                <li className="flex items-center gap-2">
-                                    <span className="w-1.5 h-1.5 rounded-full bg-accent-cyan" />
-                                    Scalable Architecture
-                                </li>
-                                <li className="flex items-center gap-2">
-                                    <span className="w-1.5 h-1.5 rounded-full bg-accent-cyan" />
-                                    Industry Best Practices
-                                </li>
-                                <li className="flex items-center gap-2">
-                                    <span className="w-1.5 h-1.5 rounded-full bg-accent-cyan" />
-                                    Dedicated Support
-                                </li>
-                            </ul>
+                            <div className="border-t border-white/10 pt-6">
+                                <h4 className="font-bold mb-4">Why This Service?</h4>
+                                <ul className="space-y-3 text-sm text-muted-foreground">
+                                    <li className="flex items-center gap-2">
+                                        <span className="w-1.5 h-1.5 rounded-full bg-accent-cyan" />
+                                        Scalable Architecture
+                                    </li>
+                                    <li className="flex items-center gap-2">
+                                        <span className="w-1.5 h-1.5 rounded-full bg-accent-cyan" />
+                                        Industry Best Practices
+                                    </li>
+                                    <li className="flex items-center gap-2">
+                                        <span className="w-1.5 h-1.5 rounded-full bg-accent-cyan" />
+                                        Dedicated Support
+                                    </li>
+                                </ul>
+                            </div>
+                        </GlassCard>
+
+                        <div className="bg-gradient-to-br from-primary/20 to-purple-600/20 rounded-xl p-6 text-center border border-white/10">
+                            <h3 className="font-bold mb-2">Need {service.title}?</h3>
+                            <p className="text-sm text-muted-foreground mb-4">Schedule a free consultation to discuss your specific requirements.</p>
+                            <Link href="/book-a-call" className="block w-full py-2 rounded-lg bg-primary text-white text-sm font-bold hover:bg-primary/90 transition-colors">
+                                Discuss This Service
+                            </Link>
                         </div>
-                    </GlassCard>
+                    </div>
                 </div>
             </SectionWrapper>
 
@@ -189,7 +178,7 @@ export default async function ServiceDetailPage({ params }: PageProps) {
             <SectionWrapper className="bg-background">
                 <SectionHeading
                     eyebrow="Our Approach"
-                    title="How We Deliver"
+                    title={`Our ${service.title} Process`}
                     subtitle="A structured process to ensure quality and consistency."
                     className="mb-16"
                 />
@@ -232,6 +221,9 @@ export default async function ServiceDetailPage({ params }: PageProps) {
             </SectionWrapper>
 
             <CTA />
+
+            <RelatedLinks currentPage={slug} className="bg-background" title="Recommended Next Steps" />
+
             <Footer />
         </main>
     );

@@ -14,24 +14,24 @@ export function CTA() {
 
             <div className="relative z-10 flex flex-col items-center text-center">
                 <h2 className="text-4xl md:text-5xl font-heading font-bold text-foreground mb-6 max-w-2xl">
-                    Ready to Transform Your <br />
+                    Ready to Build <br />
                     <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-accent-cyan">
-                        Digital Future?
+                        Something Global?
                     </span>
                 </h2>
                 <p className="text-lg text-muted-foreground max-w-xl mb-10">
-                    Join leading enterprises across the globe who trust Skylogix for secure, scalable, and innovative technology solutions.
+                    30 minutes. No commitment. Expert advice on how to build your next big idea.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4">
-                    <Link href="/contact">
+                    <Link href="/book-a-call">
                         <Button size="lg" className="h-14 px-8 text-lg rounded-full shadow-glow-md">
-                            Get a Proposal
+                            Book a Call Now
                             <ArrowRight className="ml-2 w-5 h-5" />
                         </Button>
                     </Link>
-                    <Link href="/case-studies">
+                    <Link href="/estimate">
                         <Button variant="outline" size="lg" className="h-14 px-8 text-lg rounded-full backdrop-blur-md">
-                            Explore Case Studies
+                            Get Instant Estimate
                         </Button>
                     </Link>
                 </div>

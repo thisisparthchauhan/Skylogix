@@ -1,7 +1,8 @@
 "use client";
 
 import { SectionWrapper } from "@/components/layout/SectionWrapper";
-import Image from "next/image";
+import { OptimizedImage } from "@/components/ui/OptimizedImage";
+import { AltTextGuide } from "@/lib/imageAltGuide";
 
 // Data: Technology Stack
 const technologies = {
@@ -41,10 +42,11 @@ const TechPill = ({ name, icon }: { name: string; icon: string }) => (
     ">
         <div className="relative w-6 h-6">
             {/* unoptimized because simpleicons are external SVGs */}
-            <img
+            <OptimizedImage
                 src={icon}
-                alt={name}
-                className="w-full h-full object-contain filter group-hover:brightness-110 transition-all"
+                alt={AltTextGuide.techLogo(name)}
+                fill
+                className="object-contain filter group-hover:brightness-110 transition-all"
             />
         </div>
         <span className="text-sm font-medium text-gray-300 group-hover:text-white transition-colors whitespace-nowrap">

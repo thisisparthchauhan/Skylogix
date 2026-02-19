@@ -54,7 +54,7 @@ export default function ServicesContent() {
             <Navbar />
 
             <PageHeader
-                title="Our Services"
+                title="IT Services & Software Development"
                 description="Comprehensive technology solutions designed to scale your business. From MVP to Enterprise, we cover it all."
                 breadcrumb={[{ label: "Services" }]}
             />

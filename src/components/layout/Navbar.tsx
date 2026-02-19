@@ -70,11 +70,21 @@ export function Navbar() {
                         <ThemeToggle />
 
                         <Magnet>
-                            <Link href="/contact">
+                            <Link
+                                href="/book-a-call"
+                                onClick={() => {
+                                    if (typeof window !== "undefined" && (window as any).gtag) {
+                                        (window as any).gtag("event", "book_call_click", {
+                                            event_category: "Navigation",
+                                            event_label: "Navbar CTA"
+                                        });
+                                    }
+                                }}
+                            >
                                 <Button className="bg-primary hover:bg-primary/90 text-primary-foreground font-semibold px-6 rounded-full shadow-[0_0_20px_rgba(79,142,247,0.3)] hover:shadow-[0_0_30px_rgba(79,142,247,0.5)] transition-all duration-300 group overflow-hidden relative">
                                     <div className="absolute inset-0 bg-white/20 translate-y-full group-hover:translate-y-0 transition-transform duration-300" />
                                     <span className="relative flex items-center gap-2">
-                                        Get Started <Rocket className="w-4 h-4 group-hover:-translate-y-1 group-hover:translate-x-1 transition-transform duration-300" />
+                                        Book a Free Call <Rocket className="w-4 h-4 group-hover:-translate-y-1 group-hover:translate-x-1 transition-transform duration-300" />
                                     </span>
                                 </Button>
                             </Link>
@@ -124,9 +134,9 @@ export function Navbar() {
                             transition={{ delay: 0.3 }}
                             className="mt-4"
                         >
-                            <Link href="/contact" onClick={() => setIsMobileMenuOpen(false)}>
+                            <Link href="/book-a-call" onClick={() => setIsMobileMenuOpen(false)}>
                                 <Button className="w-full h-12 text-lg" variant="glow">
-                                    Get Started
+                                    Book a Free Call
                                 </Button>
                             </Link>
                         </motion.div>

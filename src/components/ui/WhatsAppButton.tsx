@@ -64,6 +64,14 @@ export default function WhatsAppButton() {
                 transition={{ type: "spring", stiffness: 300, damping: 20 }}
                 onMouseEnter={() => setIsHovered(true)}
                 onMouseLeave={() => setIsHovered(false)}
+                onClick={() => {
+                    if (typeof window !== "undefined" && (window as any).gtag) {
+                        (window as any).gtag("event", "whatsapp_click", {
+                            event_category: "Contact",
+                            event_label: "Floating Button"
+                        });
+                    }
+                }}
             >
                 {/* Pulse Animation Effect */}
                 <div className="absolute inset-0 rounded-full animate-ping opacity-20 bg-white duration-1000" />

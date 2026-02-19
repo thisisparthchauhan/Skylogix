@@ -1,14 +1,19 @@
-import { Metadata } from "next";
 import CaseStudiesContent from "./CaseStudiesContent";
 
-export const metadata: Metadata = {
-    title: "Case Studies | Success Stories & Client Results",
-    description: "Discover how Skylogix has transformed businesses across FinTech, HealthTech, and E-commerce with custom software solutions.",
-    alternates: {
-        canonical: "/case-studies",
-    },
-};
+import { generatePageMetadata } from "@/lib/generatePageMetadata";
+
+import BreadcrumbSchema from "@/components/seo/schemas/BreadcrumbSchema";
+
+export const metadata = generatePageMetadata("caseStudies");
 
 export default function CaseStudiesPage() {
-    return <CaseStudiesContent />;
+    return (
+        <>
+            <BreadcrumbSchema items={[
+                { name: "Home", url: "/" },
+                { name: "Case Studies", url: "/case-studies" }
+            ]} />
+            <CaseStudiesContent />
+        </>
+    );
 }

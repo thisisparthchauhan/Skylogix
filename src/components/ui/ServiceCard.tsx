@@ -8,7 +8,7 @@ import type { Player as PlayerType } from "@lottiefiles/react-lottie-player";
 
 const Player = dynamic(() => import("@lottiefiles/react-lottie-player").then((mod) => mod.Player), {
     ssr: false,
-    loading: () => <div className="w-16 h-16 bg-white/5 rounded-full animate-pulse" />,
+    loading: () => <div className="w-full h-full bg-white/5 animate-pulse rounded-lg" />,
 }) as any;
 
 interface ServiceCardProps {
@@ -63,9 +63,9 @@ export default function ServiceCard({ title, description, icon: Icon, lottieUrl,
                         )}
                     </div>
 
-                    <h3 className="text-xl font-bold mb-3 text-foreground group-hover:text-primary transition-colors">
+                    <h2 className="text-xl font-bold mb-3 text-foreground group-hover:text-primary transition-colors">
                         {title}
-                    </h3>
+                    </h2>
 
                     <p className="text-muted-foreground text-sm leading-relaxed mb-6">
                         {description}

@@ -12,6 +12,7 @@ import { CTA } from "@/components/sections/CTA";
 import { caseStudies } from "@/lib/caseStudyData";
 import { Metadata } from "next";
 import { JsonLd } from "@/components/seo/JsonLd";
+import { PageViewTracker } from "@/components/analytics/PageViewTracker";
 
 interface PageProps {
     params: Promise<{
@@ -25,29 +26,24 @@ export async function generateStaticParams() {
     }));
 }
 
+import { generatePageMetadata } from "@/lib/generatePageMetadata";
+import BreadcrumbSchema from "@/components/seo/schemas/BreadcrumbSchema";
+import { RelatedLinks } from "@/components/seo/RelatedLinks";
+
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
     const { slug } = await params;
     const study = caseStudies.find((s) => s.slug === slug);
 
     if (!study) {
-        return {
-            title: "Case Study Not Found",
-        };
+        return generatePageMetadata("caseStudies", { title: "Case Study Not Found" });
     }
 
-    return {
+    return generatePageMetadata("caseStudies", {
         title: `${study.title} | Skylogix Case Studies`,
         description: study.challenge,
-        openGraph: {
-            title: study.title,
-            description: study.challenge,
-            type: "article",
-            url: `/case-studies/${slug}`,
-        },
-        alternates: {
-            canonical: `/case-studies/${slug}`,
-        },
-    };
+        canonical: `/case-studies/${slug}`,
+        keywords: [study.industry, study.techStack[0], "case study"]
+    });
 }
 
 export default async function CaseStudyDetailPage({ params }: PageProps) {
@@ -91,34 +87,17 @@ export default async function CaseStudyDetailPage({ params }: PageProps) {
         },
     };
 
-    const breadcrumbSchema = {
-        "@context": "https://schema.org",
-        "@type": "BreadcrumbList",
-        itemListElement: [
-            {
-                "@type": "ListItem",
-                position: 1,
-                name: "Home",
-                item: "https://skylogix.tech",
-            },
-            {
-                "@type": "ListItem",
-                position: 2,
-                name: "Case Studies",
-                item: "https://skylogix.tech/case-studies",
-            },
-            {
-                "@type": "ListItem",
-                position: 3,
-                name: study.title,
-                item: `https://skylogix.tech/case-studies/${slug}`,
-            },
-        ],
-    };
+
 
     return (
         <main className="min-h-screen bg-background text-foreground overflow-x-hidden">
-            <JsonLd data={[jsonLd, breadcrumbSchema]} />
+            <JsonLd data={jsonLd} />
+            <BreadcrumbSchema items={[
+                { name: "Home", url: "/" },
+                { name: "Case Studies", url: "/case-studies" },
+                { name: study.title, url: `/case-studies/${slug}` }
+            ]} />
+            <PageViewTracker eventName="case_study_view" properties={{ case_study: study.title, industry: study.industry }} />
             <Navbar />
 
             <PageHeader
@@ -222,8 +201,8 @@ export default async function CaseStudyDetailPage({ params }: PageProps) {
                         <div className="bg-gradient-to-br from-primary/20 to-purple-600/20 rounded-xl p-6 text-center border border-white/10">
                             <h3 className="font-bold mb-2">Have a similar project?</h3>
                             <p className="text-sm text-muted-foreground mb-4">Let's discuss how we can help you achieve similar results.</p>
-                            <Link href="/contact" className="block w-full py-2 rounded-lg bg-primary text-white text-sm font-bold hover:bg-primary/90 transition-colors">
-                                Contact Us
+                            <Link href="/book-a-call" className="block w-full py-2 rounded-lg bg-primary text-white text-sm font-bold hover:bg-primary/90 transition-colors">
+                                Build Something Similar
                             </Link>
                         </div>
                     </div>
@@ -255,6 +234,8 @@ export default async function CaseStudyDetailPage({ params }: PageProps) {
                     ))}
                 </div>
             </SectionWrapper>
+
+            <RelatedLinks currentPage={slug} className="bg-[#050714]" title="Explore Related Solutions" />
 
             <CTA />
             <Footer />

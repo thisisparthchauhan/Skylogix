@@ -9,11 +9,21 @@ export function ParticlesBackground() {
     const [init, setInit] = useState(false);
 
     useEffect(() => {
-        initParticlesEngine(async (engine: Engine) => {
-            await loadSlim(engine);
-        }).then(() => {
-            setInit(true);
-        });
+        // Lazy load the engine initialization
+        const init = async () => {
+            initParticlesEngine(async (engine: Engine) => {
+                await loadSlim(engine);
+            }).then(() => {
+                setInit(true);
+            });
+        };
+
+        // Use requestIdleCallback or setTimeout to defer init
+        if (window.requestIdleCallback) {
+            window.requestIdleCallback(init);
+        } else {
+            setTimeout(init, 2000); // Defer by 2s
+        }
     }, []);
 
     if (!init) return null;

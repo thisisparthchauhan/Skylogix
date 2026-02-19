@@ -1,7 +1,9 @@
 import type { Metadata } from "next";
+import { Suspense } from "react";
 import { Inter, Space_Grotesk } from "next/font/google";
 import "./globals.css";
-import { JsonLd, organizationSchema, websiteSchema } from "@/components/seo/JsonLd";
+import OrganizationSchema from "@/components/seo/schemas/OrganizationSchema";
+import ProfessionalServiceSchema from "@/components/seo/schemas/ProfessionalServiceSchema";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -15,40 +17,19 @@ const spaceGrotesk = Space_Grotesk({
   display: "swap",
 });
 
+import { siteConfig } from "@/lib/site";
+
 export const metadata: Metadata = {
-  metadataBase: new URL(process.env.NEXT_PUBLIC_APP_URL || "https://skylogix.tech"),
+  metadataBase: new URL(siteConfig.url),
   title: {
-    default: "Skylogix Technologies | Global IT Services & AI Solutions",
-    template: "%s | Skylogix Technologies",
+    default: siteConfig.name,
+    template: `%s | ${siteConfig.name}`,
   },
-  description: "Global technology partner delivering secure, scalable, AI-driven digital solutions. Expert mobile app development, web development, and IT consulting services.",
-  keywords: ["IT services company", "mobile app development company", "AI software development", "web development agency", "IT consulting services", "software engineering", "digital transformation", "enterprise software"],
-  authors: [{ name: "Skylogix Technologies" }],
-  creator: "Skylogix Technologies",
-  publisher: "Skylogix Technologies",
-  openGraph: {
-    type: "website",
-    locale: "en_US",
-    url: "/",
-    title: "Skylogix Technologies | Global IT Services & AI Solutions",
-    description: "Partner with Skylogix for world-class mobile app development, AI integration, and scalable web solutions. Serving global enterprises with precision engineering.",
-    siteName: "Skylogix Technologies",
-    images: [
-      {
-        url: "/opengraph-image",
-        width: 1200,
-        height: 630,
-        alt: "Skylogix Technologies - Engineering Your Digital Future",
-      },
-    ],
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "Skylogix Technologies | Global IT Services & AI Solutions",
-    description: "Global technology partner delivering secure, scalable, AI-driven digital solutions. Expert mobile app development, web development, and IT consulting services.",
-    images: ["/opengraph-image"],
-    creator: "@skylogixtech",
-  },
+  description: siteConfig.description,
+  keywords: siteConfig.keywords,
+  authors: siteConfig.authors,
+  creator: siteConfig.creator,
+  publisher: siteConfig.publisher,
   robots: {
     index: true,
     follow: true,
@@ -60,9 +41,42 @@ export const metadata: Metadata = {
       "max-snippet": -1,
     },
   },
-  alternates: {
-    canonical: "/",
+  openGraph: {
+    type: "website",
+    locale: "en_US",
+    url: siteConfig.url,
+    title: siteConfig.name,
+    description: siteConfig.description,
+    siteName: siteConfig.name,
+    images: [
+      {
+        url: siteConfig.ogImage,
+        width: 1200,
+        height: 630,
+        alt: siteConfig.name,
+      },
+    ],
   },
+  twitter: {
+    card: "summary_large_image",
+    title: siteConfig.name,
+    description: siteConfig.description,
+    images: [siteConfig.ogImage],
+    creator: "@skylogixtech",
+  },
+  icons: {
+    icon: "/favicon.ico",
+  },
+  alternates: {
+    canonical: siteConfig.url,
+  },
+  verification: {
+    google: process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION,
+    other: {
+      "msvalidate.01": process.env.NEXT_PUBLIC_BING_VERIFICATION || "",
+    },
+  },
+  category: "technology",
 };
 
 import MagneticCursor from "@/components/ui/MagneticCursor";
@@ -73,6 +87,8 @@ import WhatsAppButton from "@/components/ui/WhatsAppButton";
 import TawkToChat from "@/components/ui/TawkToChat";
 import ExitIntentPopup from "@/components/ui/ExitIntentPopup";
 import SlideInBanner from "@/components/ui/SlideInBanner";
+import { CookieConsent } from "@/components/legal/CookieConsent";
+import GoogleAnalytics from "@/components/analytics/GoogleAnalytics";
 
 export default function RootLayout({
   children,
@@ -88,13 +104,18 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
-          <JsonLd data={[organizationSchema, websiteSchema]} />
+          <OrganizationSchema />
+          <ProfessionalServiceSchema />
           <MagneticCursor />
           <ScrollProgress />
           <WhatsAppButton />
           <TawkToChat />
           <ExitIntentPopup />
           <SlideInBanner />
+          <CookieConsent />
+          <Suspense fallback={null}>
+            <GoogleAnalytics />
+          </Suspense>
           <TransitionProvider>
             {children}
           </TransitionProvider>

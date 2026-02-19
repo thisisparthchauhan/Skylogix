@@ -1,14 +1,19 @@
-import { Metadata } from "next";
 import AboutContent from "./AboutContent";
 
-export const metadata: Metadata = {
-    title: "About Us | Skylogix Technologies",
-    description: "Learn about Skylogix Technologies, a global IT services partner built on innovation, integrity, and engineering excellence.",
-    alternates: {
-        canonical: "/about",
-    },
-};
+import { generatePageMetadata } from "@/lib/generatePageMetadata";
+
+import BreadcrumbSchema from "@/components/seo/schemas/BreadcrumbSchema";
+
+export const metadata = generatePageMetadata("about");
 
 export default function AboutPage() {
-    return <AboutContent />;
+    return (
+        <>
+            <BreadcrumbSchema items={[
+                { name: "Home", url: "/" },
+                { name: "About Us", url: "/about" }
+            ]} />
+            <AboutContent />
+        </>
+    );
 }
