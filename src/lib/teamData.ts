@@ -47,14 +47,14 @@ export const TeamMembersData: TeamMember[] = [
     {
         id: "2",
         name: "Pratik Parmar",
-        role: "Co-Founder",
+        role: "CTO",
         department: "leadership",
         bio: "Co - Founder, Software Developer",
         skills: ["System Architecture", "Cloud Native", "Cybersecurity", "React/Node"],
         experience: "10+ Years",
         linkedin: "#",
         github: "#",
-        avatar: "PC",
+        avatar: "PP",
         avatarGradient: "from-emerald-400 to-cyan-500",
         isLeadership: true,
         location: "Singapore"
@@ -62,13 +62,13 @@ export const TeamMembersData: TeamMember[] = [
     {
         id: "3",
         name: "Parth Chauhan",
-        role: "CTO",
+        role: "COO",
         department: "leadership",
         bio: "Technical architect obsessed with scalable systems and clean code. Previously led engineering at a Series B fintech startup",
         skills: ["SAAS Development", "Design Systems", "AGI", "Super Research"],
         experience: "6+ Years",
         linkedin: "#",
-        avatar: "RL",
+        avatar: "PC",
         avatarGradient: "from-pink-500 to-rose-500",
         isLeadership: true,
         location: "Ahmedabad, India"
@@ -85,7 +85,7 @@ export const TeamMembersData: TeamMember[] = [
         experience: "6+ Years",
         linkedin: "#",
         github: "#",
-        avatar: "RP",
+        avatar: "AU",
         avatarGradient: "from-orange-400 to-red-500",
         isLeadership: false,
         location: "Mumbai, India"
@@ -100,7 +100,7 @@ export const TeamMembersData: TeamMember[] = [
         experience: "5+ Years",
         linkedin: "#",
         github: "#",
-        avatar: "KT",
+        avatar: "MG",
         avatarGradient: "from-indigo-400 to-blue-600",
         isLeadership: false,
         location: "Tokyo, Japan"
@@ -115,7 +115,7 @@ export const TeamMembersData: TeamMember[] = [
         experience: "4+ Years",
         linkedin: "#",
         github: "#",
-        avatar: "AK",
+        avatar: "KM",
         avatarGradient: "from-teal-400 to-green-500",
         isLeadership: false,
         location: "Bengaluru, India"
@@ -144,7 +144,7 @@ export const TeamMembersData: TeamMember[] = [
         skills: ["Selenium", "Cypress", "Jest", "CI/CD"],
         experience: "4+ Years",
         linkedin: "#",
-        avatar: "PS",
+        avatar: "NB",
         avatarGradient: "from-violet-500 to-purple-600",
         isLeadership: false,
         location: "Pune, India"

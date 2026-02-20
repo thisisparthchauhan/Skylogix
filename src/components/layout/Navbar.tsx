@@ -3,13 +3,13 @@
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { Menu, X, Rocket } from "lucide-react";
+import { Menu, X, LogOut, User, Settings, FolderKanban, ShieldCheck } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
 import Magnet from "@/components/ui/Magnet";
 import { ThemeToggle } from "@/components/ui/ThemeToggle";
-
+import { useAuthModal } from "@/hooks/useAuthModal";
 const navLinks = [
     { name: "Services", href: "/services" },
     { name: "Solutions", href: "/solutions" },
@@ -20,7 +20,14 @@ const navLinks = [
 export function Navbar() {
     const [isScrolled, setIsScrolled] = useState(false);
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+    const [isDropdownOpen, setIsDropdownOpen] = useState(false);
     const pathname = usePathname();
+    const { openLogin, openSignup, isLoggedIn, user, logout } = useAuthModal();
+
+    // Do not render Navbar on admin routes
+    if (pathname?.startsWith("/admin")) {
+        return null;
+    }
 
     useEffect(() => {
         const handleScroll = () => {
@@ -69,26 +76,74 @@ export function Navbar() {
                         {/* Theme Toggle */}
                         <ThemeToggle />
 
-                        <Magnet>
-                            <Link
-                                href="/book-a-call"
-                                onClick={() => {
-                                    if (typeof window !== "undefined" && (window as any).gtag) {
-                                        (window as any).gtag("event", "book_call_click", {
-                                            event_category: "Navigation",
-                                            event_label: "Navbar CTA"
-                                        });
-                                    }
-                                }}
+                        {isLoggedIn ? (
+                            <div
+                                className="relative"
+                                onMouseEnter={() => setIsDropdownOpen(true)}
+                                onMouseLeave={() => setIsDropdownOpen(false)}
                             >
-                                <Button className="bg-primary hover:bg-primary/90 text-primary-foreground font-semibold px-6 rounded-full shadow-[0_0_20px_rgba(79,142,247,0.3)] hover:shadow-[0_0_30px_rgba(79,142,247,0.5)] transition-all duration-300 group overflow-hidden relative">
-                                    <div className="absolute inset-0 bg-white/20 translate-y-full group-hover:translate-y-0 transition-transform duration-300" />
-                                    <span className="relative flex items-center gap-2">
-                                        Book a Free Call <Rocket className="w-4 h-4 group-hover:-translate-y-1 group-hover:translate-x-1 transition-transform duration-300" />
-                                    </span>
+                                <button className="w-9 h-9 rounded-full bg-gradient-to-br from-[#4F8EF7] to-[#00C2FF] flex items-center justify-center text-white font-medium shadow-[0_0_15px_rgba(79,142,247,0.3)] hover:shadow-[0_0_25px_rgba(79,142,247,0.5)] transition-all">
+                                    {user?.firstName?.[0]}{user?.lastName?.[0]}
+                                </button>
+
+                                <AnimatePresence>
+                                    {isDropdownOpen && (
+                                        <motion.div
+                                            initial={{ opacity: 0, y: 10 }}
+                                            animate={{ opacity: 1, y: 0 }}
+                                            exit={{ opacity: 0, y: 10 }}
+                                            transition={{ duration: 0.2 }}
+                                            className="absolute right-0 top-full pt-2 min-w-[220px]"
+                                        >
+                                            <div className="bg-[#0A0F2C]/95 border border-white/10 rounded-xl p-2 shadow-2xl backdrop-blur-xl">
+                                                <div className="px-3 py-2 border-b border-white/10 mb-1">
+                                                    <p className="font-medium text-white">{user?.firstName} {user?.lastName}</p>
+                                                    <p className="text-xs text-[#8A9BB5]">{user?.email}</p>
+                                                </div>
+                                                {(user?.email === "admin@skylogix.com" || user?.email === "chauhanparth165@gmail.com" || user?.email === "vaibhavatios@gmail.com") && (
+                                                    <Link href="/admin" className="w-full flex items-center gap-2 px-3 h-9 text-sm text-[#4F8EF7] hover:bg-[#4F8EF7]/10 rounded-lg transition-colors font-medium">
+                                                        <ShieldCheck size={14} /> Admin Panel
+                                                    </Link>
+                                                )}
+                                                <button className="w-full flex items-center gap-2 px-3 h-9 text-sm text-[#C8D5E8] hover:bg-white/5 rounded-lg transition-colors mt-1">
+                                                    <User size={14} /> My Profile
+                                                </button>
+                                                <button className="w-full flex items-center gap-2 px-3 h-9 text-sm text-[#C8D5E8] hover:bg-white/5 rounded-lg transition-colors">
+                                                    <FolderKanban size={14} /> My Projects
+                                                </button>
+                                                <button className="w-full flex items-center gap-2 px-3 h-9 text-sm text-[#C8D5E8] hover:bg-white/5 rounded-lg transition-colors mb-1">
+                                                    <Settings size={14} /> Settings
+                                                </button>
+                                                <div className="border-t border-white/10 pt-1">
+                                                    <button
+                                                        onClick={logout}
+                                                        className="w-full flex items-center gap-2 px-3 h-9 text-sm text-red-400 hover:bg-red-400/10 rounded-lg transition-colors"
+                                                    >
+                                                        <LogOut size={14} /> Logout
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </motion.div>
+                                    )}
+                                </AnimatePresence>
+                            </div>
+                        ) : (
+                            <div className="flex items-center gap-2">
+                                <Button
+                                    onClick={openLogin}
+                                    variant="ghost"
+                                    className="h-9 px-5 border border-white/15 text-white bg-transparent hover:bg-transparent hover:border-[#4F8EF7] hover:text-[#4F8EF7] rounded-lg text-sm font-medium transition-all"
+                                >
+                                    Login
                                 </Button>
-                            </Link>
-                        </Magnet>
+                                <Button
+                                    onClick={openSignup}
+                                    className="h-9 px-5 bg-gradient-to-br from-[#4F8EF7] to-[#00C2FF] text-white rounded-lg text-sm font-semibold shadow-[0_0_20px_rgba(0,194,255,0.25)] hover:shadow-[0_0_25px_rgba(0,194,255,0.4)] hover:scale-[1.02] transition-all"
+                                >
+                                    Sign Up
+                                </Button>
+                            </div>
+                        )}
                     </div>
 
                     {/* Mobile Menu Button */}
@@ -134,11 +189,55 @@ export function Navbar() {
                             transition={{ delay: 0.3 }}
                             className="mt-4"
                         >
-                            <Link href="/book-a-call" onClick={() => setIsMobileMenuOpen(false)}>
-                                <Button className="w-full h-12 text-lg" variant="glow">
-                                    Book a Free Call
-                                </Button>
-                            </Link>
+                            {isLoggedIn ? (
+                                <div className="flex flex-col gap-2 mt-4 pt-4 border-t border-white/10">
+                                    <div className="flex items-center gap-3 mb-4">
+                                        <div className="w-10 h-10 rounded-full bg-gradient-to-br from-[#4F8EF7] to-[#00C2FF] flex items-center justify-center text-white font-medium">
+                                            {user?.firstName?.[0]}{user?.lastName?.[0]}
+                                        </div>
+                                        <div>
+                                            <p className="font-medium text-white">{user?.firstName} {user?.lastName}</p>
+                                            <p className="text-xs text-[#8A9BB5]">{user?.email}</p>
+                                        </div>
+                                    </div>
+                                    {(user?.email === "admin@skylogix.com" || user?.email === "chauhanparth165@gmail.com" || user?.email === "vaibhavatios@gmail.com") && (
+                                        <Link href="/admin" onClick={() => setIsMobileMenuOpen(false)} className="w-full flex items-center gap-3 px-4 h-11 text-base text-[#4F8EF7] hover:bg-[#4F8EF7]/10 rounded-lg transition-colors text-left font-medium">
+                                            <ShieldCheck size={16} /> Admin Panel
+                                        </Link>
+                                    )}
+                                    <button className="w-full flex items-center gap-3 px-4 h-11 text-base text-[#C8D5E8] hover:bg-white/5 rounded-lg transition-colors text-left" onClick={() => setIsMobileMenuOpen(false)}>
+                                        <User size={16} /> My Profile
+                                    </button>
+                                    <button className="w-full flex items-center gap-3 px-4 h-11 text-base text-[#C8D5E8] hover:bg-white/5 rounded-lg transition-colors text-left" onClick={() => setIsMobileMenuOpen(false)}>
+                                        <FolderKanban size={16} /> My Projects
+                                    </button>
+                                    <button className="w-full flex items-center gap-3 px-4 h-11 text-base text-[#C8D5E8] hover:bg-white/5 rounded-lg transition-colors text-left" onClick={() => setIsMobileMenuOpen(false)}>
+                                        <Settings size={16} /> Settings
+                                    </button>
+                                    <button
+                                        onClick={() => { logout(); setIsMobileMenuOpen(false); }}
+                                        className="w-full flex items-center gap-3 px-4 h-11 text-base text-red-400 hover:bg-red-400/10 rounded-lg transition-colors text-left"
+                                    >
+                                        <LogOut size={16} /> Logout
+                                    </button>
+                                </div>
+                            ) : (
+                                <div className="mt-4 flex flex-col gap-3 border-t border-white/10 pt-6">
+                                    <Button
+                                        onClick={() => { openLogin(); setIsMobileMenuOpen(false); }}
+                                        variant="ghost"
+                                        className="w-full h-12 border border-white/15 text-white bg-transparent hover:bg-transparent hover:border-[#4F8EF7] hover:text-[#4F8EF7] rounded-lg text-base font-medium transition-all"
+                                    >
+                                        Login
+                                    </Button>
+                                    <Button
+                                        onClick={() => { openSignup(); setIsMobileMenuOpen(false); }}
+                                        className="w-full h-12 bg-gradient-to-br from-[#4F8EF7] to-[#00C2FF] text-white rounded-lg text-base font-semibold shadow-[0_0_20px_rgba(0,194,255,0.25)] hover:shadow-[0_0_25px_rgba(0,194,255,0.4)] transition-all"
+                                    >
+                                        Sign Up
+                                    </Button>
+                                </div>
+                            )}
                         </motion.div>
                     </motion.div>
                 )}

@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { Github, Twitter, Linkedin, Heart } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
@@ -26,6 +27,10 @@ const footerLinks = {
 };
 
 export function Footer() {
+    const pathname = usePathname();
+
+    if (pathname?.startsWith("/admin")) return null;
+
     return (
         <footer className="border-t border-white/10 bg-background-secondary pt-16 pb-8">
             <div className="container px-4 md:px-6 mx-auto">

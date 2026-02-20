@@ -89,6 +89,8 @@ import ExitIntentPopup from "@/components/ui/ExitIntentPopup";
 import SlideInBanner from "@/components/ui/SlideInBanner";
 import { CookieConsent } from "@/components/legal/CookieConsent";
 import GoogleAnalytics from "@/components/analytics/GoogleAnalytics";
+import { AuthModalProvider } from "@/contexts/AuthModalContext";
+import { AuthModal } from "@/components/auth/AuthModal";
 
 export default function RootLayout({
   children,
@@ -116,9 +118,12 @@ export default function RootLayout({
           <Suspense fallback={null}>
             <GoogleAnalytics />
           </Suspense>
-          <TransitionProvider>
-            {children}
-          </TransitionProvider>
+          <AuthModalProvider>
+            <TransitionProvider>
+              {children}
+            </TransitionProvider>
+            <AuthModal />
+          </AuthModalProvider>
         </ThemeProvider>
       </body>
     </html>

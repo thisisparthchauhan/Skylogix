@@ -9,7 +9,7 @@ import { AnimatedCounter } from "@/components/ui/AnimatedCounter";
 import { GradientText } from "@/components/ui/GradientText";
 
 const stats = [
-    { value: 3, suffix: "+", label: "Years Experience" },
+    { value: 13, suffix: "+", label: "Years Experience" },
     { value: 50, suffix: "+", label: "Projects Delivered" },
     { value: 10, suffix: "+", label: "Team Members" },
     { value: 15, suffix: "+", label: "Happy Clients" },
