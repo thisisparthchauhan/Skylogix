@@ -33,7 +33,7 @@ export const TeamMembersData: TeamMember[] = [
     {
         id: "1",
         name: "Vaibhav Limbani",
-        role: "CEO & Founder",
+        role: "Founder & CEO",
         department: "leadership",
         bio: "Visionary leader with a decade of experience in scaling tech startups. Passionate about AI-driven business transformation and building world-class engineering teams.",
         skills: ["Strategy", "Leadership", "AI Implementation", "Business Development"],
@@ -42,14 +42,14 @@ export const TeamMembersData: TeamMember[] = [
         avatar: "VL",
         avatarGradient: "from-blue-500 to-purple-600",
         isLeadership: true,
-        location: "Ahmedabad, India"
+        location: "Vadodara, India"
     },
     {
         id: "2",
-        name: "Parth Chauhan",
-        role: "CTO & Co-Founder",
+        name: "Pratik Parmar",
+        role: "Co-Founder",
         department: "leadership",
-        bio: "Technical architect obsessed with scalable systems and clean code. Previously led engineering at a Series B fintech startup.",
+        bio: "Co - Founder, Software Developer",
         skills: ["System Architecture", "Cloud Native", "Cybersecurity", "React/Node"],
         experience: "10+ Years",
         linkedin: "#",
@@ -61,23 +61,23 @@ export const TeamMembersData: TeamMember[] = [
     },
     {
         id: "3",
-        name: "Raj Limbani",
-        role: "Head of Design",
+        name: "Parth Chauhan",
+        role: "CTO",
         department: "leadership",
-        bio: "Award-winning designer integrating aesthetics with usability. Believes that great design is invisible and intuitive.",
-        skills: ["UI/UX Strategy", "Design Systems", "Figma", "User Research"],
-        experience: "8+ Years",
+        bio: "Technical architect obsessed with scalable systems and clean code. Previously led engineering at a Series B fintech startup",
+        skills: ["SAAS Development", "Design Systems", "AGI", "Super Research"],
+        experience: "6+ Years",
         linkedin: "#",
         avatar: "RL",
         avatarGradient: "from-pink-500 to-rose-500",
         isLeadership: true,
-        location: "Barcelona, Spain"
+        location: "Ahmedabad, India"
     },
 
     // Core Team
     {
         id: "4",
-        name: "Rohan Patel",
+        name: "Apurv Upadhyay",
         role: "Senior Full Stack Dev",
         department: "engineering",
         bio: "Full-stack wizard specializing in MERN stack and Next.js. Loves solving complex logical problems and optimizing database queries.",
@@ -92,7 +92,7 @@ export const TeamMembersData: TeamMember[] = [
     },
     {
         id: "5",
-        name: "Kenji Tanaka",
+        name: "Mihir Gohel",
         role: "Mobile Developer",
         department: "engineering",
         bio: "Mobile enthusiast building buttery smooth cross-platform experiences. Expert in Flutter and React Native animations.",
@@ -107,7 +107,7 @@ export const TeamMembersData: TeamMember[] = [
     },
     {
         id: "6",
-        name: "Aisha Khan",
+        name: "Kuldeep Meniya",
         role: "AI/ML Engineer",
         department: "engineering",
         bio: "Data scientist turned ML Engineer. Focuses on NLP, Large Language Models, and predictive analytics for enterprise solutions.",
@@ -137,7 +137,7 @@ export const TeamMembersData: TeamMember[] = [
     },
     {
         id: "8",
-        name: "Priya Sharma",
+        name: "Nisarg Bhatt",
         role: "QA Engineer",
         department: "engineering",
         bio: "Detail-oriented QA ensuring zero-bug releases. Specialized in automated testing pipelines and performance testing.",
