@@ -16,7 +16,7 @@ export function AdminTopbar({ setIsMobileOpen }: { setIsMobileOpen: (v: boolean)
                 >
                     <Menu size={20} />
                 </button>
-                <h1 className="text-white font-semibold text-base hidden sm:block">Dashboard</h1>
+                <h1 className="text-white font-semibold text-base hidden sm:block">Admin Panel</h1>
             </div>
 
             {/* Center: Search bar */}

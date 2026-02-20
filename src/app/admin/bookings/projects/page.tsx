@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { Briefcase, LayoutKanban, List, Plus, Activity, Clock } from "lucide-react";
+import { Briefcase, Kanban, List, Plus, Activity, Clock } from "lucide-react";
 import { PageHeader } from "@/components/admin/PageHeader";
 import { projectRequests } from "@/lib/admin/sampleData";
 
@@ -25,10 +25,10 @@ export default function ProjectRequestsPage() {
                 actions={
                     <div className="flex bg-white/5 border border-white/10 rounded-lg p-1">
                         <button
-                            onClick={() => setViewMode("kanban")}
-                            className={`p-1.5 rounded-md flex items-center justify-center transition-colors ${viewMode === "kanban" ? "bg-white/10 text-white" : "text-[#8A9BB5] hover:text-white"}`}
+                            onClick={() => setViewMode('kanban')}
+                            className={`p-1.5 rounded-md flex items-center justify-center transition-colors ${viewMode === 'kanban' ? 'bg-white/10 text-white' : 'text-[#8A9BB5] hover:text-white hover:bg-white/5'}`}
                         >
-                            <LayoutKanban size={16} />
+                            <Kanban size={18} />
                         </button>
                         <button
                             onClick={() => setViewMode("table")}

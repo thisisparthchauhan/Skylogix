@@ -112,16 +112,15 @@ export function AdminSidebar({ isMobileOpen, setIsMobileOpen }: { isMobileOpen: 
             >
                 {/* Header */}
                 <div className="h-14 flex items-center px-4 border-b border-white/[0.08] flex-shrink-0 justify-between">
-                    <Link href="/admin" className="flex items-center">
-                        <div className="w-7 h-7 rounded-md bg-white/10 flex items-center justify-center font-bold text-xs text-white">
-                            S
+                    <Link href="/" className="flex items-center group relative z-50">
+                        <div className="w-9 h-9 rounded-xl bg-gradient-to-br from-[#4F8EF7]/20 to-[#00C2FF]/20 flex flex-shrink-0 items-center justify-center border border-[#4F8EF7]/50 group-hover:border-[#4F8EF7] transition-colors backdrop-blur-sm">
+                            <div className="w-4 h-4 bg-[#4F8EF7] rounded-md shadow-[0_0_15px_rgba(79,142,247,0.6)] group-hover:shadow-[0_0_25px_rgba(79,142,247,0.8)] transition-shadow" />
                         </div>
-                        <span className="ml-2 text-white font-semibold text-sm">
-                            Skylogix
-                        </span>
-                        <span className="ml-1 text-white/40 text-[10px] uppercase tracking-wider">
-                            Admin
-                        </span>
+                        <div className="flex flex-col ml-3 justify-center">
+                            <span className="font-bold text-lg tracking-tight text-white group-hover:text-[#4F8EF7] transition-colors leading-none">
+                                Skylogix
+                            </span>
+                        </div>
                     </Link>
                     <button className="md:hidden text-white/70 hover:text-white p-1" onClick={() => setIsMobileOpen(false)}>
                         <AlignLeft size={18} />

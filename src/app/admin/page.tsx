@@ -48,7 +48,7 @@ const COLORS = ['#4F8EF7', '#00C2FF', '#7B5EA7', '#f59e0b', '#e11d48'];
 export default function AdminDashboard() {
     return (
         <div className="space-y-6">
-            <h1 className="text-2xl font-bold">Dashboard</h1>
+            <h1 className="text-2xl font-bold">Admin Panel</h1>
 
             {/* Top Stats Row */}
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 mb-4 tracking-tight">
