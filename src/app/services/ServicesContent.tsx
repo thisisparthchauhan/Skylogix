@@ -67,7 +67,6 @@ export default function ServicesContent() {
                             title={service.title}
                             description={service.description}
                             icon={service.icon}
-                            lottieUrl={service.lottieUrl}
                             slug={service.slug}
                         />
                     ))}
