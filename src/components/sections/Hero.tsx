@@ -46,7 +46,7 @@ export function Hero() {
                     transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
                     className="text-lg md:text-[18px] text-[#8A9BB5] max-w-3xl mb-10 leading-relaxed font-sans"
                 >
-                    We build secure, scalable, AI-driven digital solutions for businesses across US, UK, Europe, Australia & Middle East.
+                    We build secure, scalable, digital solutions for businesses across US, UK, Europe, Australia & Middle East.
                 </motion.p>
 
                 {/* Buttons */}

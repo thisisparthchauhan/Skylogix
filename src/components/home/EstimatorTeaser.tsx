@@ -62,13 +62,10 @@ export default function EstimatorTeaser() {
                             Free Estimator Tool
                         </div>
                         <h2 className="text-3xl md:text-4xl lg:text-5xl font-heading font-bold text-white leading-tight mb-4">
-                            Estimate Your <br />
-                            <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#4F8EF7] to-[#00C2FF]">
-                                Project Cost
-                            </span>
+                            Estimation logic - To be provided by us
                         </h2>
                         <p className="text-lg text-muted-foreground leading-relaxed max-w-xl">
-                            Answer 4 quick questions and get an instant cost estimate for your project. No calls, no commitment needed to get started.
+                            (Skylogix Team)
                         </p>
                     </div>
 

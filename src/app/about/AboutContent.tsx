@@ -74,7 +74,7 @@ export default function AboutContent() {
                         />
                         <div className="space-y-6 text-muted-foreground text-lg leading-relaxed">
                             <p>
-                                Founded in 2024, Skylogix Technologies has rapidly evolved from a boutique development studio into a global technology partner. We specialize in transforming complex business challenges into elegant, scalable digital solutions.
+                                Founded in 2014, Skylogix Technologies has rapidly evolved from a boutique development studio into a global technology partner. We specialize in transforming complex business challenges into elegant, scalable digital solutions.
                             </p>
                             <p>
                                 Operating across the US, UK, Europe, Australia, and the Middle East, our distributed team brings together diverse perspectives and world-class expertise to deliver software that doesn't just meet standards—it sets them.
@@ -85,7 +85,7 @@ export default function AboutContent() {
                     <GlassCard className="p-8 md:p-10">
                         <div className="grid grid-cols-2 gap-8">
                             {[
-                                { label: "Founded", value: "2024", suffix: "" },
+                                { label: "Founded", value: "2014", suffix: "" },
                                 { label: "Team Size", value: "10", suffix: "+" },
                                 { label: "Countries", value: "15", suffix: "+" },
                                 { label: "Projects", value: "50", suffix: "+" },

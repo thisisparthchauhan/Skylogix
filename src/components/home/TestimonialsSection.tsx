@@ -6,21 +6,19 @@ import { SectionWrapper } from "@/components/layout/SectionWrapper";
 import { cn } from "@/lib/utils";
 
 export default function TestimonialsSection() {
-    // Split testimonials into two rows
-    const firstRow = testimonials.slice(0, 5);
-    const secondRow = testimonials.slice(4, 9); // Overlap slightly or just use different set
+    // Split testimonials into two rows (6 total)
+    const firstRow = testimonials.slice(0, 3);
+    const secondRow = testimonials.slice(3, 6);
 
     return (
-        <SectionWrapper className="bg-[#060818] border-t border-white/5 relative overflow-hidden py-24">
+        <section className="bg-[#060818] border-t border-white/5 relative overflow-hidden py-24 w-full">
             {/* Background Gradients */}
-            <div className="absolute top-0 left-0 w-32 h-full bg-gradient-to-r from-[#060818] to-transparent z-10 pointer-events-none" />
-            <div className="absolute top-0 right-0 w-32 h-full bg-gradient-to-l from-[#060818] to-transparent z-10 pointer-events-none" />
+            <div className="absolute top-0 left-0 w-16 md:w-48 h-full bg-gradient-to-r from-[#060818] to-transparent z-10 pointer-events-none" />
+            <div className="absolute top-0 right-0 w-16 md:w-48 h-full bg-gradient-to-l from-[#060818] to-transparent z-10 pointer-events-none" />
 
-            {/* Header */}
-            <div className="text-center max-w-3xl mx-auto mb-16 px-4 relative z-20">
-                <div className="inline-block px-3 py-1 rounded-full bg-primary/10 border border-primary/20 text-primary text-xs font-bold tracking-wider uppercase mb-4">
-                    Social Proof
-                </div>
+            {/* Header - Constrained for readability but full width available */}
+            <div className="container mx-auto text-center w-full mb-16 px-4 relative z-20">
+
                 <h2 className="text-3xl md:text-5xl font-heading font-bold text-white leading-tight mb-4">
                     Client Testimonials
                 </h2>
@@ -29,35 +27,18 @@ export default function TestimonialsSection() {
                 </p>
             </div>
 
-            {/* Marquee Container */}
-            <div className="space-y-8 relative z-0">
-                {/* Row 1: Left */}
-                <div className="relative flex overflow-hidden group">
-                    <div className="flex gap-6 animate-scroll group-hover:[animation-play-state:paused] min-w-full">
-                        {[...firstRow, ...firstRow, ...firstRow].map((item, idx) => (
-                            <TestimonialCard key={`${item.id}-${idx}`} item={item} />
-                        ))}
-                    </div>
-                </div>
-
-                {/* Row 2: Right */}
-                <div className="relative flex overflow-hidden group">
-                    <div className="flex gap-6 animate-scroll-reverse group-hover:[animation-play-state:paused] min-w-full">
-                        {[...secondRow, ...secondRow, ...secondRow].map((item, idx) => (
-                            <TestimonialCard key={`${item.id}-${idx}`} item={item} />
-                        ))}
-                    </div>
+            {/* Testimonials Grid */}
+            <div className="container mx-auto px-4 relative z-0">
+                <div className="flex flex-wrap justify-center gap-6">
+                    {/* Map all 6 items into a centered responsive grid */}
+                    {[...firstRow, ...secondRow].map((item, idx) => (
+                        <TestimonialCard key={`${item.id}-${idx}`} item={item} />
+                    ))}
                 </div>
             </div>
 
-            {/* Stats */}
-            <div className="flex flex-wrap justify-center gap-4 md:gap-8 mt-16 relative z-20">
-                <StatPill icon="⭐" text="4.9/5 Average Rating" />
-                <StatPill icon="💬" text="50+ Project Reviews" />
-                <StatPill icon="🌍" text="12+ Countries Served" />
-            </div>
 
-        </SectionWrapper>
+        </section>
     );
 }
 
@@ -70,6 +51,7 @@ function TestimonialCard({ item }: { item: typeof testimonials[0] }) {
                     <Star key={i} className="w-4 h-4 fill-yellow-400 text-yellow-400" />
                 ))}
             </div>
+
 
             {/* Quote */}
             <div className="relative mb-6">

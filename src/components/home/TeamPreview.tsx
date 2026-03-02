@@ -91,7 +91,7 @@ export default function TeamPreview() {
                 <div className="text-center border-l md:border-l border-white/10 border-t md:border-t-0 pt-4 md:pt-0">
                     <div className="flex items-center justify-center gap-2 text-2xl font-bold text-white mb-1">
                         <Briefcase className="w-6 h-6 text-accent-cyan" />
-                        50+ Years
+                        13+ Years
                     </div>
                     <div className="text-sm text-muted-foreground">Combined Experience</div>
                 </div>

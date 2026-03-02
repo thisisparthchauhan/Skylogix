@@ -8,7 +8,7 @@ import { Services } from "@/components/sections/Services"; // Keep above fold st
 const TechStack = dynamic(() => import("@/components/sections/TechStack"), {
   loading: () => <div className="h-96 w-full bg-[#0A0F2C] animate-pulse" />,
 });
-const WhyChooseUs = dynamic(() => import("@/components/sections/WhyChooseUs").then(mod => mod.WhyChooseUs));
+
 const EstimatorTeaser = dynamic(() => import("@/components/home/EstimatorTeaser"));
 const TeamPreview = dynamic(() => import("@/components/home/TeamPreview"));
 const TestimonialsSection = dynamic(() => import("@/components/home/TestimonialsSection"));
@@ -30,7 +30,6 @@ export default function Home() {
 
       <TechStack />
 
-      <WhyChooseUs />
 
       <EstimatorTeaser />
 
